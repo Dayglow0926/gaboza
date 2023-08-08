@@ -1,9 +1,12 @@
+main {
+  margin-top: 140px;
+}
 main .main-slogan {
   display: flex;
   align-items: end;
   height: 220px;
   padding-left: 20rem;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 main .main-img-banner-list {
@@ -15,4 +18,116 @@ main .main-img-banner-list {
 
 main .main-img-banner-list .main-img-banner-list__item {
   height: 100%;
+}
+
+main .main-travel-info {
+  padding: 0px 20rem;
+  margin-top: 48px;
+}
+
+main .main-travel-info .main-travel-info__hotplace > * {
+  margin-bottom: 32px;
+}
+
+main .main-travel-info .main-travel-info__hotplace-main-title {
+}
+
+main .main-travel-info .main-travel-info__hotplace-sub-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list {
+  display: flex;
+  overflow-x: scroll;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item {
+  min-width: 364px;
+  margin-right: 32px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  > * {
+  margin-bottom: 14px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  .main-travel-info__hotplace-list__item-img
+  img {
+  width: 100%;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  .main-travel-info__hotplace-list__item-descript {
+  height: 65px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  .main-travel-info__hotplace-list__item-descript
+  > p {
+  max-width: calc(100% - 38px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+
+  text-overflow: ellipsis;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  .main-travel-info__hotplace-list__item-icon {
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  .main-travel-info__hotplace-list__item-icon
+  button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 25px;
+  padding: 0;
+  margin-right: 20px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  .main-travel-info__hotplace-list__item-icon
+  button
+  img {
+  width: 100%;
 }
