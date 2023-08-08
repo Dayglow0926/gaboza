@@ -2,7 +2,6 @@ window.addEventListener("load", function () {
   var allElements = document.getElementsByTagName("*");
   Array.prototype.forEach.call(allElements, function (el) {
     var includePath = el.dataset.includePath;
-    console.log(el.dataset);
     if (includePath) {
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
