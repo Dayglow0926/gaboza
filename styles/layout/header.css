@@ -4,6 +4,10 @@ header {
   align-items: center;
   padding: 0px 10rem; /* 좌우간격*/
   height: 140px;
+  position: fixed;
+  top: 0;
+  background-color: #fefefe;
+  width: 100vw;
 }
 
 header img {
