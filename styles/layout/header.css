@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10rem; /* 좌우간격*/
+  height: 140px;
+}
+
+header img {
+  height: 132px;
+}
+
+header .menu {
+  width: 165px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .menu a {
+  color: black;
+}

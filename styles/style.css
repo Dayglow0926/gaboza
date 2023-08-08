@@ -1,1 +1,23 @@
 @import url("./reset.css");
+
+body {
+  font-family: "SUIT", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-blue-4D7DFF {
+  color: #4d7dff;
+}
+
+.h-bold-24 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.h-ExtraBold-60 {
+  font-size: 60px;
+  font-weight: 800;
+}
