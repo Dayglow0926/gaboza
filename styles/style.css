@@ -12,12 +12,89 @@ a {
   color: #4d7dff;
 }
 
-.h-bold-24 {
-  font-size: 24px;
-  font-weight: 700;
+.text-blue-81ABF2 {
+  color: #81abf2;
+}
+
+.text-blue-CCE2FB {
+  color: #cce2fb;
+}
+
+.text-grey-fefefe {
+  color: #fefefe;
+}
+
+.text-grey-fdfdfd {
+  color: #fdfdfd;
+}
+
+.text-grey-f7f8f9 {
+  color: #f7f8f9;
+}
+
+.text-grey-e9ebee {
+  color: #e9ebee;
+}
+
+.text-grey-c5c8ce {
+  color: #c5c8ce;
+}
+
+.text-grey-959CA5 {
+  color: #959ca5;
+}
+
+.text-grey-646f7c {
+  color: #646f7c;
+}
+
+.text-grey-374553 {
+  color: #374553;
+}
+
+.text-grey-28323C {
+  color: #28323c;
+}
+
+.text-grey-161D24 {
+  color: #161d24;
 }
 
 .h-ExtraBold-60 {
   font-size: 60px;
   font-weight: 800;
+}
+
+.h-bold-46 {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.h-bold-24 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.h-regular-20 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.h-bold-16 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.h-regular-16 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.h-regular-14 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mx-width {
+  max-width: 1200px;
 }
