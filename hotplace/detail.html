@@ -3,75 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>상세페이지</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/layout/header.css" />
+    <link rel="stylesheet" href="../styles/layout/footer.css" />
+    <link rel="stylesheet" href="../styles/detail_hotplace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
   </head>
   <body>
-    <!-- content -->
-    <div class="content">
-      <!-- header -->
-      <header></header>
-      <!-- content -->
-      <div id="content">
-        <!-- 상단 -->
-        <div class="titleType1">
-          <h2 id="toptitle">상단 타이틀</h2>
-          <div class="area_adress">
-            <span>주소 쓰는곳</span>
-          </div>
-          <!-- 캐치플레이스 -->
-          <div class="subtitle">
-            <div class="titTypeWrap">
-              <h3>
-                <em>고소하고 건강한 콩국</em>
-              </h3>
-            </div>
-          </div>
-          <!-- 아이콘 -->
-          <div class="post_area">
-            <button type="button">
-              <span class="ico"> 좋아요 </span>
-            </button>
-            <button type="button">
-              <span class="ico"> 공유 </span>
-            </button>
-          </div>
-          <!-- //상단 -->
-          <!-- 내용 -->
-          <div class="db_cont_detail">
-            <div class="detail_tab">
-              <ul>
-                <li class="select_tab" id="photoTab">
-                  <a href="#">
-                    <span>사진보기</span>
-                  </a>
-                </li>
-                <li class="select_tab" id="detailTab">
-                  <a href="#">
-                    <span>상세정보</span>
-                  </a>
-                </li>
-                <li class="select_tab" id="commentTab">
-                  <a href="#">
-                    <span>댓글보기</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- 사진 보기 -->
-            <div id="galleryGO">
-              <div class="photo_gallery">
-                <!-- 사진 영역 -->
-                <div class="offer-container__photo--cover">
-                    
-                    </div>
-                  </li>
-                </div>
+    <div data-include-path="../layout/header.html"></div>
+    <!-- header include -->
+    <main>
+    <div id="content">
+            <div class="titleType1 ">
+              <h2 class="h-bold-46" id="topTitle">메인 타이틀 글씨</h2>
+             <div class="area_address" id="topAddr h-regular-16 "><span>주소 넣는곳</span>
+           </div>
+            <!-- 캐치플레이스 -->
+            <div class="dbDetail titBg" id="topCp">
+                <div class="titTypeWrap">
+                   <h3>
+                        <em class="h-bold-24">캐치플레이스!</em>
+                   </h3>
+                  </div>
               </div>
+          <!-- 버튼 -->
+          <div class="button_area">
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-share"></i>
             </div>
-          </div>
-        </div>
-      </div>
+        <!-- //버튼 -->
+        <!-- 내용 -->
+         <div class="db_cont_detail">
+            <div class="detail_tab">
+                <ul>
+                    <li class="select_tab on" id="photoTab"><span>사진보기</span></li>
+                    <li class="select_tab" id="detailTab"><span>상세정보</span></li>
+                    <li class="select_tab" id="commentTab"><span>댓글보기</span></li>
+                </ul>
+            </div>
+       </div>
     </div>
-  </body>
+    </main>
+    <!-- <div data-include-path="../layout/footer.html"></div> -->
+    <!-- footer include -->
+</div>
+</body>
+<script src="../js/include.js"></script>
 </html>
