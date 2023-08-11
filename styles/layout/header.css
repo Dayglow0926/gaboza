@@ -2,15 +2,15 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--grey-005);
 }
 header .header-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 140px;
-  position: fixed;
-  top: 0;
-  background-color: #fefefe;
   width: 100vw;
 }
 
