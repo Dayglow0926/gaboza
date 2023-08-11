@@ -1,20 +1,18 @@
 @import url("./reset.css");
+@import url("./root.css");
 
 body {
   font-family: "SUIT", sans-serif;
+  color: var(--grey-080);
 }
 
 a {
   text-decoration: none;
 }
 
-.text-blue-4D7DFF {
-  color: #4d7dff;
-}
-
-.h-bold-24 {
-  font-size: 24px;
-  font-weight: 700;
+.h-ExtraBold-60 {
+  font-size: 60px;
+  font-weight: 800;
 }
 
 .h-bold-46 {
@@ -22,7 +20,31 @@ a {
   font-weight: 700;
 }
 
-.h-ExtraBold-60 {
-  font-size: 60px;
-  font-weight: 800;
+.h-bold-24 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.h-regular-20 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.h-bold-16 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.h-regular-16 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.h-regular-14 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mx-width {
+  max-width: 1200px;
 }
