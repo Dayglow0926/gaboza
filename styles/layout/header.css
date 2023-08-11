@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header .header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+  width: 100%;
+}
+
+header img {
+  height: 132px;
+}
+
+header .menu {
+  width: 165px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .menu a {
+  color: black;
+}

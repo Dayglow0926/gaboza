@@ -1,0 +1,18 @@
+main .main-slogan {
+  display: flex;
+  align-items: end;
+  height: 220px;
+  padding-left: 20rem;
+  margin-bottom: 50px;
+}
+
+main .main-img-banner-list {
+  height: 450px;
+  display: flex;
+  overflow-x: scroll; /* 스크롤 없앨 예정 */
+  overflow-y: hidden;
+}
+
+main .main-img-banner-list .main-img-banner-list__item {
+  height: 100%;
+}
