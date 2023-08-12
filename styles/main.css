@@ -1,12 +1,23 @@
 main {
-  margin-top: 140px;
+  margin-top: 160px;
 }
 main .main-slogan {
   display: flex;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 220px;
-  padding-left: 20rem;
   margin-bottom: 48px;
+  /* margin: 0 calc((100% - var(--main-max-width)) / 2); */
+}
+
+main .main-slogan .main-slogan__text {
+  width: 100vw;
+  max-width: var(--main-max-width);
+}
+
+main .main-slogan .main-slogan__text-highlight {
+  color: var(--blue-010);
 }
 
 main .main-img-banner-list {
@@ -21,7 +32,8 @@ main .main-img-banner-list .main-img-banner-list__item {
 }
 
 main .main-travel-info {
-  padding: 0px 20rem;
+  max-width: var(--main-max-width);
+  margin: 0 auto;
   margin-top: 48px;
 }
 
@@ -51,7 +63,9 @@ main
   .main-travel-info__hotplace-list
   .main-travel-info__hotplace-list__item {
   min-width: 364px;
-  margin-right: 32px;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 main
@@ -79,7 +93,8 @@ main
   .main-travel-info__hotplace-list
   .main-travel-info__hotplace-list__item
   .main-travel-info__hotplace-list__item-descript {
-  height: 65px;
+  /* height: 65px; */
+  flex-grow: 1;
 }
 
 main
@@ -128,6 +143,175 @@ main
   .main-travel-info__hotplace-list__item
   .main-travel-info__hotplace-list__item-icon
   button
-  img {
-  width: 100%;
+  i {
+  font-size: 25px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  .main-travel-info__hotplace-list__item-icon
+  button
+  .bi-heart-fill {
+  color: var(--coral-080);
+}
+
+main .main-travel-info .main-travel-info__gaboza-pick {
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item
+  > img {
+  height: 200px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item.right {
+  justify-content: flex-end;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item
+  .main-travel-info__gaboza-pick-item-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item.left
+  .main-travel-info__gaboza-pick-item-title {
+  margin-left: 32px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item.right
+  .main-travel-info__gaboza-pick-item-title {
+  align-items: flex-end;
+  margin-right: 32px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item
+  .main-travel-info__gaboza-pick-item-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item
+  .main-travel-info__gaboza-pick-item-title
+  > * {
+  margin-top: 16px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item
+  .main-travel-info__gaboza-pick-item-title
+  > span:nth-child(1) {
+  color: var(--grey-050);
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-button {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-button
+  > button {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  color: var(--grey-060);
+  background-color: var(--grey-005);
+  border: 2px solid var(--grey-080);
+  border-radius: 30px;
+  padding: 6px 12px;
+  margin-bottom: 32px;
+}
+
+main .main-ad-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 320px;
+}
+
+main .main-ad-list .main-ad-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main .main-ad-list .main-ad-item.left {
+  background-color: var(--blue-020);
+}
+
+main .main-ad-list .main-ad-item.right {
+  background-color: var(--blue-030);
+}
+
+main .main-ad-list .main-ad-item .main-ad-item__title {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-ad-list .main-ad-item .main-ad-item__title > span:nth-child(1) {
+  color: var(--blue-010);
+  margin-bottom: 16px;
+}
+
+main .main-ad-list .main-ad-item > img {
+  width: 430px;
+  height: 290px;
 }
