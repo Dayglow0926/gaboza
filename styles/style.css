@@ -3,10 +3,16 @@
 
 * {
   box-sizing: border-box;
+  -webkit-text-stroke: 1px;
 }
 body {
   font-family: "SUIT", sans-serif;
   color: var(--grey-080);
+  background-color: var(--grey-005);
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
@@ -16,38 +22,86 @@ a {
 .h-ExtraBold-60 {
   font-size: 60px;
   font-weight: 800;
+  line-height: 130%;
+}
+
+.h-ExtraBold-46 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 130%;
 }
 
 .h-bold-46 {
   font-size: 46px;
   font-weight: 700;
+  line-height: 130%;
+}
+
+.h-bold-32 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.h-regular-32 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
 }
 
 .h-bold-24 {
   font-size: 24px;
   font-weight: 700;
+  line-height: 130%;
 }
 
 .h-regular-20 {
   font-size: 20px;
   font-weight: 500;
+  line-height: 130%;
 }
 
 .h-bold-16 {
   font-size: 16px;
   font-weight: 700;
+  line-height: 130%;
 }
 
 .h-regular-16 {
   font-size: 16px;
   font-weight: 500;
+  line-height: 130%;
 }
 
 .h-regular-14 {
   font-size: 14px;
   font-weight: 500;
+  line-height: 130%;
+}
+
+.text-blue-highlight {
+  color: var(--blue-010);
+}
+
+.view-all {
+  color: var(--grey-045);
+}
+
+.sub-title-color {
+  color: var(--grey-050);
+}
+
+.height-line {
+  border: 0.5px solid var(--grey-080);
+  height: 35px;
+  width: 0;
+  margin: 0px 32px;
+}
+
+.cover-width {
+  width: var(--main-max-width);
 }
 
 .mx-width {
-  max-width: 1200px;
+  max-width: var(--main-max-width);
 }
