@@ -1,11 +1,13 @@
-div {
+/* div {
   box-sizing: border-box;
-}
+} */
 
 #content {
+  display: flex;
   width: 1200px;
   margin: 0 auto;
   padding: 130px 20px 0px 20px;
+  border: 1px solid black;
 }
 
 .bi {
@@ -16,7 +18,6 @@ div {
 
 .titleType1 {
   width: 100%;
-  height: 100px;
   text-align: center;
   position: relative;
 }
@@ -29,7 +30,7 @@ div {
 }
 
 .dbDetail {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   margin-top: 24px;
 }
@@ -60,14 +61,94 @@ ul {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+}
+
+.detail_tab {
+  z-index: 1;
+  margin-bottom: 20px;
 }
 
 .detail_tab ul li {
   list-style: none;
   float: left;
-  width: 33%;
+  width: 33.3%;
   text-align: center;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+}
+
+.detail_tab ul li a {
+  position: relative;
+  display: block;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--grey-070);
+}
+
+.detail_tab ul li a span {
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+}
+
+.detail_tab ul li a:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background: #ccc;
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+#galleryGO .photo_gallery {
+  width: 100%;
+  text-align: center;
+}
+
+#galleryGO .photo_gallery_sub {
+  border-radius: 3px solid yellow;
+  width: 100%;
+  background-color: aqua;
+}
+
+#galleryGO .photo_gallery_sub li {
+  float: left;
+  width: 33%;
+  height: 200px;
+  list-style: none;
+}
+
+#galleryGO .photo_gallery_sub li a {
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  display: block;
+  box-sizing: border-box;
+  margin-left: 16px;
+}
+
+#galleryGO .photo_gallery_sub li a img {
+  width: 100%;
+  margin-left: -32px;
+}
+
+.wrap_contView {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.wrap_contView h3 {
+  width: 100%;
+  padding: 31px 0 16px;
+  margin-top: 48px;
+  font-size: 28px;
+  border-bottom: 2px solid #333;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -1px;
+  color: #333;
 }
