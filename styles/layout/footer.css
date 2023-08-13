@@ -1,4 +1,35 @@
 footer {
+  display: flex;
+  align-items: center;
+
   height: 160px;
-  border: 2px solid black;
+  margin-top: 32px;
+  padding: 10px 50px;
+
+  /* background-color: var(--grey-030); */
+}
+
+footer img {
+  height: 100%;
+  margin-right: 48px;
+}
+
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+footer .footer-info .footer-info__company {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-info .footer-info__links {
+}
+
+footer .footer-info .footer-info__links > a {
+  margin-right: 32px;
+  color: var(--grey-050);
 }
