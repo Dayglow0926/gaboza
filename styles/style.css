@@ -3,8 +3,12 @@
 
 * {
   box-sizing: border-box;
+}
+
+i {
   -webkit-text-stroke: 1px;
 }
+
 body {
   font-family: "SUIT", sans-serif;
   color: var(--grey-080);
