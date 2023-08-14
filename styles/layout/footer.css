@@ -1,17 +1,24 @@
 footer {
-  display: flex;
-  align-items: center;
-
-  height: 160px;
-  margin-top: 32px;
+  width: 100vw;
+  height: 100px;
+  margin: 32px 0px;
   padding: 10px 50px;
 
   /* background-color: var(--grey-030); */
 }
 
-footer img {
+footer > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+footer div img {
   height: 100%;
   margin-right: 48px;
+  opacity: 0.8;
 }
 
 footer .footer-info {
@@ -24,6 +31,7 @@ footer .footer-info {
 footer .footer-info .footer-info__company {
   display: flex;
   flex-direction: column;
+  color: var(--grey-060);
 }
 
 footer .footer-info .footer-info__links {

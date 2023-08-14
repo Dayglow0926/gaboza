@@ -12,7 +12,7 @@ header .header-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
+  height: 100px;
   width: 100vw;
   max-width: var(--main-max-width);
   padding: 10px 20px;
