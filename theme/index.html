@@ -31,7 +31,6 @@
     <div data-include-path="../layout/header.html"></div>
     <!-- 테마 페이지 시작 -->
     <main class="">
-      <!-- 스와이퍼 -->
       <section class="banner-slide">
         <div class="theme-title">
           <p class="br-15-30">맑을 때 가면 예쁜 장소</p>
@@ -41,7 +40,7 @@
           </div>
           <p class="h-regular-14 theme-detail">자세히 보기</p>
         </div>
-
+      <!-- 스와이퍼 -->
         <div class="swiper swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -159,7 +158,9 @@
     <div data-include-path="../layout/footer.html"></div>
     <script src="../js/include.js"></script>
     <script>
-      const sw = new Swiper(".swiper1", {
+            // 스와이퍼 
+
+            const swiper = new Swiper(".swiper", {
         slidesPerView: 1.6,
         spaceBetween: 200, //slide 간의 gap(margin)
         loop: true,
@@ -167,7 +168,7 @@
           delay: 500,
         },
         speed: 500, //like transition
-
+    
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -180,6 +181,9 @@
           el: ".swiper-scrollbar",
         },
       });
+    // 스와이퍼 
     </script>
+    <script src="./index.js"></script>
+    
   </body>
 </html>
