@@ -3,8 +3,12 @@
 
 * {
   box-sizing: border-box;
+}
+
+i {
   -webkit-text-stroke: 1px;
 }
+
 body {
   font-family: "SUIT", sans-serif;
   color: var(--grey-080);
@@ -45,7 +49,7 @@ a {
 
 .h-regular-32 {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 130%;
 }
 
@@ -57,7 +61,7 @@ a {
 
 .h-regular-20 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 130%;
 }
 
@@ -69,18 +73,28 @@ a {
 
 .h-regular-16 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 130%;
 }
 
 .h-regular-14 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 130%;
+}
+
+.h-regular-12 {
+  font-size: 12px;
+  font-weight: 300;
   line-height: 130%;
 }
 
 .text-blue-highlight {
-  color: var(--blue-010);
+  color: var(--blue-060);
+}
+
+.text-coral-highlight {
+  color: var(--coral-080);
 }
 
 .view-all {

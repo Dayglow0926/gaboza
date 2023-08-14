@@ -19,10 +19,14 @@
   --coral-070: #f75b48;
   --coral-080: #e45141;
 
-  --blue-010: #4d7dff;
-  --blue-020: #81abf2;
-  --blue-030: #cce2fb;
-  --blue-040: #fcfdfb;
+  --blue-005: #fcfdfb;
+  --blue-010: #edf6ff;
+  --blue-020: #cce2fb;
+  --blue-030: #aeccff;
+  --blue-040: #81abf2;
+  --blue-050: #7097ff;
+  --blue-060: #4d7dff;
+  --blue-070: #235cf7;
 
   --main-max-width: 1200px;
 }
