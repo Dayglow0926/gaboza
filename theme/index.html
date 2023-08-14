@@ -10,17 +10,176 @@
     />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/layout/header.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/layout/footer.css" />
+    <!-- boostrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- swiper CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles/theme.css" />
   </head>
   <body>
     <div data-include-path="../layout/header.html"></div>
+    <!-- 테마 페이지 시작 -->
+    <main class="">
+      <!-- 스와이퍼 -->
+      <section class="banner-slide">
+        <div class="theme-title">
+          <p class="br-15-30">맑을 때 가면 예쁜 장소</p>
+          <div>
+            <h4 class="">추천! 웰니스 관광지</h4>
+            <div>☀</div>
+          </div>
+          <p class="">자세히 보기</p>
+        </div>
 
-    <main>
-        <section></section>
+        <div class="swiper swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/palace.png" alt="경복궁" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/bookstore.png" alt="몸과 마음의 힐링" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/beach.png" alt="시원한 여행" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/parent.png" alt="효도 여행" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/puddle.png" alt="강아지 동반 여행" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- 스와이퍼 -->
+      <section class="mx-width banner-nav">
+        <nav class="">
+          <ul>
+            <li>
+              <button class="active h-bold-24">맑을 때 가면 예쁜 장소</button>
+            </li>
+            <li>
+              <button class="h-bold-24">몸과 마음의 힐링</button>
+            </li>
+            <li>
+              <button class="h-bold-24">시원한 자연 경관</button>
+            </li>
+            <li>
+              <button class="h-bold-24">효도 여행</button>
+            </li>
+            <li>
+              <button class="h-bold-24">우리집 댕댕이랑</button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="mx-width theme-content">
+        <div class="theme-con-title">
+          <div class="h-ExtraBold-60">한국 전통의 아름다움이 살아 숨 쉬는</div>
+          <div class="line-2p"></div>
+        </div>
+        <div class="theme-con-img">
+          <div class="theme-img-nav">
+            <ul class="list">
+              <li class="active">
+                <a href="#">
+                  <img src="../img/healing.png" alt="" />
+                  <div class="tag">
+                    <p class="h-bold-24 h-bold-32">#힐링,명상</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/cafe.png" alt="" />
+                  <div class="tag">
+                    <p class="h-bold-24">#카페</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/underthesea.png" alt="" />
+                  <div class="tag">
+                    <p class="h-bold-24">#자연 명소</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/festival.png" alt="" />
+                  <div class="tag">
+                    <p class="h-bold-24">#페스티벌</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="theme-img-area">
+            <ul class="flex-r">
+              <li>
+                <a href="#">
+                  <img src="../img/white-cafe.png" alt="" />
+                  <div class="tag">
+                    <p class="h-bold-24">타이틀</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../img/night-cafe.png" alt="" />
+                  <div class="tag">
+                    <p class="h-bold-24">타이틀</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mx-width detail-banner">
+        <p class="h-bold-24">더 많은 테마 보기</p>
+        <img src="../img/search_banner.svg" alt="">
+      </section>
     </main>
-    
+
     <div data-include-path="../layout/footer.html"></div>
     <script src="../js/include.js"></script>
+    <script>
+      const sw = new Swiper(".swiper1", {
+        slidesPerView: 1.6,
+        spaceBetween: 2, //slide 간의 gap(margin)
+        loop: true,
+        autoplay: {
+          delay: 500,
+        },
+        speed: 500, //like transition
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
