@@ -17,7 +17,7 @@ main .main-slogan .main-slogan__text {
 }
 
 main .main-slogan .main-slogan__text-highlight {
-  color: var(--blue-010);
+  color: var(--blue-070);
 }
 
 main .main-img-banner-list {
@@ -284,7 +284,7 @@ main
 main .main-ad-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 320px;
+  height: 190px;
 }
 
 main .main-ad-list .main-ad-item {
@@ -294,7 +294,7 @@ main .main-ad-list .main-ad-item {
 }
 
 main .main-ad-list .main-ad-item.left {
-  background-color: var(--blue-020);
+  background-color: var(--blue-040);
 }
 
 main .main-ad-list .main-ad-item.right {
@@ -306,12 +306,21 @@ main .main-ad-list .main-ad-item .main-ad-item__title {
   flex-direction: column;
 }
 
-main .main-ad-list .main-ad-item .main-ad-item__title > span:nth-child(1) {
+main .main-ad-list .main-ad-item.left .main-ad-item__title > span:nth-child(1) {
+  color: var(--blue-010);
+  margin-bottom: 16px;
+}
+
+main
+  .main-ad-list
+  .main-ad-item.right
+  .main-ad-item__title
+  > span:nth-child(1) {
   color: var(--blue-010);
   margin-bottom: 16px;
 }
 
 main .main-ad-list .main-ad-item > img {
-  width: 430px;
-  height: 290px;
+  width: 200px;
+  /* height: 290px; */
 }
