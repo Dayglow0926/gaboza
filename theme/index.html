@@ -23,8 +23,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <!-- swiper JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="../styles/theme.css" />
   </head>
   <body>
@@ -40,7 +39,7 @@
           </div>
           <p class="h-regular-14 theme-detail">자세히 보기</p>
         </div>
-      <!-- 스와이퍼 -->
+        <!-- 스와이퍼 -->
         <div class="swiper swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -65,7 +64,7 @@
       </section>
       <!-- 스와이퍼 -->
       <section class="mx-width banner-nav">
-        <nav class="">
+        <nav class="swiper2">
           <ul>
             <li>
               <button class="active h-bold-24">맑을 때 가면 예쁜 장소</button>
@@ -85,6 +84,25 @@
           </ul>
         </nav>
       </section>
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">Slide 1</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">Slide 2</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">Slide 3</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">Slide 4</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">Slide 5</div>
+          </div>
+        </div>
+      </div>
       <section class="mx-width theme-content">
         <div class="theme-con-title">
           <div class="h-ExtraBold-60">한국 전통의 아름다움이 살아 숨 쉬는</div>
@@ -97,7 +115,7 @@
                 <a href="#">
                   <img src="../img/healing.png" alt="" />
                   <div class="tag">
-                    <p class="h-bold-24 h-bold-32">#힐링,명상</p>
+                    <p class="h-bold-24">#힐링,명상</p>
                   </div>
                 </a>
               </li>
@@ -133,7 +151,9 @@
                 <a href="#">
                   <img src="../img/white-cafe.png" alt="" />
                   <div class="tag">
-                    <p class="h-bold-24">아름다운 포토스팟이 가득한 여름 휴가지</p>
+                    <p class="h-bold-24">
+                      아름다운 포토스팟이 가득한 여름 휴가지
+                    </p>
                   </div>
                 </a>
               </li>
@@ -141,7 +161,9 @@
                 <a href="#">
                   <img src="../img/night-cafe.png" alt="" />
                   <div class="tag">
-                    <p class="h-bold-24">서울 근교 드라이브, 밤에도 가기 좋은 카페</p>
+                    <p class="h-bold-24">
+                      서울 근교 드라이브, 밤에도 가기 좋은 카페
+                    </p>
                   </div>
                 </a>
               </li>
@@ -151,39 +173,68 @@
       </section>
       <section class="mx-width detail-banner">
         <p class="h-bold-24">더 많은 테마 보기</p>
-        <img src="../img/search_banner.svg" alt="">
+        <img src="../img/search_banner.svg" alt="" />
       </section>
+      <ul id="for"></ul>
+      <ul id="foreach"></ul>
+      <ul id="for"></ul>
     </main>
 
     <div data-include-path="../layout/footer.html"></div>
     <script src="../js/include.js"></script>
+    <!-- swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-            // 스와이퍼 
+      // 스와이퍼
 
-            const swiper = new Swiper(".swiper", {
+      const swiper = new Swiper(".swiper1", {
         slidesPerView: 1.6,
         spaceBetween: 200, //slide 간의 gap(margin)
         loop: true,
         autoplay: {
-          delay: 500,
+          delay: 3500,
         },
         speed: 500, //like transition
-    
+
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
       });
-    // 스와이퍼 
+      // 스와이퍼
+
+      // 밑의
+      var galleryThumbs = new Swiper(".gallery-thumbs", {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 5,
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 4,
+      });
+
+      swiper.controller.control = galleryThumbs;
+      galleryThumbs.controller.control = swiper;
+
+      const test = document.querySelector(".br-15-30");
+
+      swiper.on("slideChange", function () {
+        // 테마 버튼 네브 선언 
+        let themeTit = document.querySelectorAll(
+          ".banner-nav nav ul li button"
+        );
+
+        console.log(this.realIndex);
+
+        themeTit.forEach((val, i) => {
+          if (i === this.realIndex) {
+            val.classList.add("active");
+            test.innerText = val.innerText;
+          } else val.classList.remove("active");
+        });
+      });
     </script>
     <script src="./index.js"></script>
-    
   </body>
 </html>
