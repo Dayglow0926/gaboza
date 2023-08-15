@@ -20,7 +20,7 @@ main{
 
 .banner-slide .theme-title {
   width: 100%;
-  padding: 0 16.7rem;
+  padding: 0 10.7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,6 +63,7 @@ main{
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 2.73rem;
+  min-width: 9.6rem;
 }
 
 .banner-slide .theme-title .flex-r .theme-title-icon{
@@ -71,11 +72,12 @@ main{
 
 .banner-slide .swiper1 {
   margin-top: 5.7rem;
-  width: 70vw;
+  width: 62vw;
   position: absolute;
   left: 29vw;
   top: 0px;
   z-index: 0;
+  margin-left: 10rem;
 }
 /*배너 끝남 */
 
@@ -289,4 +291,9 @@ main .detail-banner p {
 main .detail-banner img {
   height: 16.7rem;
   margin-bottom: 1rem;
+}
+
+/* 밑의 스와이퍼 */
+.banner-nav .gallery-thumbs .swiper-wrapper{
+  transform: translate3d(0,0);
 }

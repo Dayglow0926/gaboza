@@ -63,28 +63,28 @@
         </div>
       </section>
       <!-- 스와이퍼 -->
-      <section class="mx-width banner-nav">
-        <nav class="swiper2">
-          <ul>
-            <li>
+      <section class="mx-width banner-nav ">
+        <nav class="swiper-container gallery-thumbs">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
               <button class="active h-bold-24">맑을 때 가면 예쁜 장소</button>
             </li>
-            <li>
+            <li class="swiper-slide">
               <button class="h-bold-24">몸과 마음의 힐링</button>
             </li>
-            <li>
+            <li class="swiper-slide">
               <button class="h-bold-24">시원한 자연 경관</button>
             </li>
-            <li>
+            <li class="swiper-slide">
               <button class="h-bold-24">효도 여행</button>
             </li>
-            <li>
+            <li class="swiper-slide">
               <button class="h-bold-24">우리집 댕댕이랑</button>
             </li>
           </ul>
         </nav>
       </section>
-      <div class="swiper-container gallery-thumbs">
+      <!-- <div class="swiper-container gallery-thumbs">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="swiper-slide-container">Slide 1</div>
@@ -102,7 +102,7 @@
             <div class="swiper-slide-container">Slide 5</div>
           </div>
         </div>
-      </div>
+      </div> -->
       <section class="mx-width theme-content">
         <div class="theme-con-title">
           <div class="h-ExtraBold-60">한국 전통의 아름다움이 살아 숨 쉬는</div>
@@ -184,57 +184,7 @@
     <script src="../js/include.js"></script>
     <!-- swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-      // 스와이퍼
 
-      const swiper = new Swiper(".swiper1", {
-        slidesPerView: 1.6,
-        spaceBetween: 200, //slide 간의 gap(margin)
-        loop: true,
-        autoplay: {
-          delay: 3500,
-        },
-        speed: 500, //like transition
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      // 스와이퍼
-
-      // 밑의
-      var galleryThumbs = new Swiper(".gallery-thumbs", {
-        spaceBetween: 10,
-        centeredSlides: true,
-        slidesPerView: 5,
-        touchRatio: 0.2,
-        slideToClickedSlide: true,
-        loop: true,
-        loopedSlides: 4,
-      });
-
-      swiper.controller.control = galleryThumbs;
-      galleryThumbs.controller.control = swiper;
-
-      const test = document.querySelector(".br-15-30");
-
-      swiper.on("slideChange", function () {
-        // 테마 버튼 네브 선언 
-        let themeTit = document.querySelectorAll(
-          ".banner-nav nav ul li button"
-        );
-
-        console.log(this.realIndex);
-
-        themeTit.forEach((val, i) => {
-          if (i === this.realIndex) {
-            val.classList.add("active");
-            test.innerText = val.innerText;
-          } else val.classList.remove("active");
-        });
-      });
-    </script>
     <script src="./index.js"></script>
   </body>
 </html>
