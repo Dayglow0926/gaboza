@@ -1,5 +1,9 @@
+body {
+  overflow-x: hidden;
+}
 main {
   margin-top: 160px;
+  width: 100vw;
 }
 main .main-slogan {
   display: flex;
@@ -14,6 +18,7 @@ main .main-slogan {
 main .main-slogan .main-slogan__text {
   width: 100vw;
   max-width: var(--main-max-width);
+  position: absolute;
 }
 
 main .main-slogan .main-slogan__text-highlight {
@@ -23,12 +28,20 @@ main .main-slogan .main-slogan__text-highlight {
 main .main-img-banner-list {
   height: 450px;
   display: flex;
-  overflow-x: scroll; /* 스크롤 없앨 예정 */
+  overflow-x: hidden;
+  width: 100vw;
   overflow-y: hidden;
 }
 
 main .main-img-banner-list .main-img-banner-list__item {
   height: 100%;
+  width: 100%;
+}
+
+main .main-img-banner-list .main-img-banner-list__item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 main .main-travel-info {
@@ -177,6 +190,38 @@ main
   .main-travel-info__gaboza-pick-item {
   display: flex;
   margin-bottom: 32px;
+  height: 200px;
+  width: 100%;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item:hover
+  > .main-travel-info__gaboza-pick-item-img {
+  width: 100%;
+  transition: all 0.2s linear;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item:hover
+  > .main-travel-info__gaboza-pick-item-img
+  .main-travel-info__gaboza-pick-item-img-text {
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item:hover
+  > .main-travel-info__gaboza-pick-item-title {
+  display: none;
 }
 
 main
@@ -184,8 +229,39 @@ main
   .main-travel-info__gaboza-pick
   .main-travel-info__gaboza-pick-list
   .main-travel-info__gaboza-pick-item
+  .main-travel-info__gaboza-pick-item-img {
+  height: 100%;
+  /* flex-grow: 1; */
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item
+  .main-travel-info__gaboza-pick-item-img
   > img {
-  height: 200px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__gaboza-pick
+  .main-travel-info__gaboza-pick-list
+  .main-travel-info__gaboza-pick-item
+  .main-travel-info__gaboza-pick-item-img
+  .main-travel-info__gaboza-pick-item-img-text {
+  position: absolute;
+  opacity: 0;
+  color: var(--blue-010);
+  text-shadow: 1px 1px 1px #000;
 }
 
 main
@@ -224,17 +300,6 @@ main
   .main-travel-info__gaboza-pick-item-title {
   align-items: flex-end;
   margin-right: 32px;
-}
-
-main
-  .main-travel-info
-  .main-travel-info__gaboza-pick
-  .main-travel-info__gaboza-pick-list
-  .main-travel-info__gaboza-pick-item
-  .main-travel-info__gaboza-pick-item-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 main
