@@ -354,8 +354,12 @@ main .main-ad-list {
 
 main .main-ad-list .main-ad-item {
   display: flex;
+
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) {
 }
 
 main .main-ad-list .main-ad-item.left {
