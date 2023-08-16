@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 body {
   overflow-x: hidden;
 }
@@ -7,7 +5,6 @@ main {
   margin-top: 160px;
   width: 100vw;
 }
->>>>>>> 9737b9e69a5e20786487e8f8924bd8e0b56151b6
 main .main-slogan {
   display: flex;
   align-items: end;
