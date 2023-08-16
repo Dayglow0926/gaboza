@@ -89,6 +89,21 @@ a {
   line-height: 130%;
 }
 
+@media screen and (max-width: 660px) {
+  .h-ExtraBold-60 {
+    font-size: 40px;
+  }
+  .h-ExtraBold-46 {
+    font-size: 30px;
+  }
+  .h-bold-46 {
+    font-size: 30px;
+  }
+  .h-regular-20 {
+    font-size: 13px;
+  }
+}
+
 .text-blue-highlight {
   color: var(--blue-060);
 }
@@ -118,4 +133,9 @@ a {
 
 .mx-width {
   max-width: var(--main-max-width);
+}
+
+.test-margin {
+  padding-left: 20px;
+  padding-right: 20px;
 }
