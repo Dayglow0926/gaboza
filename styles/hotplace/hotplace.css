@@ -10,11 +10,11 @@ ul li {
   list-style-type: none;
 }
 
-.mb-30px {
-  margin-bottom: 30px;
+.mb-32px {
+  margin-bottom: 32px;
 }
-.mb-60px {
-  margin-bottom: 60px;
+.mb-64px {
+  margin-bottom: 64px;
 }
 
 .h-regular-20 {
@@ -37,19 +37,23 @@ ul li {
   margin-right: 10px;
 }
 /* 아이콘 */
-.hp-content-list-icon i.bi {
-  font-size: 22px;
+.hp-content-list-icon i {
+  font-size: 20px;
   cursor: pointer;
   margin: 0 3px;
 }
 
-.hp-content-list-icon i.bi:active {
+.hp-content-list-icon i {
+  color: var(#e45141);
+}
+
+.hp-content-list-icon i.bi-heart:active {
   background: var(#e45141);
 }
-.hp-content-list-icon i.bi:hover {
+.hp-content-list-icon i.bi-heart:hover {
   background: var(#e45141);
 }
-.hp-content-list-icon i.bi:focus {
+.hp-content-list-icon i.bi-heart:focus {
   background: var(#e45141);
 }
 
@@ -114,11 +118,11 @@ h2.hp-tit {
 }
 /* 키워드 버튼(blue, red) */
 .blue-border-btn {
-  border-radius: 10px;
-  padding: 5px 10px;
+  border-radius: 5px;
+  padding: 4px 8px;
   margin: 5px;
   color: #646f7c;
-  border: 1.5px solid #646f7c;
+  border: 1px solid #646f7c;
   background-color: #fff;
   cursor: pointer;
 }
@@ -132,24 +136,24 @@ h2.hp-tit {
 
 .hp-keyword-ul-wrap .blue-border-btn:hover,
 .hp-keyword-ul-wrap .blue-border-btn.on {
-  border: 1.5px solid #4d7dff;
+  border: 1px solid #4d7dff;
   background: #4d7dff;
   color: #fff;
   transition: all 0.35s;
 }
 .red-border-btn {
   color: #e45141;
-  border: 1.5px solid #e45141;
+  border: 1px solid #e45141;
   background-color: #fff;
-  border-radius: 10px;
-  margin-right: 10px;
-  padding: 2px 5px;
+  border-radius: 5px;
+  margin-right: 12px;
+  padding: 8px;
   cursor: pointer;
 }
 
 .hp-keyword-ul-wrap .red-border-btn:hover,
 .hp-keyword-ul-wrap .red-border-btn.on {
-  border: 1.5px solid #e45141;
+  border: 1px solid #e45141;
   background: #e45141;
   color: #fff;
   transition: all 0.35s;
@@ -158,14 +162,14 @@ h2.hp-tit {
 .hp-content-list-h3-div {
   display: flex;
   justify-content: space-between;
-  margin: 15px 0;
+  margin: 16px 0;
 }
 
 .hp-content-list-box {
   width: 100%;
   padding: 0;
   margin-bottom: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 2.5%;
   border-bottom: 1px solid #ddd;
 }
 
@@ -178,7 +182,7 @@ h2.hp-tit {
   max-width: 400px;
   width: 100%;
   min-height: 300px;
-  margin-right: 60px;
+  margin-right: 48px;
 }
 .hp-content-list-box .hp-content-list-img img {
   width: 100%;
@@ -257,6 +261,13 @@ h2.hp-tit {
 
 .hp-content-list-text a:hover h3 {
   color: #e45141;
+}
+
+.hp-content-list-ul {
+}
+
+.hp-content-list-ul.invisible {
+  display: none;
 }
 
 /* 반응형 */
