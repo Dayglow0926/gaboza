@@ -31,7 +31,7 @@
             <span>주소 넣는곳</span>
           </div>
           <!-- 캐치플레이스 -->
-          <div class="dbDetail titBg" id="topCp">
+          <div id="topCp">
             <div class="titTypeWrap">
               <h3>
                 <em class="h-bold-24">캐치플레이스!</em>
@@ -39,7 +39,7 @@
             </div>
           </div>
           <!-- 버튼 -->
-          <div class="button_area">
+          <div class="buttonArea">
             <i class="bi bi-heart"></i>
             <i class="bi bi-share"></i>
           </div>
@@ -48,26 +48,26 @@
             <!-- 메뉴 -->
             <div class="detail_tab">
               <ul>
-                <li class="select_tab" id="photoTab">
+                <li class="selectTab" id="photoTab">
                   <a href="#사진보기"><span>사진보기</span></a>
                 </li>
-                <li class="select_tab" id="detailTab">
+                <li class="selectTab" id="detailTab">
                   <a href="#상세정보"><span>상세정보</span></a>
                 </li>
-                <li class="select_tab" id="commentTab">
+                <li class="selectTab" id="commentTab">
                   <a href="#댓글보기"><span>댓글보기</span></a>
                 </li>
               </ul>
             </div>
             <!-- 사진 -->
             <section id="galleryGO">
-              <div class="photo_gallery">
+              <div class="photoGallery">
                 <div class="mainList">
                   <!-- 메인사진 -->
                   <a href="#"><img src="../img/detail1.png" alt="" /></a>
                 </div>
                 <!-- 서브사진 -->
-                <div class="photo_gallery_sub">
+                <div class="photoGallerySub">
                   <ul class="subList">
                     <li>
                       <a href="#"><img src="../img/detail1.png" alt="" /></a>
@@ -84,7 +84,7 @@
               </div>
             </section>
             <section id="detailGo">
-              <div class="wrap_contView">
+              <div class="contView">
                 <h3>상세정보</h3>
               </div>
               <div class="inr">
@@ -132,7 +132,7 @@
                   src="//dapi.kakao.com/v2/maps/sdk.js?appkey=189a964cdaf6a650f26e7138c762b0ff"
                 ></script>
               </div>
-              <div class="area_txtView">
+              <div class="txtView">
                 <div class="inr">
                   <ul>
                     <li>
@@ -171,21 +171,21 @@
                       ></textarea>
                     </form>
                   </span>
-                  <div class="commentBtn_wrap">
+                  <div class="commentBtn">
                     <button type="button">등록</button>
                   </div>
                 </div>
               </div>
               <!-- 댓글리스트 -->
-              <div class="list_reply">
+              <div class="listReply">
                 <ul>
                   <li>
                     <div class="profile">
                       <img src="../img/profile1.png" alt="프로필 사진" />
                     </div>
-                    <div class="txt_reply">
+                    <div class="txtReply">
                       <p>댓글 내용은 여기에 쓰면 됩니다.</p>
-                      <div class="date_reply h-regular-14">
+                      <div class="dateReply h-regular-14">
                         <em class="name">닉네임</em>
                         <span>2023. 8. 13.</span>
                       </div>
@@ -195,9 +195,9 @@
                     <div class="profile">
                       <img src="../img/profile1.png" alt="프로필 사진" />
                     </div>
-                    <div class="txt_reply">
+                    <div class="txtReply">
                       <p>댓글 내용은 여기에 쓰면 됩니다.</p>
-                      <div class="date_reply h-regular-14">
+                      <div class="dateReply h-regular-14">
                         <em class="name">닉네임</em>
                         <span>2023. 8. 13.</span>
                       </div>
@@ -207,9 +207,21 @@
                     <div class="profile">
                       <img src="../img/profile1.png" alt="프로필 사진" />
                     </div>
-                    <div class="txt_reply">
+                    <div class="txtReply">
                       <p>댓글 내용은 여기에 쓰면 됩니다.</p>
-                      <div class="date_reply h-regular-14">
+                      <div class="dateReply h-regular-14">
+                        <em class="name">닉네임</em>
+                        <span>2023. 8. 13.</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="profile">
+                      <img src="../img/profile1.png" alt="프로필 사진" />
+                    </div>
+                    <div class="txtReply">
+                      <p>댓글 내용은 여기에 쓰면 됩니다.</p>
+                      <div class="dateReply h-regular-14">
                         <em class="name">닉네임</em>
                         <span>2023. 8. 13.</span>
                       </div>
@@ -237,7 +249,7 @@
 
     /* 버튼 누르면 section 이동 */
     const sections = document.querySelectorAll("section");
-    const moveBtns = document.querySelectorAll(".select_tab");
+    const moveBtns = document.querySelectorAll(".selectTab");
 
     for (let i = 0; i < sections.length; i++) {
       moveBtns[i].addEventListener("click", function () {
