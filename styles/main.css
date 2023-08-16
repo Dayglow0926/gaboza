@@ -7,7 +7,9 @@ main {
 }
 main .main-slogan {
   display: flex;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 220px;
   margin-bottom: 48px;
   /* margin: 0 calc((100% - var(--main-max-width)) / 2); */
