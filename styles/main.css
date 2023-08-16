@@ -18,7 +18,7 @@ main .main-slogan {
 main .main-slogan .main-slogan__text {
   width: 100vw;
   max-width: var(--main-max-width);
-  position: absolute;
+  /* position: absolute; */
 }
 
 main .main-slogan .main-slogan__text-highlight {
