@@ -19,7 +19,11 @@ header .header-info {
   padding: 10px 20px;
 }
 
-header img {
+header a {
+  height: 100%;
+}
+
+header a img {
   height: 100%;
 }
 

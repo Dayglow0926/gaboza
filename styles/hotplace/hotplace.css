@@ -10,16 +10,16 @@ ul li {
   list-style-type: none;
 }
 
-.mb-30px {
-  margin-bottom: 30px;
+.mb-32px {
+  margin-bottom: 32px;
 }
-.mb-60px {
-  margin-bottom: 60px;
+.mb-64px {
+  margin-bottom: 64px;
 }
 
 .h-regular-20 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.4em;
 }
 
@@ -27,14 +27,34 @@ ul li {
   font-size: 32px;
   font-weight: 700;
 }
+.h-regular-24 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 130%;
+}
 
 .mr10 {
   margin-right: 10px;
 }
 /* 아이콘 */
-i.bi {
-  -webkit-text-stroke: 1px;
-  font-size: 22px;
+.hp-content-list-icon i {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.hp-content-list-icon i {
+  color: var(#e45141);
+}
+
+.hp-content-list-icon i.bi-heart:active {
+  background: var(#e45141);
+}
+.hp-content-list-icon i.bi-heart:hover {
+  background: var(#e45141);
+}
+.hp-content-list-icon i.bi-heart:focus {
+  background: var(#e45141);
 }
 
 a {
@@ -55,6 +75,7 @@ h2.hp-tit {
   margin-left: auto;
   text-align: right;
   line-height: 1.2em;
+  margin-top: 200px;
 }
 
 .hp-search-tit {
@@ -72,7 +93,7 @@ h2.hp-tit {
   width: 100%;
   background: #e9ebee;
   padding: 35px;
-  margin: 35px 0;
+  margin: 30px 0;
   box-sizing: border-box;
 }
 
@@ -95,64 +116,60 @@ h2.hp-tit {
   flex-basis: auto;
   flex-wrap: nowrap;
 }
-
-.hp-keyword-ul-wrap a {
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin: 5px;
-}
-
+/* 키워드 버튼(blue, red) */
 .blue-border-btn {
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 5px;
   color: #646f7c;
-  border: 1.5px solid #646f7c;
+  border: 1px solid #646f7c;
   background-color: #fff;
+  cursor: pointer;
 }
 
-.blue-border-btn:hover {
+/* .blue-border-btn:hover {
   border: 1.5px solid #4d7dff;
   background: #4d7dff;
   color: #fff;
   transition: all 0.35s;
-}
+} */
 
-.blue-check-btn {
-  border: 1.5px solid #4d7dff;
+.hp-keyword-ul-wrap .blue-border-btn:hover,
+.hp-keyword-ul-wrap .blue-border-btn.on {
+  border: 1px solid #4d7dff;
   background: #4d7dff;
   color: #fff;
+  transition: all 0.35s;
 }
-
 .red-border-btn {
   color: #e45141;
-  border: 1.5px solid #e45141;
+  border: 1px solid #e45141;
   background-color: #fff;
+  border-radius: 5px;
+  margin-right: 12px;
+  padding: 8px;
+  cursor: pointer;
 }
 
-.red-border-btn:hover {
-  border: 1.5px solid #e45141;
+.hp-keyword-ul-wrap .red-border-btn:hover,
+.hp-keyword-ul-wrap .red-border-btn.on {
+  border: 1px solid #e45141;
   background: #e45141;
   color: #fff;
   transition: all 0.35s;
-}
-
-.red-check-btn {
-  border: 1.5px solid #e45141;
-  background: #e45141;
-  color: #fff;
 }
 
 .hp-content-list-h3-div {
   display: flex;
   justify-content: space-between;
-  margin: 15px 0;
-}
-.hp-content-list-icon {
+  margin: 16px 0;
 }
 
 .hp-content-list-box {
   width: 100%;
   padding: 0;
   margin-bottom: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 2.5%;
   border-bottom: 1px solid #ddd;
 }
 
@@ -162,17 +179,23 @@ h2.hp-tit {
 }
 
 .hp-content-list-box .hp-content-list-img {
-  margin-right: 60px;
+  max-width: 400px;
+  width: 100%;
+  min-height: 300px;
+  margin-right: 48px;
 }
 .hp-content-list-box .hp-content-list-img img {
-  min-width: 400px;
   width: 100%;
-  height: 300px;
 }
+
 .hp-like-num {
   font-size: 22px;
-  font-weight: 700;
   margin: 15px 0;
+}
+/* 위치 */
+.location-p {
+  color: var(--blue-010);
+  margin-bottom: 15px;
 }
 
 .page-btn-wrap {
@@ -232,9 +255,20 @@ h2.hp-tit {
   font-weight: bold;
 }
 
+#heart.red {
+  color: var(--coral-080);
+}
 
+.hp-content-list-text a:hover h3 {
+  color: #e45141;
+}
 
+.hp-content-list-ul {
+}
 
+.hp-content-list-ul.invisible {
+  display: none;
+}
 
 /* 반응형 */
 @media (max-width: 1200px) {
@@ -247,17 +281,26 @@ h2.hp-tit {
 }
 
 @media (max-width: 990px) {
+  /* hotplace style */
+  #container {
+    width: 100%;
+    padding: 0 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .hp-content-list-box .hp-content-list-ul {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
   }
-
   .hp-content-list-box .hp-content-list-img {
+    width: 100%;
+    max-width: 100%;
     margin-right: 0px;
   }
-  .hp-content-list-box .hp-content-list-img img {
-    width: 100vw;
-  }
+
   .hp-content-list-text {
     width: 100%;
     display: block;
