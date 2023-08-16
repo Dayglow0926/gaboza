@@ -2,7 +2,7 @@
 let galleryThumbs = new Swiper(".gallery-thumbs", {
   // spaceBetween: 10,
   // centeredSlides: true,
-  slidesPerView: 5,
+  slidesPerView: 6,
   // touchRatio:0.2,
   slideToClickedSlide: true,
   loop: true,
@@ -84,5 +84,44 @@ swiper.on("slideChange", function () {
   });
 });
 
+// const moreTheme=document.querySelector('.detail-banner');
 
-const moreTheme=document.querySelector('.')
+// moreTheme.addEventListener('click',()=>{
+//   alert('아직 준비중입니다');
+// });
+
+// 부트 스트랩 모달
+const moreTheme = new bootstrap.Modal(document.querySelector(".detail-banner"));
+
+// 이미지 네브 선언
+const NavImg = document.querySelectorAll(
+  ".theme-con-img .theme-img-nav .list li"
+);
+
+// 이미지 네브의 리스트들 선언
+const ImgArea = document.querySelectorAll(".theme-img-area .flex-r");
+
+// NavImg.forEach((v, i) => {
+//   this.addEventListener("click", () => {
+//     // v.classList.toggle("bi-heart-fill");
+//     // v.classList.toggle("bi-heart");
+//     console.log('click');
+//   });
+// });
+
+console.log(ImgArea);
+
+NavImg.forEach((v, i) => {
+  // 이미지 네브 클릭하면 보이게
+  v.addEventListener("click", () => {
+    NavImg.forEach((a) => {
+      a.classList.remove("active");
+    });
+    v.classList.add("active");
+
+    ImgArea.forEach((b) => {
+      b.classList.remove("active");
+    });
+    ImgArea[i].classList.add("active");
+  });
+});
