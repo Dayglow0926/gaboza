@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
   <body>
     <div data-include-path="../layout/header.html"></div>
@@ -31,21 +32,26 @@
           <li><h3 class="hp-keyword-tit h-bold-24">여행 위치</h3></li>
           <li class="work_categories">
             <ul class="hp-keyword-ul-wrap h-regular-24 location-wrap">
+              <li class="blue-border-btn on" data-filter="*">
+                <input
+                  type="checkbox"
+                  value="filter_all"
+                  data-filter_id="all"
+                />#전체
+              </li>
               <li
-                class="blue-border-btn on category_btn selected"
-                data-filter="*"
+                class="blue-border-btn"
+                value="filter-seoul"
+                data-filter_id="seoul"
               >
-                #전체
+                <input
+                  type="checkbox"
+                  value="filter_red"
+                  data-filter_id="red"
+                />#서울
               </li>
-              <li class="blue-border-btn category_btn" data-filter="seoul">
-                #서울
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="busan">
-                #부산
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="daegu">
-                #대구
-              </li>
+              <li class="blue-border-btn" data-filter="busan">#부산</li>
+              <li class="blue-border-btn" data-filter="daegu">#대구</li>
               <li class="blue-border-btn category_btn" data-filter="incheon">
                 #인천
               </li>
@@ -91,6 +97,7 @@
             </ul>
           </li>
         </ul>
+
         <br />
         <ul class="mb-32px">
           <li><h3 class="hp-keyword-tit h-bold-24">여행 컨셉</h3></li>
@@ -320,6 +327,7 @@
         }`;
       });
     }
+
     console.log(p);
 
     console.log(p.innerHTML);
@@ -349,32 +357,5 @@
     //     }
     //   });
     // });
-  </script>
-
-  <script>
-    const categoryBtn = document.querySelector(".work_categories");
-    //카테고리 컨테이너를 가져옴
-
-    const projects = document.querySelectorAll(".project");
-    //work 리스트 전체를 가져옴
-
-    categoryBtn.addEventListener("click", (e) => {
-      const filter = e.target.dataset.filter;
-      //console.log(filter);
-      //e.target값 확인
-
-      if (filter == null) {
-        return;
-      }
-
-      projects.forEach((project) => {
-        // for문과 같은 의미, 배열을 불러와서 정렬
-        if (filter === "*" || filter === project.dataset.type) {
-          project.classList.remove("invisible");
-        } else {
-          project.classList.add("invisible");
-        }
-      });
-    });
   </script>
 </html>
