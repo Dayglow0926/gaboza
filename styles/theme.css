@@ -1,14 +1,9 @@
-
 header {
   z-index: 2;
 }
 
 main {
   margin-top: 100px;
-}
-
-section{
-  border: 3px solid salmon;
 }
 
 /*배너 시작*/
@@ -78,8 +73,7 @@ section{
   font-size: 30px;
 }
 
-
-.background-slide{
+.background-slide {
   background-color: var(--blue-020);
   height: 58vh;
   position: absolute;
@@ -207,11 +201,11 @@ a {
   flex-grow: 2;
 }
 
-.theme-content .theme-con-img .theme-img-nav .list li.active{
+.theme-content .theme-con-img .theme-img-nav .list li.active {
   flex-grow: 2;
 }
 
-.theme-content .theme-con-img .theme-img-nav .list li.active .tag p{
+.theme-content .theme-con-img .theme-img-nav .list li.active .tag p {
   font-size: 32px;
 }
 
@@ -280,7 +274,7 @@ a {
   display: none;
 }
 
-.theme-content .theme-img-area .active{
+.theme-content .theme-img-area .active {
   display: flex;
 }
 
@@ -354,12 +348,13 @@ main .detail-banner img {
   transform: translate3d(0, 0);
 }
 
-.btn-primary{
- background-color: var(--blue-060);
- border-color: var(--blue-060);
+.btn-primary {
+  background-color: var(--blue-060);
+  border-color: var(--blue-060);
 }
 
-.btn-primary:hover, .btn-primary:focus{
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: var(--blue-070);
   border-color: var(--blue-070);
   color: var(--grey-005);
