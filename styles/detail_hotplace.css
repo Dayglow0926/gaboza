@@ -1,13 +1,20 @@
-/* div {
-  box-sizing: border-box;
-} */
+li {
+  list-style: none;
+}
+
+div {
+  display: block;
+}
+
+header {
+  z-index: 99;
+}
 
 #content {
   display: flex;
   width: 1200px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 130px 20px 0px 20px;
-  border: 1px solid black;
 }
 
 .bi {
@@ -29,47 +36,32 @@
   margin-top: 16px;
 }
 
-.dbDetail {
+#topCp {
   /* width: 100%; */
   text-align: center;
   margin-top: 24px;
-}
-
-#topCp {
   font-size: 28px;
-  text-align: center;
-  justify-content: center;
   margin-top: 30px;
 }
 
-.dbDetail.titBg h3 em {
+#topCp h3 em {
   padding: 0 15px;
   box-shadow: inset 0 -12px 0 rgba(129, 171, 242, 1);
 }
 
-.button_area {
+.buttonArea {
   display: flex;
   justify-content: end;
-  margin-top: 30px;
+  margin-top: 8rem;
   margin-right: 2rem;
 }
 
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
+/* 메뉴 */
 
 .detail_tab {
-  z-index: 1;
-  margin-bottom: 20px;
+  margin-top: 1rem;
 }
-
 .detail_tab ul li {
-  list-style: none;
   float: left;
   width: 33.3%;
   text-align: center;
@@ -78,6 +70,7 @@ ul {
 }
 
 .detail_tab ul li a {
+  margin-top: 10px;
   position: relative;
   display: block;
   line-height: 60px;
@@ -86,10 +79,11 @@ ul {
   color: var(--grey-070);
 }
 
-.detail_tab ul li a span {
-  display: inline-block;
-  padding: 0 30px;
-  position: relative;
+.detail_tab ul li a:hover {
+  box-shadow: inset 0 -3px 0 var(--grey-080);
+}
+
+.detail_tab ul li a:active {
 }
 
 .detail_tab ul li a:before {
@@ -104,53 +98,211 @@ ul {
   margin-top: -8px;
 }
 
-#galleryGO .photo_gallery {
+/* 사진 */
+#galleryGO .photoGallery {
   width: 100%;
-  text-align: center;
 }
 
-#galleryGO .photo_gallery_sub {
-  border-radius: 3px solid yellow;
+#galleryGO .photoGallery .mainList a img {
+  margin-top: 32px;
   width: 100%;
-  background-color: aqua;
+
+  box-shadow: 0 3px 10px #333;
 }
 
-#galleryGO .photo_gallery_sub li {
-  float: left;
+#galleryGO .photoGallery .subList {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#galleryGO .photoGallerySub li {
   width: 33%;
+}
+
+#galleryGO .photoGallerySub li a img {
+  width: 100%;
   height: 200px;
-  list-style: none;
+  box-shadow: 0 3px 10px #333;
 }
 
-#galleryGO .photo_gallery_sub li a {
-  position: relative;
-  display: block;
-  height: 100%;
-  box-sizing: border-box;
-  margin: 0 0 0 20px;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-#galleryGO .photo_gallery_sub li a img {
+.contView {
   width: 100%;
-  margin-left: -32px;
+  margin-top: 2rem;
 }
 
-.wrap_contView {
-  width: 100%;
-  margin-top: 24px;
-}
-
-.wrap_contView h3 {
+.contView h3 {
   width: 100%;
   padding: 31px 0 16px;
-  margin-top: 48px;
   font-size: 28px;
   border-bottom: 2px solid #333;
   font-weight: 600;
   text-align: left;
   letter-spacing: -1px;
-  color: #333;
+}
+
+.inr {
+  margin: 16px;
+}
+
+.inr p {
+  text-align: left;
+}
+
+.contView .txtView {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.txtView ul li {
+  float: left;
+  width: 50%;
+  padding: 3px 0 6px 0;
+  display: table;
+  font-size: 15px;
+  background: none !important;
+}
+
+.txtView ul li strong {
+  float: none;
+  margin-right: 0;
+  position: relative;
+  display: table-cell;
+  width: 128px;
+  padding: 0 0 0 12px;
+  text-align: left;
+}
+
+.txtView ul li span {
+  float: none;
+  width: auto;
+  display: table-cell;
+  padding-right: 20px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.txtView ul li strong:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background: #0b0b0b;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+/* 댓글 */
+
+#commentGO {
+  width: 100%;
+  margin-top: 100px;
+}
+
+#commentGo .write .form form {
+  background-color: aqua;
+  height: auto;
+}
+
+#commentGO h3 {
+  width: 100%;
+  padding: 31px 0 16px;
+  font-size: 28px;
+  border-bottom: 2px solid #333;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+#commentGO h3 span {
+  color: var(--blue-060);
+}
+
+#writeComment .form {
+  float: none;
+  margin: 20px;
+}
+
+.form #comment {
+  margin: 16px 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 80px;
+  line-height: 20px;
+  border: 1px solid #e5e5e5;
+  word-break: keep-all;
+  color: #535455;
+  border: 1px solid #bbb;
+  resize: none;
+  width: 95%;
+  padding: 15px 20px 15px 20px;
+}
+
+#commentGO .write {
+  position: relative;
+  margin-top: 30px;
+  background: #f7f8f9;
+  border: 1px solid #c5c8ce;
+}
+
+.commentBtn {
+  text-align: right;
+  padding: 16px;
+}
+.commentBtn button {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 14px;
+  background-color: var(--blue-060);
+  color: var(--blue-010);
+  border: none;
+}
+
+.listReply ul li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 16px;
+}
+
+.listReply .profile {
+  margin-left: 1vw;
+  width: 50px;
+  height: 50px;
+}
+
+.listReply .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.listReply .txtReply {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 1vw;
+  width: 80%;
+}
+
+.listReply .txtReply p {
+  font-size: 1.1em;
+  padding-right: 25px;
+}
+
+.listReply .txtReply .date {
+  color: var(--grey-050);
+}
+
+.listReply > ul > li {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px;
+  border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
 }

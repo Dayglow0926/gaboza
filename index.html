@@ -8,11 +8,15 @@
       href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/layout/header.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/layout/footer.css" />
-    <link rel="stylesheet" href="./styles/icon.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
@@ -22,32 +26,44 @@
     <div data-include-path="./layout/header.html"></div>
     <main>
       <div class="main-slogan h-ExtraBold-60">
-        <div class="main-slogan__text">
+        <div class="main-slogan__text test-margin">
           <span>여기는</span>
           <span class="text-blue-highlight">메인 슬로건 문구</span>
           <span> 를 <br />넣으면 될 것 같습니다! </span>
         </div>
       </div>
-      <div class="main-img-banner-list">
-        <div class="main-img-banner-list__item">
-          <img src="./img/banner-img1.png" alt="banner-img1" />
+      <div class="main-img-banner-list swiper">
+        <div class="swiper-wrapper">
+          <div class="main-img-banner-list__item swiper-slide">
+            <img src="./img/banner-img1.png" alt="banner-img1" />
+          </div>
+          <div class="main-img-banner-list__item swiper-slide">
+            <img src="./img/banner-img2.png" alt="banner-img2" />
+          </div>
+          <div class="main-img-banner-list__item swiper-slide">
+            <img src="./img/banner-img3.png" alt="banner-img3" />
+          </div>
+          <div class="main-img-banner-list__item swiper-slide">
+            <img src="./img/banner-img1.png" alt="banner-img1" />
+          </div>
+          <div class="main-img-banner-list__item swiper-slide">
+            <img src="./img/banner-img2.png" alt="banner-img2" />
+          </div>
+          <div class="main-img-banner-list__item swiper-slide">
+            <img src="./img/banner-img3.png" alt="banner-img3" />
+          </div>
         </div>
-        <div class="main-img-banner-list__item">
-          <img src="./img/banner-img2.png" alt="banner-img2" />
-        </div>
-        <div class="main-img-banner-list__item">
-          <img src="./img/banner-img3.png" alt="banner-img3" />
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="main-travel-info">
+      <div class="main-travel-info test-margin">
         <div class="main-travel-info__hotplace">
           <h2 class="main-travel-info__hotplace-main-title h-bold-46">
             우리지역
-            <span class="text-blue-highlight">핫플</span>이 궁금해?
+            <span class="text-coral-highlight">핫플</span>이 궁금해?
           </h2>
           <div class="main-travel-info__hotplace-sub-title">
             <span class="h-regular-20">숨은 명소, 가까운 순으로 확인하기!</span>
-            <a class="view-all" href="#">전체보기</a>
+            <a class="view-all h-regular-20" href="#">전체보기</a>
           </div>
           <div class="main-travel-info__hotplace-list">
             <div class="main-travel-info__hotplace-list__item">
@@ -193,7 +209,7 @@
           </h2>
           <div class="main-travel-info__hotplace-sub-title">
             <span class="h-regular-20">더위 피해 시원하게 즐겨요</span>
-            <a class="view-all" href="#">전체보기</a>
+            <a class="view-all h-regular-20" href="#">전체보기</a>
           </div>
           <div class="main-travel-info__hotplace-list">
             <div class="main-travel-info__hotplace-list__item">
@@ -343,7 +359,17 @@
           </div>
           <div class="main-travel-info__gaboza-pick-list">
             <div class="main-travel-info__gaboza-pick-item left">
-              <img src="./img/gaboza-pick-img1.png" alt="gaboza-pick-img1" />
+              <div class="main-travel-info__gaboza-pick-item-img">
+                <img
+                  src="./img/gaboza-pick-img1-1.png"
+                  alt="gaboza-pick-img1"
+                />
+                <span
+                  class="main-travel-info__gaboza-pick-item-img-text h-ExtraBold-60"
+                >
+                  광주패밀리랜드
+                </span>
+              </div>
               <div class="main-travel-info__gaboza-pick-item-title">
                 <span class="h-regular-14">광주 북구</span>
                 <span class="h-ExtraBold-46">광주패밀리랜드</span>
@@ -360,10 +386,24 @@
                   아름다운 바다를 바라보며 휴식할 수 있는 공원
                 </span>
               </div>
-              <img src="./img/gaboza-pick-img2.png" alt="gaboza-pick-img2" />
+              <div class="main-travel-info__gaboza-pick-item-img">
+                <img src="./img/gaboza-pick-img2.png" alt="gaboza-pick-img2" />
+                <span
+                  class="main-travel-info__gaboza-pick-item-img-text h-ExtraBold-60"
+                >
+                  시흥배곧한울공원
+                </span>
+              </div>
             </div>
             <div class="main-travel-info__gaboza-pick-item left">
-              <img src="./img/gaboza-pick-img3.png" alt="gaboza-pick-img3" />
+              <div class="main-travel-info__gaboza-pick-item-img">
+                <img src="./img/gaboza-pick-img3.png" alt="gaboza-pick-img3" />
+                <span
+                  class="main-travel-info__gaboza-pick-item-img-text h-ExtraBold-60"
+                >
+                  영남 알프스
+                </span>
+              </div>
               <div class="main-travel-info__gaboza-pick-item-title">
                 <span class="h-regular-14">울산 울주군</span>
                 <span class="h-ExtraBold-46">영남 알프스</span>
@@ -374,34 +414,39 @@
             </div>
           </div>
           <div class="main-travel-info__gaboza-pick-button">
-            <button class="h-regular-20">+ 추천 여행지 더보기</button>
+            <button class="h-bold-16">+ 추천 여행지 더보기</button>
           </div>
         </div>
       </div>
-      <div class="main-ad-list">
-        <div class="main-ad-item left">
-          <div class="main-ad-item__title">
-            <span class="h-regular-32">여행 갈때 뭐 입지?</span>
-            <span class="h-bold-32">
-              감기 피하는 <br />
-              기온별 옷차림 추천
-            </span>
+      <div class="main-ad-list swiper">
+        <div class="swiper-wrapper">
+          <div class="main-ad-item left swiper-slide">
+            <div class="main-ad-item__title">
+              <span class="h-regular-20">여행 갈때 뭐 입지?</span>
+              <span class="h-bold-32">
+                감기 피하는 <br />
+                기온별 옷차림 추천
+              </span>
+            </div>
+            <img src="./img/ad-img1.png" alt="ad-img1" />
           </div>
-          <img src="./img/ad-img1.png" alt="ad-img1" />
-        </div>
-        <div class="main-ad-item right">
-          <div class="main-ad-item__title">
-            <span class="h-regular-32">감성 챙기기 딱 좋은</span>
-            <span class="h-bold-32">
-              국내 캠핑 & <br />
-              차박 추천 여행지
-            </span>
+          <div class="main-ad-item right swiper-slide">
+            <div class="main-ad-item__title">
+              <span class="h-regular-20">감성 챙기기 딱 좋은</span>
+              <span class="h-bold-32">
+                국내 캠핑 & <br />
+                차박 추천 여행지
+              </span>
+            </div>
+            <img src="./img/ad-img2.png" alt="ad-img2" />
           </div>
-          <img src="./img/ad-img2.png" alt="ad-img2" />
         </div>
       </div>
     </main>
     <div data-include-path="./layout/footer.html"></div>
     <script src="./js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/main-top-banner.js"></script>
+    <script src="./js/favorite-click-event.js"></script>
   </body>
 </html>

@@ -6,13 +6,14 @@ header {
   top: 0;
   background-color: var(--grey-005);
   box-shadow: 0 0 10px 0px rgba(51, 51, 51, 0.2);
+  z-index: 2;
 }
 
 header .header-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
+  height: 100px;
   width: 100vw;
   max-width: var(--main-max-width);
   padding: 10px 20px;
