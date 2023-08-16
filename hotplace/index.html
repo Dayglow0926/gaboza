@@ -21,34 +21,73 @@
         우리 어디로 가볼까? <br />
         <span class="text-red-E45141">핫플</span> 내 맘대로 골라봐!
       </h2>
-      <ul class="hp-search-tit h-bold-32">
-        <li>#강원</li>
-        <li>#자연</li>
-      </ul>
+      <div class="hp-search-tit">
+        <span>#강원</span>
+        <span>#자연</span>
+      </div>
 
       <div class="hp-keyword-box">
         <ul class="mb-32px">
           <li><h3 class="hp-keyword-tit h-bold-24">여행 위치</h3></li>
-          <li>
-            <ul class="hp-keyword-ul-wrap h-regular-20 location-wrap">
-              <li class="blue-border-btn on">#전체</li>
-              <li class="blue-border-btn">#서울</li>
-              <li class="blue-border-btn">#부산</li>
-              <li class="blue-border-btn">#대구</li>
-              <li class="blue-border-btn">#인천</li>
-              <li class="blue-border-btn">#광주</li>
-              <li class="blue-border-btn">#대전</li>
-              <li class="blue-border-btn">#울산</li>
-              <li class="blue-border-btn">#세종</li>
-              <li class="blue-border-btn">#경기</li>
-              <li class="blue-border-btn">#강원</li>
-              <li class="blue-border-btn">#충북</li>
-              <li class="blue-border-btn">#충남</li>
-              <li class="blue-border-btn">#경북</li>
-              <li class="blue-border-btn">#경남</li>
-              <li class="blue-border-btn">#전북</li>
-              <li class="blue-border-btn">#전남</li>
-              <li class="blue-border-btn">#제주</li>
+          <li class="work_categories">
+            <ul class="hp-keyword-ul-wrap h-regular-24 location-wrap">
+              <li
+                class="blue-border-btn on category_btn selected"
+                data-filter="*"
+              >
+                #전체
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="seoul">
+                #서울
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="busan">
+                #부산
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="daegu">
+                #대구
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="incheon">
+                #인천
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="gwangju">
+                #광주
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="daejeon">
+                #대전
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="ulsan">
+                #울산
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="sejong">
+                #세종
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="geonggi">
+                #경기
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="gangwon">
+                #강원
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="choogbuk">
+                #충북
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="choognam">
+                #충남
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="gyeongbuk">
+                #경북
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="gyeongnam">
+                #경남
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="jeonbuk">
+                #전북
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="jeonnam">
+                #전남
+              </li>
+              <li class="blue-border-btn category_btn" data-filter="jeju">
+                #제주
+              </li>
             </ul>
           </li>
         </ul>
@@ -56,7 +95,7 @@
         <ul class="mb-32px">
           <li><h3 class="hp-keyword-tit h-bold-24">여행 컨셉</h3></li>
           <li>
-            <ul class="hp-keyword-ul-wrap h-regular-20 concept-wrap">
+            <ul class="hp-keyword-ul-wrap h-regular-24 concept-wrap">
               <li class="blue-border-btn on">#전체</li>
               <li class="blue-border-btn">#자연</li>
               <li class="blue-border-btn">#체험</li>
@@ -74,7 +113,7 @@
         <ul>
           <li><h3 class="hp-keyword-tit h-bold-24">핫플 지수</h3></li>
           <li>
-            <ul class="hp-keyword-ul-wrap h-bold-20 hp-wrap">
+            <ul class="hp-keyword-ul-wrap h-regular-24 hp-wrap">
               <li class="red-border-btn on">
                 <i class="bi bi-heart-fill"></i> 0~15
               </li>
@@ -97,80 +136,86 @@
           </li>
         </ul>
       </div>
-      <!-- hp-keyword-box (pc) end -->
+      <!-- hp-keyword-box end -->
 
-      <div class="hp-keyword-box hp-keyword-box-m">
-        <div class="h-bold-24 scrollable_menu_wrap">
-          <div class="scrollable_menu on" data-filter="*">#전체</div>
-          <div class="scrollable_menu" data-filter="seoul">#서울</div>
-          <div class="scrollable_menu" data-filter="busan">#부산</div>
-          <div class="scrollable_menu" data-filter="daegu">#대구</div>
-          <div class="scrollable_menu" data-filter="incheon">#인천</div>
-          <div class="scrollable_menu" data-filter="gwangju">#광주</div>
-          <div class="scrollable_menu" data-filter="daejeon">#대전</div>
-          <div class="scrollable_menu" data-filter="ulsan">#울산</div>
-          <div class="scrollable_menu" data-filter="sejong">#세종</div>
-          <div class="scrollable_menu" data-filter="geonggi">#경기</div>
-          <div class="scrollable_menu" data-filter="gangwon">#강원</div>
-          <div class="scrollable_menu" data-filter="choogbuk">#충북</div>
-          <div class="scrollable_menu" data-filter="choognam">#충남</div>
-          <div class="scrollable_menu" data-filter="gyeongbuk">#경북</div>
-          <div class="scrollable_menu" data-filter="gyeongnam">#경남</div>
-          <div class="scrollable_menu" data-filter="jeonbuk">#전북</div>
-          <div class="scrollable_menu" data-filter="jeonnam">#전남</div>
-          <div class="scrollable_menu" data-filter="jeju">#제주</div>
-        </div>
-        <br />
-
-        <div class="h-bold-24 scrollable_menu_wrap">
-          <div class="scrollable_menu on">#전체</div>
-          <div class="scrollable_menu">#자연</div>
-          <div class="scrollable_menu">#체험</div>
-          <div class="scrollable_menu">#역사</div>
-          <div class="scrollable_menu">#실내</div>
-          <div class="scrollable_menu">#카페</div>
-          <div class="scrollable_menu">#숙박</div>
-          <div class="scrollable_menu">#쇼핑</div>
-          <div class="scrollable_menu">#음식</div>
-          <div class="scrollable_menu">#트레킹</div>
-        </div>
-        <br />
-        <div class="h-bold-24 scrollable_menu_wrap">
-          <div href="#" class="scrollable_menu on">
-            <i class="bi bi-heart-fill"></i> 0~15
-          </div>
-          <div href="#" class="scrollable_menu">
-            <i class="bi bi-heart-fill"></i> 16~30
-          </div>
-          <div href="#" class="scrollable_menu">
-            <i class="bi bi-heart-fill"></i> 31~50
-          </div>
-          <div href="#" class="scrollable_menu">
-            <i class="bi bi-heart-fill"></i> 51~70
-          </div>
-          <div href="#" class="scrollable_menu">
-            <i class="bi bi-heart-fill"></i> 71~100
-          </div>
-          <div href="#" class="scrollable_menu">
-            <i class="bi bi-heart-fill"></i> 101~
-          </div>
-        </div>
+      <div class="hp-content-list-box work_projects">
+        <ul class="hp-content-list-ul" data-type="seoul">
+          <li class="hp-content-list-img">
+            <a href="#"><img src="./img/ns-tower.jpg" alt="" /></a>
+          </li>
+          <li class="hp-content-list-text">
+            <div class="hp-content-list-h3-div">
+              <a href="#">
+                <h3 class="h-bold-32">서울 N서울타워</h3>
+              </a>
+              <div class="hp-content-list-icon text-black-5B5B5B">
+                <i class="bi bi-heart heart"></i>
+                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
+              </div>
+            </div>
+            <p class="location-p h-regular-20">
+              <i class="bi bi-geo-alt-fill"></i> 서울 용산구
+            </p>
+            <p class="h-regular-20 text-black-5B5B5B">
+              N서울타워는 남산 정상 부근에 위치한 전파 송출 및 관광용
+              타워입니다. 한국의 대표적 관광코스이기도합니다. 케이블카와 다양한
+              볼거리를 제공합니다.
+            </p>
+            <p class="hp-like-num"><i class="bi bi-heart-fill"></i> 22</p>
+            <br />
+            <ul class="hp-keyword-ul-wrap h-bold-20">
+              <li class="blue-border-btn on">#서울</li>
+              <li class="blue-border-btn on">#자연</li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <!-- hp-keyword-box (m) end -->
 
-      <p class="h-bold-24 mb-32px">
-        총 <span class="text-blue-4D7DFF">5</span>건
-      </p>
+      <div class="hp-content-list-box work_projects">
+        <ul class="hp-content-list-ul" data-type="seoul">
+          <li class="hp-content-list-img">
+            <a href="#"><img src="./img/ddp.jpg" alt="" /></a>
+          </li>
+          <li class="hp-content-list-text">
+            <div class="hp-content-list-h3-div">
+              <a href="#">
+                <h3 class="h-bold-32">동대문디지털프라자(DDP)</h3>
+              </a>
+              <div class="hp-content-list-icon text-black-5B5B5B">
+                <i class="bi bi-heart heart"></i>
+                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
+              </div>
+            </div>
+            <p class="location-p h-regular-20">
+              <i class="bi bi-geo-alt-fill"></i> 서울 중구
+            </p>
+            <p class="h-regular-20 text-black-5B5B5B">
+              DDP는 대한민국 서울특별시 동대문역사문화공원역에 위치한 복합 문화
+              공간입니다. 2014년 3월 21일 개관한 이래 DDP에서는 각종 전시,
+              패션쇼, 신제품발표회, 포럼, 컨퍼런스 등 다양한 문화 행사가
+              진행되어 왔습니다.
+            </p>
+            <p class="hp-like-num text-red-E45141">
+              <i class="bi bi-heart-fill"></i> 22
+            </p>
+            <br />
+            <ul class="hp-keyword-ul-wrap h-bold-20">
+              <li class="blue-border-btn on">#서울</li>
+              <li class="blue-border-btn on">#실내</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-      <div class="hp-content-list-box">
+      <div class="hp-content-list-box work_projects">
         <ul class="hp-content-list-ul" data-type="gangwon">
           <li class="hp-content-list-img">
-            <a href="#"><img src="./img/hotplace-dh.jpg" alt="" /></a>
+            <a href="#"><img src="./img/jamsil_tower.jpg" alt="" /></a>
           </li>
           <li class="hp-content-list-text">
             <div class="hp-content-list-h3-div">
               <a href="#">
-                <h3 class="h-bold-32">동해 천곡황금박쥐동굴</h3>
+                <h3 class="h-bold-32">롯데월드타워&롯데월드몰</h3>
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
@@ -178,160 +223,20 @@
               </div>
             </div>
             <p class="location-p h-regular-20">
-              <i class="bi bi-geo-alt-fill"></i> 강원 동해시
+              <i class="bi bi-geo-alt-fill"></i> 서울 송파구
             </p>
             <p class="h-regular-20 text-black-5B5B5B">
-              동굴 한 구간에서는 화려한 미디어아트까지 볼 수 있어 관람하는
-              재미를 더해줍니다. 실내 온도 15℃로 유지되는 이곳에서 무더위를
-              피해보세요.
+              한국적 곡선의 미를 지닌 한국 전통의 도자기와 붓의 형상을 모티브로
+              설계된 롯데월드타워는 총 123층, 555M 높이로 세계 5위의 초고층
+              빌딩이다.
             </p>
             <p class="hp-like-num text-red-E45141">
               <i class="bi bi-heart-fill"></i> 22
             </p>
             <br />
             <ul class="hp-keyword-ul-wrap h-bold-20">
-              <li class="blue-border-btn on">#강원</li>
-              <li class="blue-border-btn on">#자연</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="hp-content-list-box">
-        <ul class="hp-content-list-ul">
-          <li class="hp-content-list-img">
-            <a href="#"><img src="./img/hotplace-dh.jpg" alt="" /></a>
-          </li>
-          <li class="hp-content-list-text">
-            <div class="hp-content-list-h3-div">
-              <a href="#">
-                <h3 class="h-bold-32">동해 천곡황금박쥐동굴</h3>
-              </a>
-              <div class="hp-content-list-icon text-black-5B5B5B">
-                <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
-              </div>
-            </div>
-            <p class="location-p h-regular-20">
-              <i class="bi bi-geo-alt-fill"></i> 강원 동해시
-            </p>
-            <p class="h-regular-20 text-black-5B5B5B">
-              동굴 한 구간에서는 화려한 미디어아트까지 볼 수 있어 관람하는
-              재미를 더해줍니다. 실내 온도 15℃로 유지되는 이곳에서 무더위를
-              피해보세요.
-            </p>
-            <p class="hp-like-num text-red-E45141">
-              <i class="bi bi-heart-fill"></i> 22
-            </p>
-            <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
-              <li class="blue-border-btn on">#강원</li>
-              <li class="blue-border-btn on">#자연</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="hp-content-list-box">
-        <ul class="hp-content-list-ul">
-          <li class="hp-content-list-img">
-            <a href="#"><img src="./img/hotplace-dh.jpg" alt="" /></a>
-          </li>
-          <li class="hp-content-list-text">
-            <div class="hp-content-list-h3-div">
-              <a href="#">
-                <h3 class="h-bold-32">동해 천곡황금박쥐동굴</h3>
-              </a>
-              <div class="hp-content-list-icon text-black-5B5B5B">
-                <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
-              </div>
-            </div>
-            <p class="location-p h-regular-20">
-              <i class="bi bi-geo-alt-fill"></i> 강원 동해시
-            </p>
-            <p class="h-regular-20 text-black-5B5B5B">
-              동굴 한 구간에서는 화려한 미디어아트까지 볼 수 있어 관람하는
-              재미를 더해줍니다. 실내 온도 15℃로 유지되는 이곳에서 무더위를
-              피해보세요.
-            </p>
-            <p class="hp-like-num text-red-E45141">
-              <i class="bi bi-heart-fill"></i> 22
-            </p>
-            <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
-              <li class="blue-border-btn on">#강원</li>
-              <li class="blue-border-btn on">#자연</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="hp-content-list-box">
-        <ul class="hp-content-list-ul">
-          <li class="hp-content-list-img">
-            <a href="#"><img src="./img/hotplace-dh.jpg" alt="" /></a>
-          </li>
-          <li class="hp-content-list-text">
-            <div class="hp-content-list-h3-div">
-              <a href="#">
-                <h3 class="h-bold-32">동해 천곡황금박쥐동굴</h3>
-              </a>
-              <div class="hp-content-list-icon text-black-5B5B5B">
-                <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
-              </div>
-            </div>
-            <p class="location-p h-regular-20">
-              <i class="bi bi-geo-alt-fill"></i> 강원 동해시
-            </p>
-            <p class="h-regular-20 text-black-5B5B5B">
-              동굴 한 구간에서는 화려한 미디어아트까지 볼 수 있어 관람하는
-              재미를 더해줍니다. 실내 온도 15℃로 유지되는 이곳에서 무더위를
-              피해보세요.
-            </p>
-            <p class="hp-like-num text-red-E45141">
-              <i class="bi bi-heart-fill"></i> 22
-            </p>
-            <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
-              <li class="blue-border-btn on">#강원</li>
-              <li class="blue-border-btn on">#자연</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="hp-content-list-box">
-        <ul class="hp-content-list-ul">
-          <li class="hp-content-list-img">
-            <a href="#"><img src="./img/hotplace-dh.jpg" alt="" /></a>
-          </li>
-          <li class="hp-content-list-text">
-            <div class="hp-content-list-h3-div">
-              <a href="#">
-                <h3 class="h-bold-32">동해 천곡황금박쥐동굴</h3>
-              </a>
-              <div class="hp-content-list-icon">
-                <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
-              </div>
-            </div>
-            <p class="location-p h-regular-20">
-              <i class="bi bi-geo-alt-fill"></i> 강원 동해시
-            </p>
-            <p class="h-regular-20 text-black-5B5B5B">
-              동굴 한 구간에서는 화려한 미디어아트까지 볼 수 있어 관람하는
-              재미를 더해줍니다. 실내 온도 15℃로 유지되는 이곳에서 무더위를
-              피해보세요.
-            </p>
-            <p class="hp-like-num text-red-E45141">
-              <i class="bi bi-heart-fill"></i> 22
-            </p>
-            <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
-              <li class="blue-border-btn on">#강원</li>
-              <li class="blue-border-btn on">#자연</li>
+              <li class="blue-border-btn on">#서울</li>
+              <li class="blue-border-btn on">#실내</li>
             </ul>
           </li>
         </ul>
@@ -403,7 +308,6 @@
   </script>
   <script>
     // 하트 클릭 시 변경이벤트
-
     const hearts = document.querySelectorAll(".heart");
     console.log(hearts);
     const p = document.querySelector(".hp-like-num");
@@ -420,18 +324,38 @@
 
     console.log(p.innerHTML);
 
-    // 반응형때 스크롤메뉴로 변경
-    $(function () {
-      $(".scrollable_menu").click(function () {
-        $(".scrollable_menu").removeClass("on");
-        $(this).addClass("on");
-      });
-    });
+    // // 필터링
+    // const categoryBtn = document.querySelector(".hp-keyword-box");
+    // //카테고리 컨테이너를 가져옴
 
-    const categoryBtn = document.querySelector(".hp-keyword-box");
+    // const projects = document.querySelectorAll(".hp-content-list-box");
+    // //hp-keyword-box 리스트 전체를 가져옴
+
+    // categoryBtn.addEventListener("click", (e) => {
+    //   const filter = e.target.dataset.filter;
+    //   //console.log(filter);
+    //   //e.target값 확인
+
+    //   if (filter == null) {
+    //     return;
+    //   }
+
+    //   projects.forEach((project) => {
+    //     // for문과 같은 의미, 배열을 불러와서 정렬
+    //     if (filter === "*" || filter === project.dataset.type) {
+    //       project.classList.remove("invisible");
+    //     } else {
+    //       project.classList.add("invisible");
+    //     }
+    //   });
+    // });
+  </script>
+
+  <script>
+    const categoryBtn = document.querySelector(".work_categories");
     //카테고리 컨테이너를 가져옴
 
-    const projects = document.querySelectorAll(".hp-content-list-ul");
+    const projects = document.querySelectorAll(".project");
     //work 리스트 전체를 가져옴
 
     categoryBtn.addEventListener("click", (e) => {
