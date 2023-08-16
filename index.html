@@ -26,7 +26,7 @@
     <div data-include-path="./layout/header.html"></div>
     <main>
       <div class="main-slogan h-ExtraBold-60">
-        <div class="main-slogan__text">
+        <div class="main-slogan__text test-margin">
           <span>여기는</span>
           <span class="text-blue-highlight">메인 슬로건 문구</span>
           <span> 를 <br />넣으면 될 것 같습니다! </span>
@@ -55,7 +55,7 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <div class="main-travel-info">
+      <div class="main-travel-info test-margin">
         <div class="main-travel-info__hotplace">
           <h2 class="main-travel-info__hotplace-main-title h-bold-46">
             우리지역
@@ -63,7 +63,7 @@
           </h2>
           <div class="main-travel-info__hotplace-sub-title">
             <span class="h-regular-20">숨은 명소, 가까운 순으로 확인하기!</span>
-            <a class="view-all" href="#">전체보기</a>
+            <a class="view-all h-regular-20" href="#">전체보기</a>
           </div>
           <div class="main-travel-info__hotplace-list">
             <div class="main-travel-info__hotplace-list__item">
@@ -209,7 +209,7 @@
           </h2>
           <div class="main-travel-info__hotplace-sub-title">
             <span class="h-regular-20">더위 피해 시원하게 즐겨요</span>
-            <a class="view-all" href="#">전체보기</a>
+            <a class="view-all h-regular-20" href="#">전체보기</a>
           </div>
           <div class="main-travel-info__hotplace-list">
             <div class="main-travel-info__hotplace-list__item">
@@ -418,26 +418,28 @@
           </div>
         </div>
       </div>
-      <div class="main-ad-list">
-        <div class="main-ad-item left">
-          <div class="main-ad-item__title">
-            <span class="h-regular-20">여행 갈때 뭐 입지?</span>
-            <span class="h-bold-32">
-              감기 피하는 <br />
-              기온별 옷차림 추천
-            </span>
+      <div class="main-ad-list swiper">
+        <div class="swiper-wrapper">
+          <div class="main-ad-item left swiper-slide">
+            <div class="main-ad-item__title">
+              <span class="h-regular-20">여행 갈때 뭐 입지?</span>
+              <span class="h-bold-32">
+                감기 피하는 <br />
+                기온별 옷차림 추천
+              </span>
+            </div>
+            <img src="./img/ad-img1.png" alt="ad-img1" />
           </div>
-          <img src="./img/ad-img1.png" alt="ad-img1" />
-        </div>
-        <div class="main-ad-item right">
-          <div class="main-ad-item__title">
-            <span class="h-regular-20">감성 챙기기 딱 좋은</span>
-            <span class="h-bold-32">
-              국내 캠핑 & <br />
-              차박 추천 여행지
-            </span>
+          <div class="main-ad-item right swiper-slide">
+            <div class="main-ad-item__title">
+              <span class="h-regular-20">감성 챙기기 딱 좋은</span>
+              <span class="h-bold-32">
+                국내 캠핑 & <br />
+                차박 추천 여행지
+              </span>
+            </div>
+            <img src="./img/ad-img2.png" alt="ad-img2" />
           </div>
-          <img src="./img/ad-img2.png" alt="ad-img2" />
         </div>
       </div>
     </main>
