@@ -1,3 +1,18 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+}
+
 .text-red-E45141 {
   color: #e45141;
 }
@@ -10,32 +25,54 @@ ul li {
   list-style-type: none;
 }
 
-.mb-30px {
-  margin-bottom: 30px;
+.mb-32px {
+  margin-bottom: 32px;
 }
-.mb-60px {
-  margin-bottom: 60px;
+.mb-64px {
+  margin-bottom: 64px;
 }
 
 .h-regular-20 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.4em;
 }
 
-.h-bold-32 {
-  font-size: 32px;
-  font-weight: 700;
+.h-regular-24 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 130%;
 }
 
 .mr10 {
   margin-right: 10px;
 }
 /* 아이콘 */
-i.bi {
-  -webkit-text-stroke: 1px;
-  font-size: 22px;
+.hp-content-list-icon i {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 3px;
 }
+
+i.bi-heart {
+  color: var(--coral-080);
+}
+
+i.bi-heart-fill {
+  color: var(--coral-080);
+}
+/* 
+.hp-content-list-icon i.bi-heart:active {
+  color: var(--coral-080);
+  content: "\F415";
+}
+.hp-content-list-icon i.bi-heart:hover {
+  color: var(--coral-080);
+  content: "\F415";
+}
+.hp-content-list-icon i.bi-heart:focus {
+  color: var(--coral-080);
+} */
 
 a {
   color: inherit;
@@ -55,25 +92,32 @@ h2.hp-tit {
   margin-left: auto;
   text-align: right;
   line-height: 1.2em;
+  margin-top: 200px;
+  color: var(--grey-080);
 }
 
 .hp-search-tit {
   display: flex;
+  margin-top: 32px;
 }
 
-.hp-search-tit li {
+.hp-search-tit span {
   flex-direction: row;
   flex-basis: auto;
   margin-right: 10px;
-  line-height: 1.4em;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .hp-keyword-box {
   width: 100%;
   background: #e9ebee;
-  padding: 35px;
-  margin: 35px 0;
+  padding: 32px;
+  margin: 32px 0 64px 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .hp-keyword-box > ul {
@@ -93,66 +137,70 @@ h2.hp-tit {
   justify-content: flex-start;
   flex-direction: row;
   flex-basis: auto;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
-
-.hp-keyword-ul-wrap a {
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin: 5px;
-}
-
+/* 키워드 버튼(blue, red) */
 .blue-border-btn {
-  color: #646f7c;
-  border: 1.5px solid #646f7c;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 6px;
+  color: var(--grey-050) !important;
+  border: 1px solid #646f7c;
   background-color: #fff;
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
 }
 
-.blue-border-btn:hover {
+/* .blue-border-btn:hover {
   border: 1.5px solid #4d7dff;
   background: #4d7dff;
   color: #fff;
   transition: all 0.35s;
-}
+} */
 
-.blue-check-btn {
-  border: 1.5px solid #4d7dff;
+.hp-keyword-ul-wrap .blue-border-btn:hover,
+.hp-keyword-ul-wrap .blue-border-btn.on {
+  border: 1px solid #4d7dff;
   background: #4d7dff;
-  color: #fff;
+  color: #fff !important;
+  transition: all 0.35s;
 }
-
 .red-border-btn {
   color: #e45141;
-  border: 1.5px solid #e45141;
+  border: 1px solid #e45141;
   background-color: #fff;
+  border-radius: 5px;
+  margin-right: 12px;
+  padding: 4px 8px;
+  margin: 6px;
+  cursor: pointer;
 }
 
-.red-border-btn:hover {
-  border: 1.5px solid #e45141;
+.hp-keyword-ul-wrap .red-border-btn:hover,
+.hp-keyword-ul-wrap .red-border-btn.on {
+  border: 1px solid #e45141;
   background: #e45141;
-  color: #fff;
+  color: #fff !important;
   transition: all 0.35s;
 }
-
-.red-check-btn {
-  border: 1.5px solid #e45141;
-  background: #e45141;
+.hp-keyword-ul-wrap .red-border-btn:hover i,
+.hp-keyword-ul-wrap .red-border-btn.on i {
   color: #fff;
 }
 
 .hp-content-list-h3-div {
   display: flex;
   justify-content: space-between;
-  margin: 15px 0;
-}
-.hp-content-list-icon {
+  margin: 16px 0;
 }
 
 .hp-content-list-box {
   width: 100%;
   padding: 0;
   margin-bottom: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 2.5%;
   border-bottom: 1px solid #ddd;
 }
 
@@ -162,22 +210,30 @@ h2.hp-tit {
 }
 
 .hp-content-list-box .hp-content-list-img {
-  margin-right: 60px;
+  max-width: 400px;
+  width: 100%;
+  min-height: 300px;
+  margin-right: 48px;
 }
 .hp-content-list-box .hp-content-list-img img {
-  min-width: 400px;
   width: 100%;
-  height: 300px;
 }
+
 .hp-like-num {
   font-size: 22px;
-  font-weight: 700;
   margin: 15px 0;
+  color: var(--coral-080);
+}
+/* 위치 */
+.location-p {
+  color: var(--blue-060);
+  margin-bottom: 15px;
 }
 
 .page-btn-wrap {
   width: 100%;
   display: block;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -190,6 +246,7 @@ h2.hp-tit {
   line-height: 38px;
   color: #646f7c;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 .page-btn-wrap .check-page-btn {
@@ -209,6 +266,7 @@ h2.hp-tit {
   padding: 10px;
   white-space: nowrap;
   overflow-x: auto;
+  box-sizing: border-box;
 }
 .scrollable_menu_wrap::-webkit-scrollbar {
   width: 100%;
@@ -232,34 +290,81 @@ h2.hp-tit {
   font-weight: bold;
 }
 
+#heart.red {
+  color: var(--coral-080);
+}
 
+.hp-content-list-text a:hover h3 {
+  color: #e45141;
+}
 
-
+.hp-content-list-ul.invisible {
+  display: none;
+}
 
 /* 반응형 */
 @media (max-width: 1200px) {
-  .hp-keyword-box {
-    display: none;
-  }
-  .hp-keyword-box-m {
-    display: block;
-  }
 }
 
 @media (max-width: 990px) {
+  /* hotplace style */
+  #container {
+    width: 100%;
+    padding: 0 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .hp-content-list-box .hp-content-list-ul {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
   }
-
   .hp-content-list-box .hp-content-list-img {
+    width: 100%;
+    max-width: 100%;
     margin-right: 0px;
   }
-  .hp-content-list-box .hp-content-list-img img {
-    width: 100vw;
-  }
+
   .hp-content-list-text {
     width: 100%;
     display: block;
+  }
+
+  .hp-keyword-box {
+    width: 100%;
+    background: #e9ebee;
+    padding: 16px;
+    margin: 32px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hp-keyword-tit {
+    display: none;
+  }
+
+  .hp-search-tit span {
+    font-size: 24px;
+  }
+
+  .h-bold-32 {
+    font-size: 22px !important;
+  }
+  .h-regular-24 {
+    font-size: 18px;
+  }
+
+  .hp-like-num {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+
+  .hp-content-list-box .hp-content-list-img {
+    min-height: auto;
+    margin-right: 0px;
   }
 }

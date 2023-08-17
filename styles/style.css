@@ -20,7 +20,7 @@ button {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .h-ExtraBold-60 {
@@ -79,14 +79,29 @@ a {
 
 .h-regular-14 {
   font-size: 14px;
-  font-weight: 300;
-  line-height: 130%;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .h-regular-12 {
   font-size: 12px;
-  font-weight: 300;
-  line-height: 130%;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 660px) {
+  .h-ExtraBold-60 {
+    font-size: 40px;
+  }
+  .h-ExtraBold-46 {
+    font-size: 30px;
+  }
+  .h-bold-46 {
+    font-size: 30px;
+  }
+  .h-regular-20 {
+    font-size: 13px;
+  }
 }
 
 .text-blue-highlight {
@@ -118,4 +133,16 @@ a {
 
 .mx-width {
   max-width: var(--main-max-width);
+}
+
+.test-margin {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comment-delete {
+  color: var(--coral-080);
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }

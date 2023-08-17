@@ -6,6 +6,7 @@ header {
   top: 0;
   background-color: var(--grey-005);
   box-shadow: 0 0 10px 0px rgba(51, 51, 51, 0.2);
+  z-index: 2;
 }
 
 header .header-info {
@@ -18,7 +19,11 @@ header .header-info {
   padding: 10px 20px;
 }
 
-header img {
+header a {
+  height: 100%;
+}
+
+header a img {
   height: 100%;
 }
 

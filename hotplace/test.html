@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="mask-icon"
+      type="image/x-icon"
+      href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+      color="#111"
+    />
+
+    <link rel="canonical" href="https://codepen.io/jekaterina/pen/RowMzK" />
+    <link rel="stylesheet" href="../styles/hotplace/hotplace.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/layout/header.css" />
+    <link rel="stylesheet" href="../styles/layout/footer.css" />
+    <style>
+      /* ---- button ---- */
+
+      .button {
+        display: inline-block;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+      }
+
+      /**.button:hover {
+        background-color: #8CF;
+        text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+        color: #222;
+      }**/
+
+      /* .button:active,
+            .button.is-checked {
+              background-color: #634665;
+            } */
+
+      /* ---- button-group ---- */
+
+      /* .button-group:after {
+              content: "";
+              display: block;
+              clear: both;
+            }
+
+            .button-group .button {
+              float: left;
+              margin-left: 0.1em;
+              margin-right: 1px;
+            } */
+
+      /* ---- isotope ---- */
+
+      /* .grid {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      /* clear fix */
+      /* .grid:after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+
+      /* filters */
+      /* .filters {
+        display: table;
+        margin: auto;
+      } */
+
+      /* ui group */
+      /* 
+      .ui-group {
+        display: table-row;
+      } */
+      /*
+            .heading {
+              width: 100px;
+              display: table-cell;
+            }
+
+            .ui-group h3 {
+              display: inline-block;
+             
+             
+            } 
+            */
+
+      /* office-year-function */
+      /* .office-year-function {
+        width: 312px;
+        height: 160px;
+        float: left;
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+      } */
+
+      /* .office-year-function > .cell-child {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      } */
+
+      /* .hidden {
+        visibility: hidden;
+        width: 0px !important;
+        height: 0px !important;
+        margin: 0px !important;
+        padding: 0px !important;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div class="hp-keyword-box filters">
+      <ul class="mb-32px">
+        <li><h3 class="hp-keyword-tit h-bold-24">여행 위치</h3></li>
+        <li class="">
+          <ul class="hp-keyword-ul-wrap location-wrap">
+            <li class="blue-border-btn on">
+              <button class="button h-regular-24" data-filter="">#전체</button>
+            </li>
+            <li class="blue-border-btn">
+              <button class="button h-regular-24" data-filter=".seoul">
+                #서울
+              </button>
+            </li>
+            <li class="blue-border-btn">
+              <button class="button h-regular-24" data-filter=".busan">
+                #부산
+              </button>
+            </li>
+            <li class="blue-border-btn">
+              <button class="button h-regular-24" data-filter=".gso">
+                GSO
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <br />
+      <ul class="mb-32px">
+        <li><h3 class="hp-keyword-tit h-bold-24">여행 컨셉</h3></li>
+        <li>
+          <ul class="hp-keyword-ul-wrap concept-wrap">
+            <li class="blue-border-btn on">
+              <button class="button h-regular-24" data-filter="">#전체</button>
+            </li>
+            <li class="blue-border-btn">
+              <button class="button h-regular-24" data-filter=".nature">
+                #자연
+              </button>
+            </li>
+            <li class="blue-border-btn">
+              <button class="button h-regular-24" data-filter=".experience">
+                #체험
+              </button>
+            </li>
+            <li class="blue-border-btn">
+              <button class="button h-regular-24" data-filter=".history">
+                #역사
+              </button>
+            </li>
+            <li class="blue-border-btn">
+              <button class="button h-regular-24" data-filter=".indoor">
+                #실내
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <br />
+      <ul>
+        <li><h3 class="hp-keyword-tit h-bold-24">핫플 지수</h3></li>
+        <li>
+          <ul class="hp-keyword-ul-wrap h-regular-24 hp-wrap">
+            <li class="red-border-btn on">
+              <button class="button h-regular-24" data-filter="">
+                <i class="bi bi-heart-fill"></i> 전체
+              </button>
+            </li>
+            <li class="red-border-btn">
+              <button class="button h-regular-24" data-filter=".heart-0-15">
+                <i class="bi bi-heart-fill"></i> 0~15
+              </button>
+            </li>
+            <li class="red-border-btn">
+              <button class="button h-regular-24" data-filter=".heart-16-30">
+                <i class="bi bi-heart-fill"></i> 16~30
+              </button>
+            </li>
+            <li class="red-border-btn">
+              <button class="button h-regular-24" data-filter=".heart-31-50">
+                <i class="bi bi-heart-fill"></i>31~50
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- hp-keyword-box end -->
+
+    <!-- <div class="filters hp-keyword-box">
+      <div class="ui-group">
+        <div class="heading">
+          <h3 class="hp-keyword-tit h-bold-24">여행 위치</h3>
+        </div>
+
+        <div
+          class="hp-keyword-ul-wrap h-regular-24 location-wrap button-group js-radio-button-group"
+          data-filter-group="line-office"
+          id="line-office-btn"
+        >
+          <button class="button blue-border-btn is-checked" data-filter="">
+            #전체
+          </button>
+          <button class="button" data-filter=".sds">SDS</button>
+          <button class="button" data-filter=".sro">SRO</button>
+          <button class="button" data-filter=".gso">GSO</button>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="ui-group">
+        <div class="heading" id="year-text">
+          <h3>Year</h3>
+        </div>
+        <div
+          class="button-group js-radio-button-group"
+          data-filter-group="year"
+          id="year-btn"
+        >
+          <button class="button is-checked" data-filter="">All</button>
+          <button class="button" data-filter=".2015">2015</button>
+          <button class="button" data-filter=".2016">2016</button>
+        </div>
+      </div>
+      <br />
+
+      <div class="ui-group">
+        <div class="heading" id="function-text">
+          <h3>Function</h3>
+        </div>
+        <div
+          class="button-group js-radio-button-group"
+          data-filter-group="function"
+          id="function-btn"
+        >
+          <button class="button is-checked" data-filter="">All</button>
+          <button class="button" data-filter=".label1">Label 1</button>
+          <button class="button" data-filter=".label2">Label 2</button>
+        </div>
+      </div>
+
+      <br />
+    </div> -->
+
+    <!-- events showing -->
+    <div class="grid hp-content-wrap">
+      <div
+        class="hp-content-list-box work_projects office-year-function seoul indoor heart-0-15"
+      >
+        <ul class="hp-content-list-ul">
+          <li class="hp-content-list-img">
+            <a href="#"><img src="./img/ns-tower.jpg" alt="" /></a>
+          </li>
+          <li class="hp-content-list-text">
+            <div class="hp-content-list-h3-div">
+              <a href="#">
+                <h3 class="h-bold-32">동대문디지털프라자(DDP)</h3>
+              </a>
+              <div class="hp-content-list-icon text-black-5B5B5B">
+                <i class="bi bi-heart heart"></i>
+                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
+              </div>
+            </div>
+            <p class="location-p h-regular-20">
+              <i class="bi bi-geo-alt-fill"></i> 서울 용산구
+            </p>
+            <p class="h-regular-20 text-black-5B5B5B">
+              N서울타워는 남산 정상 부근에 위치한 전파 송출 및 관광용
+              타워입니다. 한국의 대표적 관광코스이기도합니다. 케이블카와 다양한
+              볼거리를 제공합니다.
+            </p>
+            <p class="hp-like-num"><i class="bi bi-heart-fill"></i> 22</p>
+            <br />
+            <ul class="hp-keyword-ul-wrap h-bold-20">
+              <li class="blue-border-btn on">#서울</li>
+              <li class="blue-border-btn on">#자연</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="hp-content-list-box work_projects office-year-function seoul experience label1"
+      >
+        <ul class="hp-content-list-ul">
+          <li class="hp-content-list-img">
+            <a href="#"><img src="./img/ns-tower.jpg" alt="" /></a>
+          </li>
+          <li class="hp-content-list-text">
+            <div class="hp-content-list-h3-div">
+              <a href="#">
+                <h3 class="h-bold-32">서울 N서울타워</h3>
+              </a>
+              <div class="hp-content-list-icon text-black-5B5B5B">
+                <i class="bi bi-heart heart"></i>
+                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
+              </div>
+            </div>
+            <p class="location-p h-regular-20">
+              <i class="bi bi-geo-alt-fill"></i> 서울 용산구
+            </p>
+            <p class="h-regular-20 text-black-5B5B5B">
+              N서울타워는 남산 정상 부근에 위치한 전파 송출 및 관광용
+              타워입니다. 한국의 대표적 관광코스이기도합니다. 케이블카와 다양한
+              볼거리를 제공합니다.
+            </p>
+            <p class="hp-like-num"><i class="bi bi-heart-fill"></i> 22</p>
+            <br />
+            <ul class="hp-keyword-ul-wrap h-bold-20">
+              <li class="blue-border-btn on">#서울</li>
+              <li class="blue-border-btn on">#경험</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="hp-content-list-box work_projects office-year-function seoul experience label1"
+      >
+        <ul class="hp-content-list-ul">
+          <li class="hp-content-list-img">
+            <a href="#"><img src="./img/ns-tower.jpg" alt="" /></a>
+          </li>
+          <li class="hp-content-list-text">
+            <div class="hp-content-list-h3-div">
+              <a href="#">
+                <h3 class="h-bold-32">서울 N서울타워</h3>
+              </a>
+              <div class="hp-content-list-icon text-black-5B5B5B">
+                <i class="bi bi-heart heart"></i>
+                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
+              </div>
+            </div>
+            <p class="location-p h-regular-20">
+              <i class="bi bi-geo-alt-fill"></i> 서울 용산구
+            </p>
+            <p class="h-regular-20 text-black-5B5B5B">
+              N서울타워는 남산 정상 부근에 위치한 전파 송출 및 관광용
+              타워입니다. 한국의 대표적 관광코스이기도합니다. 케이블카와 다양한
+              볼거리를 제공합니다.
+            </p>
+            <p class="hp-like-num"><i class="bi bi-heart-fill"></i> 22</p>
+            <br />
+            <ul class="hp-keyword-ul-wrap h-bold-20">
+              <li class="blue-border-btn on">#서울</li>
+              <li class="blue-border-btn on">#경험</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="hp-content-list-box work_projects office-year-function seoul experience label1"
+      >
+        <ul class="hp-content-list-ul">
+          <li class="hp-content-list-img">
+            <a href="#"><img src="./img/ns-tower.jpg" alt="" /></a>
+          </li>
+          <li class="hp-content-list-text">
+            <div class="hp-content-list-h3-div">
+              <a href="#">
+                <h3 class="h-bold-32">서울 N서울타워</h3>
+              </a>
+              <div class="hp-content-list-icon text-black-5B5B5B">
+                <i class="bi bi-heart heart"></i>
+                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
+              </div>
+            </div>
+            <p class="location-p h-regular-20">
+              <i class="bi bi-geo-alt-fill"></i> 서울 용산구
+            </p>
+            <p class="h-regular-20 text-black-5B5B5B">
+              N서울타워는 남산 정상 부근에 위치한 전파 송출 및 관광용
+              타워입니다. 한국의 대표적 관광코스이기도합니다. 케이블카와 다양한
+              볼거리를 제공합니다.
+            </p>
+            <p class="hp-like-num"><i class="bi bi-heart-fill"></i> 22</p>
+            <br />
+            <ul class="hp-keyword-ul-wrap h-bold-20">
+              <li class="blue-border-btn on">#서울</li>
+              <li class="blue-border-btn on">#경험</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="hp-content-list-box work_projects office-year-function seoul experience label1"
+      >
+        <ul class="hp-content-list-ul">
+          <li class="hp-content-list-img">
+            <a href="#"><img src="./img/ns-tower.jpg" alt="" /></a>
+          </li>
+          <li class="hp-content-list-text">
+            <div class="hp-content-list-h3-div">
+              <a href="#">
+                <h3 class="h-bold-32">서울 N서울타워</h3>
+              </a>
+              <div class="hp-content-list-icon text-black-5B5B5B">
+                <i class="bi bi-heart heart"></i>
+                <i class="bi bi-share mr10" onclick="shareBtn()"></i>
+              </div>
+            </div>
+            <p class="location-p h-regular-20">
+              <i class="bi bi-geo-alt-fill"></i> 서울 용산구
+            </p>
+            <p class="h-regular-20 text-black-5B5B5B">
+              N서울타워는 남산 정상 부근에 위치한 전파 송출 및 관광용
+              타워입니다. 한국의 대표적 관광코스이기도합니다. 케이블카와 다양한
+              볼거리를 제공합니다.
+            </p>
+            <p class="hp-like-num"><i class="bi bi-heart-fill"></i> 22</p>
+            <br />
+            <ul class="hp-keyword-ul-wrap h-bold-20">
+              <li class="blue-border-btn on">#서울</li>
+              <li class="blue-border-btn on">#경험</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="office-year-function seoul 2015 label1">
+        <div class="content cell-child">
+          <img
+            src="http://www.cityu.edu.hk/sds/web/img/photo/cresda.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 공유버튼 이벤트
+      function shareBtn() {
+        alert("공유 링크가 복사되었습니다.");
+      }
+
+      // 위치(btnChange1), 컨셉(btnChange2), 지수(btnChange3) 필터링 버튼선택변경
+      const btnChange1 = document.querySelectorAll(
+        ".location-wrap .blue-border-btn"
+      );
+
+      btnChange1.forEach((v) => {
+        console.log(v);
+        v.addEventListener("click", () => {
+          // v.classList.toggle("on");
+          btnChange1.forEach((v) => {
+            v.classList.remove("on");
+          });
+          v.classList.add("on");
+        });
+      });
+
+      const btnChange2 = document.querySelectorAll(
+        ".concept-wrap .blue-border-btn"
+      );
+
+      btnChange2.forEach((v) => {
+        console.log(v);
+        v.addEventListener("click", () => {
+          // v.classList.toggle("on");
+          btnChange2.forEach((v) => {
+            v.classList.remove("on");
+          });
+          v.classList.add("on");
+        });
+      });
+
+      const btnChange3 = document.querySelectorAll(".hp-wrap .red-border-btn");
+
+      btnChange3.forEach((v) => {
+        console.log(v);
+        v.addEventListener("click", () => {
+          // v.classList.toggle("on");
+          btnChange3.forEach((v) => {
+            v.classList.remove("on");
+          });
+          v.classList.add("on");
+        });
+      });
+    </script>
+
+    <!-- events showing -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+    <script>
+      // init Isotope
+      let $container = $(".hp-content-wrap").isotope({
+        itemSelector: ".office-year-function",
+      });
+
+      // store filter for each group
+      let filters = {};
+
+      $(".filters").on("click", ".button", function () {
+        let $this = $(this);
+        // get group key
+        let $buttonGroup = $this.parents(".button-group");
+        let filterGroup = $buttonGroup.attr("data-filter-group");
+        // set filter for group
+        filters[filterGroup] = $this.attr("data-filter");
+        // combine filters
+        let filterValue = concatValues(filters);
+        // set filter for Isotope
+        $container.isotope({ filter: filterValue });
+      });
+
+      // change is-checked class on buttons
+      $(".button-group").each(function (i, buttonGroup) {
+        let $buttonGroup = $(buttonGroup);
+        $buttonGroup.on("click", "button", function () {
+          $buttonGroup.find(".is-checked").removeClass("is-checked");
+          $(this).addClass("is-checked");
+        });
+      });
+
+      // flatten object by concatting values
+      function concatValues(obj) {
+        let value = "";
+        for (let prop in obj) {
+          value += obj[prop];
+        }
+        return value;
+      }
+    </script>
+  </body>
+</html>

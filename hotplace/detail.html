@@ -12,23 +12,140 @@
     <link rel="stylesheet" href="../styles/layout/header.css" />
     <link rel="stylesheet" href="../styles/layout/footer.css" />
     <link rel="stylesheet" href="../styles/detail_hotplace.css" />
-
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/detail_modal_swiper.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <header>
-      <div data-include-path="../layout/header.html"></div>
-    </header>
     <!-- header include -->
+    <div data-include-path="../layout/header.html"></div>
     <main>
+      <!-- 이미지 모달창 -->
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                메인 타이틀 글씨
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                style="
+                  --swiper-navigation-color: #fff;
+                  --swiper-pagination-color: #fff;
+                "
+                class="swiper mySwiper2"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../img/detail1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://swiperjs.com/demos/images/nature-10.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../img/detail1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://swiperjs.com/demos/images/nature-10.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="content">
         <div class="titleType1">
-          <h2 class="h-bold-46" id="topTitle">메인 타이틀 글씨</h2>
+          <h2 class="h-bold-46" id="topTitle">경복궁</h2>
           <div class="area_address h-regular-16" id="topAddr">
-            <span>주소 넣는곳</span>
+            <span>서울특별시 종로구 사직로 161</span>
           </div>
           <!-- 캐치플레이스 -->
           <div id="topCp">
@@ -62,21 +179,26 @@
             <!-- 사진 -->
             <section id="galleryGO">
               <div class="photoGallery">
-                <div class="mainList">
+                <div
+                  class="mainList"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
                   <!-- 메인사진 -->
-                  <a href="#"><img src="../img/detail1.png" alt="" /></a>
+                  <img src="../img/detail1.png" alt="" />
                 </div>
                 <!-- 서브사진 -->
                 <div class="photoGallerySub">
                   <ul class="subList">
-                    <li>
-                      <a href="#"><img src="../img/detail1.png" alt="" /></a>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="../img/detail1-2.png" alt="" />
                     </li>
-                    <li>
-                      <a href="#"><img src="../img/detail1.png" alt="" /></a>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="../img/detail1-3.png" alt="" />
                     </li>
-                    <li>
-                      <a href="#"><img src="../img/detail4.png" alt="" /></a>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <!-- <div class="img-counter h-bold-32">+ 6</div> -->
+                      <img src="../img/detail1-4.png" alt="" />
                     </li>
                   </ul>
                 </div>
@@ -126,59 +248,74 @@
                   margin: 16px;
                   justify-content: center;
                 "
-              >
-                <script
-                  type="text/javascript"
-                  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=189a964cdaf6a650f26e7138c762b0ff"
-                ></script>
-              </div>
-              <div class="txtView">
-                <div class="inr">
-                  <ul>
-                    <li>
-                      <strong class="h-bold-16"> 문의 및 안내 </strong>
-                      <span> 012-006-0001 </span>
-                    </li>
-                    <li>
-                      <strong class="h-bold-16"> 주소 </strong>
-                      <span> 대전광역시 유성구 대덕대로 1101 </span>
-                    </li>
-                    <li>
-                      <strong class="h-bold-16"> 영업시간 </strong>
-                      <span> - 평일 10:00~17:00 <br />- 주말 10:00~18:25 </span>
-                    </li>
-                    <li>
-                      <strong class="h-bold-16"> 휴일 </strong>
-                      <span> 연중무휴 </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              ></div>
             </section>
+            <div class="txtView">
+              <div class="inr">
+                <ul>
+                  <li>
+                    <strong class="h-bold-16"> 문의 및 안내 </strong>
+                    <span> 012-006-0001 </span>
+                  </li>
+                  <li>
+                    <strong class="h-bold-16"> 주소 </strong>
+                    <span> 서울특별시 종로구 사직로 161 </span>
+                  </li>
+                  <li>
+                    <strong class="h-bold-16"> 영업시간 </strong>
+                    <span>
+                      목요일 오전 9:00~오후 6:00 <br />
+                      금요일 오전 9:00~오후 6:00 <br />
+                      토요일 오전 9:00~오후 6:00 <br />
+                      일요일 오전 9:00~오후 6:00 <br />
+                      월요일 오전 9:00~오후 6:00 <br />
+                      화요일 휴무일 수요일 오전 9:00~오후 6:00
+                    </span>
+                  </li>
+                  <li>
+                    <strong class="h-bold-16"> 휴일 </strong>
+                    <span> 연중무휴 </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <!-- 내용 끝 -->
             <section id="commentGO">
-              <h3>댓글 <span>4</span></h3>
+              <h3>댓글 <span></span></h3>
               <div class="write">
                 <div class="form">
-                  <span class="writeForm">
-                    <form name="tform">
-                      <textarea
-                        name=""
-                        rows=""
-                        id="comment"
-                        placeholder="소중한 댓글을 남겨주세요."
-                        cols=""
-                      ></textarea>
-                    </form>
-                  </span>
-                  <div class="commentBtn">
-                    <button type="button">등록</button>
-                  </div>
+                  <!-- <span class="writeForm"> -->
+                  <form id="tform" name="tform">
+                    <textarea
+                      name=""
+                      rows=""
+                      id="comment"
+                      placeholder="소중한 댓글을 남겨주세요."
+                      cols=""
+                      onkeydown="mykeydown()"
+                    ></textarea>
+                    <div class="commentBtn">
+                      <button type="button">등록</button>
+                    </div>
+                  </form>
+                  <!-- </span> -->
                 </div>
               </div>
               <!-- 댓글리스트 -->
               <div class="listReply">
                 <ul>
+                  <li>
+                    <div class="profile">
+                      <img src="../img/profile1.png" alt="프로필 사진" />
+                    </div>
+                    <div class="txtReply">
+                      <p>댓글 내용은 여기에 쓰면 됩니다.</p>
+                      <div class="dateReply h-regular-14">
+                        <em class="name">닉네임</em>
+                        <span>2023. 8. 13.</span>
+                      </div>
+                    </div>
+                  </li>
                   <li>
                     <div class="profile">
                       <img src="../img/profile1.png" alt="프로필 사진" />
@@ -242,20 +379,63 @@
   <div data-include-path="../layout/footer.html"></div>
   <!-- footer include -->
   <script src="../js/include.js"></script>
+  <script src="../js/favorite-click-event.js"></script>
+  <script src="../js/comment.js"></script>
+  <script src="../js/img-counter.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=189a964cdaf6a650f26e7138c762b0ff&libraries=services"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
+    let x = 33.450701;
+    let y = 126.570667;
+
     let container = document.getElementById("map");
     let options = {
-      center: new kakao.maps.LatLng(33.450701, 126.570667),
+      center: new kakao.maps.LatLng(x, y),
       level: 3,
     };
-
-    let map = new kakao.maps.Map(container, options);
 
     /* 버튼 누르면 section 이동 */
     const sections = document.querySelectorAll("section");
     const moveBtns = document.querySelectorAll(".selectTab");
 
-    for (let i = 0; i <script sections.length; i++) {
+    // 지도를 생성합니다
+    var map = new kakao.maps.Map(container, options);
+
+    map.setDraggable(false);
+    map.setZoomable(false);
+
+    // 주소-좌표 변환 객체를 생성합니다
+    var geocoder = new kakao.maps.services.Geocoder();
+
+    // 주소로 좌표를 검색합니다
+    geocoder.addressSearch(
+      "서울특별시 종로구 사직로 161",
+      function (result, status) {
+        // 정상적으로 검색이 완료됐으면
+        if (status === kakao.maps.services.Status.OK) {
+          var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+          // 결과값으로 받은 위치를 마커로 표시합니다
+          var marker = new kakao.maps.Marker({
+            map: map,
+            position: coords,
+          });
+
+          // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+          map.setCenter(coords);
+        }
+      }
+    );
+
+    for (let i = 0; i < sections.length; i++) {
       moveBtns[i].addEventListener("click", function () {
         window.scrollBy({
           top: sections[i].getBoundingClientRect().top - 140,
@@ -263,9 +443,30 @@
         });
       });
     }
+
     /* 최상단 이동 */
     function scrollTopFixed() {
       window.scrollTo(0, 0);
     }
+
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+
   </script>
 </html>
