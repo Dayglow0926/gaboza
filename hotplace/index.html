@@ -27,7 +27,7 @@
         <span>#자연</span>
       </div>
 
-      <div class="hp-keyword-box">
+      <!-- <div class="hp-keyword-box">
         <ul class="mb-32px">
           <li><h3 class="hp-keyword-tit h-bold-24">여행 위치</h3></li>
           <li class="work_categories">
@@ -142,6 +142,98 @@
             </ul>
           </li>
         </ul>
+      </div> -->
+      <!-- hp-keyword-box end -->
+
+      <div class="hp-keyword-box filters">
+        <ul class="mb-32px">
+          <li><h3 class="hp-keyword-tit h-bold-24">여행 위치</h3></li>
+          <li class="">
+            <ul class="hp-keyword-ul-wrap location-wrap">
+              <li class="blue-border-btn on">
+                <button class="button h-regular-24" data-filter="">
+                  #전체
+                </button>
+              </li>
+              <li class="blue-border-btn">
+                <button class="button h-regular-24" data-filter=".seoul">
+                  #서울
+                </button>
+              </li>
+              <li class="blue-border-btn">
+                <button class="button h-regular-24" data-filter=".busan">
+                  #부산
+                </button>
+              </li>
+              <li class="blue-border-btn">
+                <button class="button h-regular-24" data-filter=".gso">
+                  GSO
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <br />
+        <ul class="mb-32px">
+          <li><h3 class="hp-keyword-tit h-bold-24">여행 컨셉</h3></li>
+          <li>
+            <ul class="hp-keyword-ul-wrap concept-wrap">
+              <li class="blue-border-btn on">
+                <button class="button h-regular-24" data-filter="">
+                  #전체
+                </button>
+              </li>
+              <li class="blue-border-btn">
+                <button class="button h-regular-24" data-filter=".nature">
+                  #자연
+                </button>
+              </li>
+              <li class="blue-border-btn">
+                <button class="button h-regular-24" data-filter=".experience">
+                  #체험
+                </button>
+              </li>
+              <li class="blue-border-btn">
+                <button class="button h-regular-24" data-filter=".history">
+                  #역사
+                </button>
+              </li>
+              <li class="blue-border-btn">
+                <button class="button h-regular-24" data-filter=".indoor">
+                  #실내
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <br />
+        <ul>
+          <li><h3 class="hp-keyword-tit h-bold-24">핫플 지수</h3></li>
+          <li>
+            <ul class="hp-keyword-ul-wrap h-regular-24 hp-wrap">
+              <li class="red-border-btn on">
+                <button class="button h-regular-24" data-filter="">
+                  <i class="bi bi-heart-fill"></i> 전체
+                </button>
+              </li>
+              <li class="red-border-btn">
+                <button class="button h-regular-24" data-filter=".heart-0-15">
+                  <i class="bi bi-heart-fill"></i> 0~15
+                </button>
+              </li>
+              <li class="red-border-btn">
+                <button class="button h-regular-24" data-filter=".heart-16-30">
+                  <i class="bi bi-heart-fill"></i> 16~30
+                </button>
+              </li>
+              <li class="red-border-btn">
+                <button class="button h-regular-24" data-filter=".heart-31-50">
+                  <i class="bi bi-heart-fill"></i>31~50
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <!-- hp-keyword-box end -->
 
@@ -178,7 +270,9 @@
         </ul>
       </div>
 
-      <div class="hp-content-list-box work_projects">
+      <div
+        class="hp-content-list-box work_projects office-year-function seoul indoor heart-0-15"
+      >
         <ul class="hp-content-list-ul" data-type="seoul">
           <li class="hp-content-list-img">
             <a href="#"><img src="./img/ddp.jpg" alt="" /></a>
@@ -248,114 +342,156 @@
           </li>
         </ul>
       </div>
+    </div>
 
-      <div class="page-btn-wrap">
+    <!-- <div class="page-btn-wrap">
         <a class="page-btn check-page-btn" href="#">1</a>
         <a class="page-btn" href="#">2</a>
         <a class="page-btn" href="#">3</a>
         <a class="page-btn" href="#">></a>
         <a class="page-btn" href="#">>></a>
-      </div>
-    </div>
+      </div> -->
 
+    <br />
     <div data-include-path="../layout/footer.html"></div>
     <!-- footer include -->
     <script src="../js/include.js"></script>
+
+    <script>
+      // 공유버튼 이벤트
+      function shareBtn() {
+        alert("공유 링크가 복사되었습니다.");
+      }
+
+      // 위치(btnChange1), 컨셉(btnChange2), 지수(btnChange3) 필터링 버튼선택변경
+      const btnChange1 = document.querySelectorAll(
+        ".location-wrap .blue-border-btn"
+      );
+
+      btnChange1.forEach((v) => {
+        console.log(v);
+        v.addEventListener("click", () => {
+          // v.classList.toggle("on");
+          btnChange1.forEach((v) => {
+            v.classList.remove("on");
+          });
+          v.classList.add("on");
+        });
+      });
+
+      const btnChange2 = document.querySelectorAll(
+        ".concept-wrap .blue-border-btn"
+      );
+
+      btnChange2.forEach((v) => {
+        console.log(v);
+        v.addEventListener("click", () => {
+          // v.classList.toggle("on");
+          btnChange2.forEach((v) => {
+            v.classList.remove("on");
+          });
+          v.classList.add("on");
+        });
+      });
+
+      const btnChange3 = document.querySelectorAll(".hp-wrap .red-border-btn");
+
+      btnChange3.forEach((v) => {
+        console.log(v);
+        v.addEventListener("click", () => {
+          // v.classList.toggle("on");
+          btnChange3.forEach((v) => {
+            v.classList.remove("on");
+          });
+          v.classList.add("on");
+        });
+      });
+    </script>
+    <script>
+      // 하트 클릭 시 변경이벤트
+      // const hearts = document.querySelectorAll(".heart");
+      // console.log(hearts);
+      // const p = document.querySelector(".hp-like-num");
+      // for (let i = 0; i < hearts.length; i++) {
+      //   hearts[i].addEventListener("click", function () {
+      //     hearts[i].classList.toggle("bi-heart-fill");
+      //     hearts[i].classList.toggle("bi-heart");
+      //     p.innerHTML = `<i class="bi bi-heart-fill"></i> ${
+      //       Number(p.innerText) + 1
+      //     }`;
+      //   });
+      // }
+
+      // console.log(p);
+
+      // console.log(p.innerHTML);
+
+      // 하트 클릭 시 변경이벤트
+
+      const hearts = document.querySelectorAll(".heart");
+      const p = document.querySelectorAll(".hp-like-num");
+      for (let i = 0; i < hearts.length; i++) {
+        hearts[i].addEventListener("click", function () {
+          // 숫자 count 변경
+          /* 빈 변수를 설정하고,
+        꽉찬 하트(?)(.bi-heart-fill)을 누르면 더하기, 그렇지 않으면 빼기 연산해서 
+        변수에 대입 */
+          let heartCounts;
+          if (hearts[i].classList.contains("bi-heart-fill")) {
+            heartCounts = Number(p[i].innerText) - 1;
+          } else {
+            heartCounts = Number(p[i].innerText) + 1;
+          }
+          p[i].innerHTML = `<i class="bi bi-heart-fill"></i> ${heartCounts}`;
+
+          // 하트 변경 > 변경 로직이 밑에 있어야 생각하기 편합니다.
+          hearts[i].classList.toggle("bi-heart-fill");
+          hearts[i].classList.toggle("bi-heart");
+        });
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+    <script>
+      // init Isotope
+      let $container = $(".hp-content-wrap").isotope({
+        itemSelector: ".office-year-function",
+      });
+
+      // store filter for each group
+      let filters = {};
+
+      $(".filters").on("click", ".button", function () {
+        let $this = $(this);
+        // get group key
+        let $buttonGroup = $this.parents(".button-group");
+        let filterGroup = $buttonGroup.attr("data-filter-group");
+        // set filter for group
+        filters[filterGroup] = $this.attr("data-filter");
+        // combine filters
+        let filterValue = concatValues(filters);
+        // set filter for Isotope
+        $container.isotope({ filter: filterValue });
+      });
+
+      // change is-checked class on buttons
+      $(".button-group").each(function (i, buttonGroup) {
+        let $buttonGroup = $(buttonGroup);
+        $buttonGroup.on("click", "button", function () {
+          $buttonGroup.find(".is-checked").removeClass("is-checked");
+          $(this).addClass("is-checked");
+        });
+      });
+
+      // flatten object by concatting values
+      function concatValues(obj) {
+        let value = "";
+        for (let prop in obj) {
+          value += obj[prop];
+        }
+        return value;
+      }
+    </script>
   </body>
-
-  <script>
-    // 공유버튼 이벤트
-    function shareBtn() {
-      alert("공유 링크가 복사되었습니다.");
-    }
-
-    // 위치(btnChange1), 컨셉(btnChange2), 지수(btnChange3) 필터링 버튼선택변경
-    const btnChange1 = document.querySelectorAll(
-      ".location-wrap .blue-border-btn"
-    );
-
-    btnChange1.forEach((v) => {
-      console.log(v);
-      v.addEventListener("click", () => {
-        // v.classList.toggle("on");
-        btnChange1.forEach((v) => {
-          v.classList.remove("on");
-        });
-        v.classList.add("on");
-      });
-    });
-
-    const btnChange2 = document.querySelectorAll(
-      ".concept-wrap .blue-border-btn"
-    );
-
-    btnChange2.forEach((v) => {
-      console.log(v);
-      v.addEventListener("click", () => {
-        // v.classList.toggle("on");
-        btnChange2.forEach((v) => {
-          v.classList.remove("on");
-        });
-        v.classList.add("on");
-      });
-    });
-
-    const btnChange3 = document.querySelectorAll(".hp-wrap .red-border-btn");
-
-    btnChange3.forEach((v) => {
-      console.log(v);
-      v.addEventListener("click", () => {
-        // v.classList.toggle("on");
-        btnChange3.forEach((v) => {
-          v.classList.remove("on");
-        });
-        v.classList.add("on");
-      });
-    });
-  </script>
-  <script>
-    // 하트 클릭 시 변경이벤트
-    const hearts = document.querySelectorAll(".heart");
-    console.log(hearts);
-    const p = document.querySelector(".hp-like-num");
-    for (let i = 0; i < hearts.length; i++) {
-      hearts[i].addEventListener("click", function () {
-        hearts[i].classList.toggle("bi-heart-fill");
-        hearts[i].classList.toggle("bi-heart");
-        p.innerHTML = `<i class="bi bi-heart-fill"></i> ${
-          Number(p.innerText) + 1
-        }`;
-      });
-    }
-
-    console.log(p);
-
-    console.log(p.innerHTML);
-
-    // // 필터링
-    // const categoryBtn = document.querySelector(".hp-keyword-box");
-    // //카테고리 컨테이너를 가져옴
-
-    // const projects = document.querySelectorAll(".hp-content-list-box");
-    // //hp-keyword-box 리스트 전체를 가져옴
-
-    // categoryBtn.addEventListener("click", (e) => {
-    //   const filter = e.target.dataset.filter;
-    //   //console.log(filter);
-    //   //e.target값 확인
-
-    //   if (filter == null) {
-    //     return;
-    //   }
-
-    //   projects.forEach((project) => {
-    //     // for문과 같은 의미, 배열을 불러와서 정렬
-    //     if (filter === "*" || filter === project.dataset.type) {
-    //       project.classList.remove("invisible");
-    //     } else {
-    //       project.classList.add("invisible");
-    //     }
-    //   });
-    // });
-  </script>
 </html>
