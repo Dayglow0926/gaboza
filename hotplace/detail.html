@@ -229,6 +229,10 @@
                   </li>
                 </ul>
               </div>
+
+              <button class="scrollUp" onclick="scrollTopFixed()">
+                <i class="bi bi-arrow-up"></i>
+              </button>
             </section>
           </div>
         </div>
@@ -251,13 +255,17 @@
     const sections = document.querySelectorAll("section");
     const moveBtns = document.querySelectorAll(".selectTab");
 
-    for (let i = 0; i < sections.length; i++) {
+    for (let i = 0; i <script sections.length; i++) {
       moveBtns[i].addEventListener("click", function () {
         window.scrollBy({
           top: sections[i].getBoundingClientRect().top - 140,
           behavior: "smooth",
         });
       });
+    }
+    /* 최상단 이동 */
+    function scrollTopFixed() {
+      window.scrollTo(0, 0);
     }
   </script>
 </html>
