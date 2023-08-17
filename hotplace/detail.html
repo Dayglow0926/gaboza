@@ -366,6 +366,10 @@
                   </li>
                 </ul>
               </div>
+
+              <button class="scrollUp" onclick="scrollTopFixed()">
+                <i class="bi bi-arrow-up"></i>
+              </button>
             </section>
           </div>
         </div>
@@ -440,6 +444,11 @@
       });
     }
 
+    /* 최상단 이동 */
+    function scrollTopFixed() {
+      window.scrollTo(0, 0);
+    }
+
     var swiper = new Swiper(".mySwiper", {
       loop: true,
       spaceBetween: 10,
@@ -458,5 +467,6 @@
         swiper: swiper,
       },
     });
+
   </script>
 </html>
