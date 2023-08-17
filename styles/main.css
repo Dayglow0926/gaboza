@@ -67,7 +67,15 @@ main
   .main-travel-info__hotplace
   .main-travel-info__hotplace-list {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .swiper-wrapper {
+  padding-bottom: 16px;
 }
 
 main
@@ -76,9 +84,11 @@ main
   .main-travel-info__hotplace-list
   .main-travel-info__hotplace-list__item {
   min-width: 364px;
-  margin: 0 16px;
+  /* margin: 0 16px; */
+  height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 main
@@ -86,6 +96,16 @@ main
   .main-travel-info__hotplace
   .main-travel-info__hotplace-list
   .main-travel-info__hotplace-list__item
+  > div:nth-child(1) {
+  cursor: pointer;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  > div:nth-child(1)
   > * {
   margin-bottom: 14px;
 }
