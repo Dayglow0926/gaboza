@@ -1,3 +1,18 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+}
+
 .text-red-E45141 {
   color: #e45141;
 }
@@ -23,10 +38,6 @@ ul li {
   line-height: 1.4em;
 }
 
-.h-bold-32 {
-  font-size: 32px;
-  font-weight: 700;
-}
 .h-regular-24 {
   font-size: 24px;
   font-weight: 300;
@@ -43,19 +54,25 @@ ul li {
   margin: 0 3px;
 }
 
-.hp-content-list-icon i {
-  color: var(#e45141);
+i.bi-heart {
+  color: var(--coral-080);
 }
 
+i.bi-heart-fill {
+  color: var(--coral-080);
+}
+/* 
 .hp-content-list-icon i.bi-heart:active {
-  background: var(#e45141);
+  color: var(--coral-080);
+  content: "\F415";
 }
 .hp-content-list-icon i.bi-heart:hover {
-  background: var(#e45141);
+  color: var(--coral-080);
+  content: "\F415";
 }
 .hp-content-list-icon i.bi-heart:focus {
-  background: var(#e45141);
-}
+  color: var(--coral-080);
+} */
 
 a {
   color: inherit;
@@ -76,25 +93,31 @@ h2.hp-tit {
   text-align: right;
   line-height: 1.2em;
   margin-top: 200px;
+  color: var(--grey-080);
 }
 
 .hp-search-tit {
   display: flex;
+  margin-top: 32px;
 }
 
-.hp-search-tit li {
+.hp-search-tit span {
   flex-direction: row;
   flex-basis: auto;
   margin-right: 10px;
-  line-height: 1.4em;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .hp-keyword-box {
   width: 100%;
   background: #e9ebee;
-  padding: 35px;
-  margin: 30px 0;
+  padding: 32px;
+  margin: 32px 0 64px 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .hp-keyword-box > ul {
@@ -114,16 +137,19 @@ h2.hp-tit {
   justify-content: flex-start;
   flex-direction: row;
   flex-basis: auto;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 /* 키워드 버튼(blue, red) */
 .blue-border-btn {
   border-radius: 5px;
   padding: 4px 8px;
-  margin: 5px;
-  color: #646f7c;
+  margin: 6px;
+  color: var(--grey-050) !important;
   border: 1px solid #646f7c;
   background-color: #fff;
+  cursor: pointer;
+}
+label {
   cursor: pointer;
 }
 
@@ -138,7 +164,7 @@ h2.hp-tit {
 .hp-keyword-ul-wrap .blue-border-btn.on {
   border: 1px solid #4d7dff;
   background: #4d7dff;
-  color: #fff;
+  color: #fff !important;
   transition: all 0.35s;
 }
 .red-border-btn {
@@ -147,7 +173,8 @@ h2.hp-tit {
   background-color: #fff;
   border-radius: 5px;
   margin-right: 12px;
-  padding: 8px;
+  padding: 4px 8px;
+  margin: 6px;
   cursor: pointer;
 }
 
@@ -155,8 +182,12 @@ h2.hp-tit {
 .hp-keyword-ul-wrap .red-border-btn.on {
   border: 1px solid #e45141;
   background: #e45141;
-  color: #fff;
+  color: #fff !important;
   transition: all 0.35s;
+}
+.hp-keyword-ul-wrap .red-border-btn:hover i,
+.hp-keyword-ul-wrap .red-border-btn.on i {
+  color: #fff;
 }
 
 .hp-content-list-h3-div {
@@ -191,16 +222,18 @@ h2.hp-tit {
 .hp-like-num {
   font-size: 22px;
   margin: 15px 0;
+  color: var(--coral-080);
 }
 /* 위치 */
 .location-p {
-  color: var(--blue-010);
+  color: var(--blue-060);
   margin-bottom: 15px;
 }
 
 .page-btn-wrap {
   width: 100%;
   display: block;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -213,6 +246,7 @@ h2.hp-tit {
   line-height: 38px;
   color: #646f7c;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 .page-btn-wrap .check-page-btn {
@@ -232,6 +266,7 @@ h2.hp-tit {
   padding: 10px;
   white-space: nowrap;
   overflow-x: auto;
+  box-sizing: border-box;
 }
 .scrollable_menu_wrap::-webkit-scrollbar {
   width: 100%;
@@ -263,21 +298,12 @@ h2.hp-tit {
   color: #e45141;
 }
 
-.hp-content-list-ul {
-}
-
 .hp-content-list-ul.invisible {
   display: none;
 }
 
 /* 반응형 */
 @media (max-width: 1200px) {
-  .hp-keyword-box {
-    display: none;
-  }
-  .hp-keyword-box-m {
-    display: block;
-  }
 }
 
 @media (max-width: 990px) {
@@ -304,5 +330,41 @@ h2.hp-tit {
   .hp-content-list-text {
     width: 100%;
     display: block;
+  }
+
+  .hp-keyword-box {
+    width: 100%;
+    background: #e9ebee;
+    padding: 16px;
+    margin: 32px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hp-keyword-tit {
+    display: none;
+  }
+
+  .hp-search-tit span {
+    font-size: 24px;
+  }
+
+  .h-bold-32 {
+    font-size: 22px !important;
+  }
+  .h-regular-24 {
+    font-size: 18px;
+  }
+
+  .hp-like-num {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+
+  .hp-content-list-box .hp-content-list-img {
+    min-height: auto;
+    margin-right: 0px;
   }
 }
