@@ -1,0 +1,23 @@
+.modal {
+  --bs-modal-bg: none !important;
+  --bs-modal-color: var(--blue-005) !important;
+}
+.modal-fullscreen .modal-body {
+  overflow-y: hidden !important;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-body img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal .modal-dialog .modal-content .modal-header .btn-close {
+  --bs-btn-close-color: var(--blue-005) !important;
+  background-color: var(--blue-005);
+}

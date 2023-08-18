@@ -67,7 +67,15 @@ main
   .main-travel-info__hotplace
   .main-travel-info__hotplace-list {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .swiper-wrapper {
+  padding-bottom: 16px;
 }
 
 main
@@ -76,9 +84,11 @@ main
   .main-travel-info__hotplace-list
   .main-travel-info__hotplace-list__item {
   min-width: 364px;
-  margin: 0 16px;
+  /* margin: 0 16px; */
+  height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 main
@@ -86,6 +96,16 @@ main
   .main-travel-info__hotplace
   .main-travel-info__hotplace-list
   .main-travel-info__hotplace-list__item
+  > div:nth-child(1) {
+  cursor: pointer;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
+  > div:nth-child(1)
   > * {
   margin-bottom: 14px;
 }
@@ -359,9 +379,6 @@ main .main-ad-list .main-ad-item {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 700px) {
-}
-
 main .main-ad-list .main-ad-item.left {
   background-color: var(--blue-040);
 }
@@ -392,4 +409,37 @@ main
 main .main-ad-list .main-ad-item > img {
   width: 200px;
   /* height: 290px; */
+}
+
+.main-travel-info__hotplace .swiper-wrapper {
+  padding-left: 10px;
+}
+
+.swiper-button-next {
+  background: url(../img/arrow-right-circle-fill.svg) no-repeat;
+  background-position: center;
+  right: -25px;
+  z-index: 99;
+}
+
+.swiper-button-prev {
+  background: url(../img/arrow-left-circle-fill.svg) no-repeat;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-color: var(--blue-005);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
 }
