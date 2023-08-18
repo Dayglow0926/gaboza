@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/layout/header.css" />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -397,7 +398,10 @@
           </div>
           <div class="main-travel-info__gaboza-pick-list">
             <div class="main-travel-info__gaboza-pick-item left">
-              <div class="main-travel-info__gaboza-pick-item-img">
+              <div
+                class="main-travel-info__gaboza-pick-item-img"
+                onclick="movePage('./theme/detail.html')"
+              >
                 <img
                   src="./img/gaboza-pick-img1-1.png"
                   alt="gaboza-pick-img1"
@@ -424,7 +428,10 @@
                   아름다운 바다를 바라보며 휴식할 수 있는 공원
                 </span>
               </div>
-              <div class="main-travel-info__gaboza-pick-item-img">
+              <div
+                class="main-travel-info__gaboza-pick-item-img"
+                onclick="movePage('./theme/detail.html')"
+              >
                 <img src="./img/gaboza-pick-img2.png" alt="gaboza-pick-img2" />
                 <span
                   class="main-travel-info__gaboza-pick-item-img-text h-ExtraBold-60"
@@ -434,7 +441,10 @@
               </div>
             </div>
             <div class="main-travel-info__gaboza-pick-item left">
-              <div class="main-travel-info__gaboza-pick-item-img">
+              <div
+                class="main-travel-info__gaboza-pick-item-img"
+                onclick="movePage('./theme/detail.html')"
+              >
                 <img src="./img/gaboza-pick-img3.png" alt="gaboza-pick-img3" />
                 <span
                   class="main-travel-info__gaboza-pick-item-img-text h-ExtraBold-60"
@@ -458,7 +468,7 @@
       </div>
       <div class="main-ad-list swiper">
         <div class="swiper-wrapper">
-          <div class="main-ad-item left swiper-slide">
+          <div class="main-ad-item left swiper-slide ready">
             <div class="main-ad-item__title">
               <span class="h-regular-20">여행 갈때 뭐 입지?</span>
               <span class="h-bold-32">
@@ -468,7 +478,7 @@
             </div>
             <img src="./img/ad-img1.png" alt="ad-img1" />
           </div>
-          <div class="main-ad-item right swiper-slide">
+          <div class="main-ad-item right swiper-slide ready">
             <div class="main-ad-item__title">
               <span class="h-regular-20">감성 챙기기 딱 좋은</span>
               <span class="h-bold-32">
@@ -482,10 +492,13 @@
       </div>
     </main>
     <div data-include-path="./layout/footer.html"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="./js/include.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/main-swipre-list.js"></script>
     <script src="./js/favorite-click-event.js"></script>
     <script src="./js/main-page.js"></script>
+    <script src="./js/ready-alert.js"></script>
   </body>
 </html>
