@@ -27,6 +27,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  height: 60vh;
 }
 
 .banner-slide .theme-title .theme-detail {
@@ -90,7 +91,8 @@ main {
 }
 
 .banner-slide .swiper1 .swiper-wrapper .swiper-slide img {
-  width: 1000px;
+  width: 100%;
+  object-fit: cover;
 }
 /*배너 끝남 */
 
