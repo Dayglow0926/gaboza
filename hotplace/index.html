@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/hotplace/hotplace.css" />
+    <link rel="stylesheet" href="../styles/hotplace.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/layout/header.css" />
     <link rel="stylesheet" href="../styles/layout/footer.css" />
@@ -12,7 +12,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
 
   <body>
@@ -24,128 +23,9 @@
         <span class="text-red-E45141">핫플</span> 내 맘대로 골라봐!
       </h2>
       <div class="hp-search-tit">
-        <span>#강원</span>
-        <span>#자연</span>
+        <span>#전체</span>
+        <span>#전체</span>
       </div>
-
-      <!-- <div class="hp-keyword-box">
-        <ul class="mb-32px">
-          <li><h3 class="hp-keyword-tit h-bold-24">여행 위치</h3></li>
-          <li class="work_categories">
-            <ul class="hp-keyword-ul-wrap h-regular-24 location-wrap">
-              <li class="blue-border-btn on" data-filter="*">
-                <input
-                  type="checkbox"
-                  value="filter_all"
-                  data-filter_id="all"
-                />#전체
-              </li>
-              <li
-                class="blue-border-btn"
-                value="filter-seoul"
-                data-filter_id="seoul"
-              >
-                <input
-                  type="checkbox"
-                  value="filter_red"
-                  data-filter_id="red"
-                />#서울
-              </li>
-              <li class="blue-border-btn" data-filter="busan">#부산</li>
-              <li class="blue-border-btn" data-filter="daegu">#대구</li>
-              <li class="blue-border-btn category_btn" data-filter="incheon">
-                #인천
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="gwangju">
-                #광주
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="daejeon">
-                #대전
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="ulsan">
-                #울산
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="sejong">
-                #세종
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="geonggi">
-                #경기
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="gangwon">
-                #강원
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="choogbuk">
-                #충북
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="choognam">
-                #충남
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="gyeongbuk">
-                #경북
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="gyeongnam">
-                #경남
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="jeonbuk">
-                #전북
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="jeonnam">
-                #전남
-              </li>
-              <li class="blue-border-btn category_btn" data-filter="jeju">
-                #제주
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-        <br />
-        <ul class="mb-32px">
-          <li><h3 class="hp-keyword-tit h-bold-24">여행 컨셉</h3></li>
-          <li>
-            <ul class="hp-keyword-ul-wrap h-regular-24 concept-wrap">
-              <li class="blue-border-btn on">#전체</li>
-              <li class="blue-border-btn">#자연</li>
-              <li class="blue-border-btn">#체험</li>
-              <li class="blue-border-btn">#역사</li>
-              <li class="blue-border-btn">#실내</li>
-              <li class="blue-border-btn">#카페</li>
-              <li class="blue-border-btn">#숙박</li>
-              <li class="blue-border-btn">#쇼핑</li>
-              <li class="blue-border-btn">#음식</li>
-              <li class="blue-border-btn">#트레킹</li>
-            </ul>
-          </li>
-        </ul>
-        <br />
-        <ul>
-          <li><h3 class="hp-keyword-tit h-bold-24">핫플 지수</h3></li>
-          <li>
-            <ul class="hp-keyword-ul-wrap h-regular-24 hp-wrap">
-              <li class="red-border-btn on">
-                <i class="bi bi-heart-fill"></i> 0~15
-              </li>
-              <li class="red-border-btn">
-                <i class="bi bi-heart-fill"></i> 16~30
-              </li>
-              <li class="red-border-btn">
-                <i class="bi bi-heart-fill"></i> 31~50
-              </li>
-              <li class="red-border-btn">
-                <i class="bi bi-heart-fill"></i> 51~70
-              </li>
-              <li class="red-border-btn">
-                <i class="bi bi-heart-fill"></i> 71~100
-              </li>
-              <li class="red-border-btn">
-                <i class="bi bi-heart-fill"></i> 101~
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div> -->
-      <!-- hp-keyword-box end -->
-
       <div class="hp-keyword-box filters">
         <ul class="mb-32px">
           <li><h3 class="hp-keyword-tit h-bold-24">여행 위치</h3></li>
@@ -301,12 +181,12 @@
                 </button>
               </li>
               <li class="red-border-btn">
-                <button class="button h-regular-24" value="heart-31-50">
+                <button class="button h-regular-24" value="heart-51-100">
                   <i class="bi bi-heart-fill"></i> 51~100
                 </button>
               </li>
               <li class="red-border-btn">
-                <button class="button h-regular-24" value="heart-31-50">
+                <button class="button h-regular-24" value="heart-101-">
                   <i class="bi bi-heart-fill"></i> 101~
                 </button>
               </li>
@@ -674,131 +554,8 @@
     <br />
     <div data-include-path="../layout/footer.html"></div>
     <!-- footer include -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../js/include.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-    <script>
-      var allItems = Array.from(document.querySelectorAll(".item"));
-
-      function hashCheck(target, checkHash) {
-        console.log(target, checkHash);
-        target.forEach((v) => {
-          let index = checkHash.indexOf(v);
-          if (index != -1) checkHash.splice(index, 1);
-        });
-        return checkHash.length === 0 ? true : false;
-      }
-
-      function setVisibility() {
-        let onButton = document.querySelectorAll(".filters li .on > button");
-        let value = "";
-
-        onButton.forEach((v) => {
-          value += " " + v.value;
-        });
-        value = new Set(value.trim().split(" "));
-
-        allItems.map(function (el) {
-          if (
-            // (" " + el.classList + " ").replace(/[\n\t]/g, " ").indexOf(value) > -1
-            hashCheck([...el.classList], [...value])
-          ) {
-            el.style.display = "block";
-          } else {
-            el.style.display = "none";
-          }
-        });
-      }
-    </script>
-
-    <script>
-      const btn = document.getElementById("printText");
-
-      btn.addEventListener("click", () => {
-        const divNode = document.getElementById("content");
-        divNode.innerHTML = `<p>Hello,JavaScript</p>`;
-
-        console.log(divNode.innerHTML);
-      });
-    </script>
-
-    <script>
-      // 공유버튼 이벤트
-      function shareBtn() {
-        alert("공유 링크가 복사되었습니다.");
-      }
-
-      // 위치(btnChange1), 컨셉(btnChange2), 지수(btnChange3) 필터링 버튼선택변경
-      const btnChange1 = document.querySelectorAll(
-        ".location-wrap .blue-border-btn"
-      );
-
-      btnChange1.forEach((v) => {
-        // console.log(v);
-        v.addEventListener("click", () => {
-          // v.classList.toggle("on");
-          btnChange1.forEach((v) => {
-            v.classList.remove("on");
-          });
-          v.classList.add("on");
-          setVisibility();
-        });
-      });
-
-      const btnChange2 = document.querySelectorAll(
-        ".concept-wrap .blue-border-btn"
-      );
-
-      btnChange2.forEach((v) => {
-        // console.log(v);
-        v.addEventListener("click", () => {
-          // v.classList.toggle("on");
-          btnChange2.forEach((v) => {
-            v.classList.remove("on");
-          });
-          v.classList.add("on");
-          setVisibility();
-        });
-      });
-
-      const btnChange3 = document.querySelectorAll(".hp-wrap .red-border-btn");
-
-      btnChange3.forEach((v) => {
-        // console.log(v);
-        v.addEventListener("click", () => {
-          // v.classList.toggle("on");
-          btnChange3.forEach((v) => {
-            v.classList.remove("on");
-          });
-          v.classList.add("on");
-          setVisibility();
-        });
-      });
-    </script>
-
-    <script>
-      // 하트 클릭 시 변경이벤트
-      const hearts = document.querySelectorAll(".heart");
-      const p = document.querySelectorAll(".hp-like-num");
-      for (let i = 0; i < hearts.length; i++) {
-        hearts[i].addEventListener("click", function () {
-          // 숫자 count 변경
-          /* 빈 변수를 설정하고,
-        꽉찬 하트(?)(.bi-heart-fill)을 누르면 더하기, 그렇지 않으면 빼기 연산해서 
-        변수에 대입 */
-          let heartCounts;
-          if (hearts[i].classList.contains("bi-heart-fill")) {
-            heartCounts = Number(p[i].innerText) - 1;
-          } else {
-            heartCounts = Number(p[i].innerText) + 1;
-          }
-          p[i].innerHTML = `<i class="bi bi-heart-fill"></i> ${heartCounts}`;
-
-          // 하트 변경 > 변경 로직이 밑에 있어야 생각하기 편합니다.
-          hearts[i].classList.toggle("bi-heart-fill");
-          hearts[i].classList.toggle("bi-heart");
-        });
-      }
-    </script>
+    <script src="../js/hotplace.js"></script>
   </body>
 </html>
