@@ -11,8 +11,9 @@ header {
 }
 
 #content {
+  width: 100%;
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   margin: 100px auto;
   padding: 130px 20px 0px 20px;
 }
@@ -21,6 +22,7 @@ header {
   font-size: 20px;
   -webkit-text-stroke: 1px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .titleType1 {
@@ -53,24 +55,33 @@ header {
   display: flex;
   justify-content: end;
   margin-top: 8rem;
-  margin-right: 2rem;
 }
+
+i.bi-heart {
+  color: var(--grey-050);
+}
+
+i.bi-heart-fill {
+  color: var(--coral-080);
+}
+/* 
 
 /* 메뉴 */
 
 .detail_tab {
-  margin-top: 1rem;
+  width: 100%;
+  float: left;
+  border-top: 1px solid var(--grey-040);
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--grey-040);
 }
 .detail_tab ul li {
+  width: 33.333%;
   float: left;
-  width: 33.3%;
   text-align: center;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .detail_tab ul li a {
-  margin-top: 10px;
   position: relative;
   display: block;
   line-height: 60px;
@@ -87,14 +98,14 @@ header {
 .detail_tab ul li a:active {
 }
 
-.detail_tab ul li a:before {
+.detail_tab ul li:nth-child(n + 2) a:before {
   content: "";
   display: inline-block;
-  width: 1px;
+  width: 1.25px;
   height: 16px;
   background: #ccc;
   position: absolute;
-  left: -1px;
+  left: -1.25px;
   top: 50%;
   margin-top: -8px;
 }
@@ -107,10 +118,9 @@ header {
 #galleryGO .photoGallery .mainList img {
   margin-top: 32px;
   width: 100%;
-  height: 500px;
+  max-height: 500px;
   object-fit: cover;
-
-  box-shadow: 0 3px 10px #333;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -145,7 +155,8 @@ header {
 
 #galleryGO .photoGallerySub li img {
   width: 100%;
-  height: 200px;
+  max-height: 200px;
+  height: 100%;
   box-shadow: 0 3px 10px #333;
   cursor: pointer;
   object-fit: cover;
@@ -158,7 +169,7 @@ header {
 
 .contView h3 {
   width: 100%;
-  padding: 31px 0 16px;
+  padding: 32px 0 16px;
   font-size: 28px;
   border-bottom: 2px solid #333;
   font-weight: 600;
@@ -225,7 +236,6 @@ header {
 }
 
 /* 댓글 */
-
 #commentGO {
   width: 100%;
   margin-top: 36px;
@@ -285,7 +295,7 @@ header {
   position: relative;
   display: inline-block;
   border-radius: 5px;
-  padding: 12px 25px;
+  padding: 12px 24px;
   font-size: 14px;
   background-color: var(--blue-060);
   color: var(--blue-010);
@@ -305,6 +315,7 @@ header {
 
 .listReply .profile {
   margin-left: 1vw;
+  margin-right: 1.5vw;
   width: 50px;
   height: 50px;
 }
@@ -317,16 +328,16 @@ header {
 }
 
 .listReply .txtReply {
+  width: 80%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: start;
-  padding-left: 1vw;
-  width: 80%;
 }
 
 .listReply .txtReply p {
-  font-size: 1.1em;
-  padding-right: 25px;
+  font-size: 1em;
+  margin-bottom: 0.5em;
 }
 
 .listReply .txtReply .date {
@@ -342,7 +353,7 @@ header {
 .listReply > ul > li {
   position: relative;
   width: 100%;
-  padding: 20px 10px;
+  padding: 16px 0px;
   border-bottom: 1px solid #e6e6e6;
   box-sizing: border-box;
 }
@@ -353,9 +364,9 @@ header {
   height: 60px;
   background-color: var(--grey-010);
   border: none;
-  box-shadow: 0 3px 10px #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   position: fixed;
-  bottom: 15px;
+  bottom: 30px;
   right: 45px;
 }
 
@@ -367,4 +378,53 @@ header {
 
 .listReply > ul > li > .comment-delete {
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .contView h3 {
+    width: 100%;
+    padding: 16px;
+    font-size: 24px;
+  }
+
+  #galleryGO .photoGallerySub li img {
+    height: 50%;
+  }
+  #galleryGO .photoGallerySub li:nth-child(3) .img-counter {
+    height: 50%;
+  }
+
+  .h-bold-32 {
+    font-size: 24px;
+  }
+
+  #commentGO h3 {
+    width: 100%;
+    padding: 16px 0 8px;
+    font-size: 22px;
+  }
+
+  .txtView ul li {
+    /* float: left; */
+    width: 100%;
+  }
+
+  .scrollUp {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    background-color: var(--grey-010);
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+  }
+
+  .scrollUp i {
+    font-size: 20px;
+    color: var(--grey-050);
+    margin-left: 6.5px;
+  }
 }

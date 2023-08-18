@@ -101,6 +101,7 @@ h2.hp-tit {
 }
 
 .hp-search-tit {
+  width: 100%;
   display: flex;
   margin-top: 32px;
 }
@@ -235,6 +236,11 @@ label {
   margin-bottom: 48px;
 }
 
+.location-p a:hover {
+  padding: 0 15px;
+  box-shadow: inset 0 -12px 0 rgba(129, 171, 242, 1);
+}
+
 .page-btn-wrap {
   width: 100%;
   display: block;
@@ -275,7 +281,17 @@ label {
 .hp-content-list-ul.invisible {
   display: none;
 }
+/* .typing-txt {
+  display: none;
+}
 
+.typing {
+  /*position: absolute;*/
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+} */
 /* 반응형 */
 @media (max-width: 1200px) {
 }
