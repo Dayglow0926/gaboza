@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gaboza | Hot Place</title>
+    <link rel="shortcut icon" href="../img/favicon.ico/favicon.ico" />
     <link rel="stylesheet" href="../styles/hotplace.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/layout/header.css" />
@@ -565,6 +566,9 @@
         <a class="page-btn" href="#">>></a>
       </div>
     </div>
+    <button class="scrollUp" onclick="scrollTopFixed()">
+      <i class="bi bi-arrow-up"></i>
+    </button>
     <!-- #container end -->
     <br />
     <div data-include-path="../layout/footer.html"></div>
@@ -572,6 +576,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../js/include.js"></script>
     <script src="../js/hotplace.js"></script>
+    <script src="../js/scrollTopFixed.js"></script>
 
     <script>
       let typingBool = false;
@@ -579,13 +584,14 @@
 
       // 타이핑될 텍스트를 가져온다
       let typingTxt = $(".typing-txt").text();
+      let tyInt;
 
       typingTxt = typingTxt.split(""); // 한글자씩 자른다.
 
       if (typingBool == false) {
         // 타이핑이 진행되지 않았다면
         typingBool = true;
-        let tyInt = setInterval(typing, 100); // 반복동작
+        tyInt = setInterval(typing, 100); // 반복동작
       }
 
       function typing() {
