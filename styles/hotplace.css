@@ -54,14 +54,11 @@ ul li {
 .hp-content-list-icon i {
   font-size: 20px;
   cursor: pointer;
-}
-
-.hp-content-list-icon i.bi-heart {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 i.bi-heart {
-  color: var(--grey-080);
+  color: var(--grey-050);
 }
 
 i.bi-heart-fill {
@@ -104,6 +101,7 @@ h2.hp-tit {
 }
 
 .hp-search-tit {
+  width: 100%;
   display: flex;
   margin-top: 32px;
 }
@@ -159,13 +157,6 @@ h2.hp-tit {
 label {
   cursor: pointer;
 }
-
-/* .blue-border-btn:hover {
-  border: 1.5px solid var(--blue-060);
-  background: var(--blue-060);
-  color: #fff;
-  transition: all 0.35s;
-} */
 
 .hp-keyword-ul-wrap .blue-border-btn:hover,
 .hp-keyword-ul-wrap .blue-border-btn.on {
@@ -245,6 +236,11 @@ label {
   margin-bottom: 48px;
 }
 
+.location-p a:hover {
+  padding: 0 15px;
+  box-shadow: inset 0 -12px 0 rgba(129, 171, 242, 1);
+}
+
 .page-btn-wrap {
   width: 100%;
   display: block;
@@ -285,7 +281,17 @@ label {
 .hp-content-list-ul.invisible {
   display: none;
 }
+/* .typing-txt {
+  display: none;
+}
 
+.typing {
+  /*position: absolute;*/
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+} */
 /* 반응형 */
 @media (max-width: 1200px) {
 }
@@ -370,9 +376,5 @@ label {
   .hp-content-list-icon i {
     font-size: 18px;
     cursor: pointer;
-  }
-
-  .hp-content-list-icon i.bi-heart {
-    margin-right: 8px;
   }
 }
