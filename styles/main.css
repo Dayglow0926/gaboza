@@ -49,6 +49,9 @@ main .main-travel-info {
   margin: 0 auto;
   margin-top: 48px;
 }
+main .main-travel-info .main-travel-info__hotplace {
+  position: relative;
+}
 
 main .main-travel-info .main-travel-info__hotplace > * {
   margin-bottom: 32px;
@@ -378,6 +381,8 @@ main .main-ad-list .main-ad-item {
 
   align-items: center;
   justify-content: space-evenly;
+
+  cursor: pointer;
 }
 
 main .main-ad-list .main-ad-item.left {
@@ -416,21 +421,28 @@ main .main-ad-list .main-ad-item > img {
   padding-left: 10px;
 }
 
+.swiper {
+  position: static;
+}
+
 .swiper-button-next {
-  background: url(../img/arrow-right-circle-fill.svg) no-repeat;
+  background: url(../img/arrow-right.svg) no-repeat;
   background-position: center;
   right: -25px;
-  z-index: 99;
+  z-index: 2;
 }
 
 .swiper-button-prev {
-  background: url(../img/arrow-left-circle-fill.svg) no-repeat;
+  background: url(../img/arrow-left.svg) no-repeat;
+  background-size: 30px 30px;
+  left: -15px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  border: 5px solid var(--blue-005);
   background-size: contain;
   background-color: var(--blue-005);
   border-radius: 50%;
