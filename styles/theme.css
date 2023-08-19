@@ -105,6 +105,7 @@ main {
 .banner-nav nav ul {
   display: flex;
   padding: 0;
+  justify-content: center;
 }
 
 .banner-nav nav ul li {
@@ -360,4 +361,47 @@ main .detail-banner img {
   background-color: var(--blue-070);
   border-color: var(--blue-070);
   color: var(--grey-005);
+}
+
+@media screen and (min-width: 840px) {
+
+  .theme-content {
+    padding: 0 20px;
+  }
+  .theme-content .theme-con-img .theme-img-nav .list li{
+    margin-left: 1rem;
+  }
+
+  .theme-img-area ul li{
+    margin-left: 1rem;
+  }
+
+  .banner-nav nav ul li button {
+    width: 8rem;
+  }
+
+  .banner-nav nav ul li:first-child button {
+    width: 8rem;
+  }
+  .banner-nav nav ul li:nth-child(4) button {
+    width: 8rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .banner-slide .theme-title {
+    padding-left: 3rem;
+    width: 45vw;
+  }
+
+  .banner-nav nav ul li button {
+    width: 14rem;
+  }
+
+  .banner-nav nav ul li:first-child button {
+    width: 12rem;
+  }
+  .banner-nav nav ul li:nth-child(4) button {
+    width: 8rem;
+  }
 }
