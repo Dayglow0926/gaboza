@@ -58,8 +58,6 @@ swiper.on("slideChange", function () {
   // 테마 서브 타이틀과 나오는 아이콘
   let themeTitIcon = ["☀", "🏞️", "🏄", "👩‍🦳👨‍", "🐶"];
 
-  console.log(this.realIndex);
-
   // 테마 버튼 네브 스와이퍼와 연동
   themeTit.forEach((val, i) => {
     if (i === this.realIndex) {
@@ -72,7 +70,6 @@ swiper.on("slideChange", function () {
   themeTitdetail.forEach((v, l) => {
     if (l === this.realIndex) {
       themeCon.innerText = v;
-      console.log(v);
     }
   });
 
@@ -108,8 +105,6 @@ const ImgArea = document.querySelectorAll(".theme-img-area .flex-r");
 //     console.log('click');
 //   });
 // });
-
-console.log(ImgArea);
 
 NavImg.forEach((v, i) => {
   // 이미지 네브 클릭하면 보이게
