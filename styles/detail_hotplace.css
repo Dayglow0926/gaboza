@@ -381,6 +381,7 @@ i.bi-heart-fill {
 }
 
 @media (max-width: 800px) {
+
   #content {
     width: 100%;
     display: flex;
@@ -391,6 +392,7 @@ i.bi-heart-fill {
   .buttonArea {
     margin-top: 3rem;
   }
+
   .contView h3 {
     width: 100%;
     padding: 16px;
