@@ -1,0 +1,380 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+}
+/* 
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+} */
+
+.text-red-E45141 {
+  color: var(--coral-080);
+}
+.text-black-5B5B5B {
+  color: var(--grey-050);
+}
+
+/* 폰트사이즈 */
+ul li {
+  list-style-type: none;
+}
+
+.mb-16px {
+  margin-bottom: 16px;
+}
+.mb-32px {
+  margin-bottom: 32px;
+}
+.mb-48px {
+  margin-bottom: 48px;
+}
+
+.h-regular-20 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.h-regular-24 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 130%;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+/* 아이콘 */
+.hp-content-list-icon i {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+i.bi-heart {
+  color: var(--grey-050);
+}
+
+i.bi-heart-fill {
+  color: var(--coral-080);
+}
+/* 
+.hp-content-list-icon i.bi-heart:active {
+  color: var(--coral-080);
+  content: "\F415";
+}
+.hp-content-list-icon i.bi-heart:hover {
+  color: var(--coral-080);
+  content: "\F415";
+}
+.hp-content-list-icon i.bi-heart:focus {
+  color: var(--coral-080);
+} */
+
+a {
+  color: inherit;
+}
+
+/* hotplace style */
+#container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2.hp-tit {
+  width: 100%;
+  margin-left: auto;
+  text-align: right;
+  line-height: 1.2em;
+  margin-top: 200px;
+  color: var(--grey-080);
+}
+
+.hp-search-tit {
+  width: 100%;
+  display: flex;
+  margin-top: 32px;
+}
+
+.hp-search-tit span {
+  flex-direction: row;
+  flex-basis: auto;
+  margin-right: 10px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hp-keyword-box {
+  width: 100%;
+  background: var(--blue-010);
+  padding: 32px;
+  margin: 32px 0 64px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hp-keyword-box > ul {
+  display: flex;
+  width: 100%;
+}
+
+/* 키워드 타이틀 h3 */
+.hp-keyword-box h3.hp-keyword-tit {
+  width: 100px;
+  margin-right: 30px;
+}
+
+/* 키워드 단어 ul-wrap*/
+.hp-keyword-ul-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+/* 키워드 버튼(blue, red) */
+.blue-border-btn {
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 6px;
+  color: var(--grey-050) !important;
+  border: 1px solid var(--grey-050);
+  background-color: var(--grey-005);
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+}
+
+.hp-keyword-ul-wrap .blue-border-btn:hover,
+.hp-keyword-ul-wrap .blue-border-btn.on {
+  border: 1px solid var(--blue-060);
+  background: var(--blue-060);
+  color: #fff !important;
+  transition: all 0.35s;
+}
+.red-border-btn {
+  color: var(--coral-080);
+  border: 1px solid var(--coral-080);
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 12px;
+  padding: 4px 8px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.hp-keyword-ul-wrap .red-border-btn:hover,
+.hp-keyword-ul-wrap .red-border-btn.on {
+  border: 1px solid #e45141;
+  background: #e45141;
+  color: #fff !important;
+  transition: all 0.35s;
+}
+.hp-keyword-ul-wrap .red-border-btn:hover i,
+.hp-keyword-ul-wrap .red-border-btn.on i {
+  color: #fff;
+}
+
+.hp-content-list-h3-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.hp-content-list-box {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hp-content-list-box .hp-content-list-ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hp-content-list-box .hp-content-list-img {
+  max-width: 488px;
+  width: 100%;
+  min-height: 300px;
+  margin-right: 48px;
+}
+.hp-content-list-box .hp-content-list-img img {
+  /* width: 100%; */
+  max-width: 488px;
+  min-height: 326px;
+}
+
+.hp-content-wrap {
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 배치 */
+}
+
+.hp-like-num {
+  font-size: 22px;
+  margin: 15px 0;
+  color: var(--coral-080);
+}
+/* 위치 */
+.location-p {
+  color: var(--blue-060);
+  margin-bottom: 48px;
+}
+
+.location-p a:hover {
+  padding: 0 15px;
+  box-shadow: inset 0 -12px 0 rgba(129, 171, 242, 1);
+}
+
+.page-btn-wrap {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.page-btn-wrap .page-btn {
+  border: 1px solid var(--grey-050);
+  color: #fff;
+  padding: 6px 12px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 38px;
+  color: var(--grey-050);
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.page-btn-wrap .check-page-btn {
+  background: var(--grey-050);
+  color: #fff;
+  font-size: 20px;
+}
+
+.hp-keyword-box-m {
+  display: none;
+}
+
+#heart.red {
+  color: var(--grey-070);
+}
+
+.hp-content-list-text a:hover h3 {
+  color: var(--coral-080);
+}
+
+.hp-content-list-ul.invisible {
+  display: none;
+}
+/* .typing-txt {
+  display: none;
+}
+
+.typing {
+  /*position: absolute;*/
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+} */
+/* 반응형 */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 990px) {
+  /* hotplace style */
+  #container {
+    width: 100%;
+    padding: 0 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hp-content-list-box .hp-content-list-ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .hp-content-list-box .hp-content-list-img {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  .hp-content-list-text {
+    width: 100%;
+    display: block;
+  }
+
+  .hp-keyword-box {
+    width: 100%;
+    padding: 16px;
+    margin: 32px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hp-keyword-tit {
+    display: none;
+  }
+
+  .hp-search-tit span {
+    font-size: 24px;
+  }
+
+  .h-bold-32 {
+    font-size: 22px !important;
+  }
+  .h-regular-24 {
+    font-size: 18px;
+  }
+
+  .hp-like-num {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+
+  .hp-content-list-box .hp-content-list-img {
+    min-height: auto;
+    margin-right: 0px;
+  }
+
+  .location-p {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hp-content-list-box .hp-content-list-img img {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .hp-like-num {
+    margin: 0;
+  }
+
+  /* 아이콘 */
+  .hp-content-list-icon i {
+    font-size: 18px;
+    cursor: pointer;
+  }
+}

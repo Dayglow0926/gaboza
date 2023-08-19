@@ -3,7 +3,7 @@
 }
 
 .swiper.mySwiper {
-  width: 40%;
+  /* width: 40%; */
 }
 
 .swiper.mySwiper .swiper-wrapper .swiper-slide img {
@@ -34,7 +34,7 @@
 
 .swiper {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -68,6 +68,6 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  /* height: 100%;
+  object-fit: contain; */
 }
