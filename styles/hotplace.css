@@ -47,17 +47,16 @@ ul li {
   line-height: 130%;
 }
 
-@keyframes cursor {
-  to {
-    border-color: transparent;
-  }
+.typing-demo {
+  animation: typing 2s steps(12), 1s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.txt {
-  display: table-cell;
-  vertical-align: middle;
-  border-right: 0.05em solid #f81857;
-  animation: cursor 0.5s ease infinite;
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
 /* 아이콘 */
