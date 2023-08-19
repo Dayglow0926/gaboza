@@ -24,7 +24,6 @@
           <span class="text-red-E45141">핫플</span> 내 맘대로 골라봐!
         </p>
       </h2>
-
       <div class="hp-search-tit">
         <span>#전체</span>
         <span></span>
@@ -227,7 +226,7 @@
             </p>
             <p class="hp-like-num"><i class="bi bi-heart-fill"></i> 12</p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#서울</li>
               <li class="blue-border-btn on">#자연</li>
             </ul>
@@ -265,7 +264,7 @@
               <i class="bi bi-heart-fill"></i> 23
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#서울</li>
               <li class="blue-border-btn on">#실내</li>
             </ul>
@@ -304,7 +303,7 @@
               <i class="bi bi-heart-fill"></i> 5
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#서울</li>
               <li class="blue-border-btn on">#실내</li>
             </ul>
@@ -341,7 +340,7 @@
               <i class="bi bi-heart-fill"></i> 53
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#부산</li>
               <li class="blue-border-btn on">#자연</li>
             </ul>
@@ -375,7 +374,7 @@
               <i class="bi bi-heart-fill"></i> 5
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#부산</li>
               <li class="blue-border-btn on">#자연</li>
             </ul>
@@ -409,7 +408,7 @@
               <i class="bi bi-heart-fill"></i> 37
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#강원</li>
               <li class="blue-border-btn on">#체험</li>
             </ul>
@@ -443,7 +442,7 @@
               <i class="bi bi-heart-fill"></i> 32
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#대구</li>
               <li class="blue-border-btn on">#트래킹</li>
             </ul>
@@ -478,7 +477,7 @@
               <i class="bi bi-heart-fill"></i> 32
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#대구</li>
               <li class="blue-border-btn on">#체험</li>
             </ul>
@@ -513,7 +512,7 @@
               <i class="bi bi-heart-fill"></i> 50
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#인천</li>
               <li class="blue-border-btn on">#음식</li>
             </ul>
@@ -549,7 +548,7 @@
               <i class="bi bi-heart-fill"></i> 50
             </p>
             <br />
-            <ul class="hp-keyword-ul-wrap h-bold-20">
+            <ul class="hp-keyword-ul-wrap2 h-bold-20">
               <li class="blue-border-btn on">#강원</li>
               <li class="blue-border-btn on">#자연</li>
             </ul>
@@ -573,32 +572,6 @@
     <script src="../js/include.js"></script>
     <script src="../js/hotplace.js"></script>
 
-    <script>
-      let typingBool = false;
-      let typingIdx = 0;
-
-      // 타이핑될 텍스트를 가져온다
-      let typingTxt = $(".typing-txt").text();
-
-      typingTxt = typingTxt.split(""); // 한글자씩 자른다.
-
-      if (typingBool == false) {
-        // 타이핑이 진행되지 않았다면
-        typingBool = true;
-        let tyInt = setInterval(typing, 100); // 반복동작
-      }
-
-      function typing() {
-        if (typingIdx < typingTxt.length) {
-          // 타이핑될 텍스트 길이만큼 반복
-          $(".typing").append(typingTxt[typingIdx]);
-          // 한글자씩 이어준다.
-          typingIdx++;
-        } else {
-          //끝나면 반복종료
-          clearInterval(tyInt);
-        }
-      }
-    </script>
+    <script></script>
   </body>
 </html>

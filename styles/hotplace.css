@@ -47,9 +47,19 @@ ul li {
   line-height: 130%;
 }
 
-.mr10 {
-  margin-right: 10px;
+@keyframes cursor {
+  to {
+      border-color: transparent;
+  }
 }
+
+.txt {
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 0.05em solid #F81857; 
+  animation: cursor 0.5s ease infinite;
+}
+
 /* 아이콘 */
 .hp-content-list-icon i {
   font-size: 20px;
@@ -147,19 +157,44 @@ h2.hp-tit {
 /* 키워드 버튼(blue, red) */
 .blue-border-btn {
   border-radius: 5px;
-  padding: 4px 8px;
-  margin: 6px;
+  padding: 4px 6px;
+  margin:6px;
   color: var(--grey-050) !important;
   border: 1px solid var(--grey-050);
   background-color: var(--grey-005);
   cursor: pointer;
 }
+
 label {
   cursor: pointer;
 }
 
-.hp-keyword-ul-wrap .blue-border-btn:hover,
-.hp-keyword-ul-wrap .blue-border-btn.on {
+.hp-keyword-ul-wrap2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+
+.hp-keyword-ul-wrap2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+.hp-keyword-ul-wrap2 .blue-border-btn:hover,
+.hp-keyword-ul-wrap2 .blue-border-btn.on {
+  border: 1px solid var(--blue-060);
+  background: var(--blue-060);
+  color: #fff !important;
+  transition: all 0.35s;
+}
+
+
+.blue-border-btn:hover,
+.blue-border-btn.on {
   border: 1px solid var(--blue-060);
   background: var(--blue-060);
   color: #fff !important;
@@ -363,6 +398,11 @@ label {
 }
 
 @media (max-width: 640px) {
+  /* 키워드 단어 ul-wrap*/
+.hp-keyword-ul-wrap {
+  justify-content: space-around; 
+}
+
   .hp-content-list-box .hp-content-list-img img {
     width: 100%;
     min-height: auto;
