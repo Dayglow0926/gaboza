@@ -1,100 +1,148 @@
 @import url("./reset.css");
+@import url("./root.css");
+
+* {
+  box-sizing: border-box;
+}
+
+i {
+  -webkit-text-stroke: 1px;
+}
 
 body {
   font-family: "SUIT", sans-serif;
+  color: var(--grey-080);
+  background-color: var(--grey-005);
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
-  text-decoration: none;
-}
-
-.text-blue-4D7DFF {
-  color: #4d7dff;
-}
-
-.text-blue-81ABF2 {
-  color: #81abf2;
-}
-
-.text-blue-CCE2FB {
-  color: #cce2fb;
-}
-
-.text-grey-fefefe {
-  color: #fefefe;
-}
-
-.text-grey-fdfdfd {
-  color: #fdfdfd;
-}
-
-.text-grey-f7f8f9 {
-  color: #f7f8f9;
-}
-
-.text-grey-e9ebee {
-  color: #e9ebee;
-}
-
-.text-grey-c5c8ce {
-  color: #c5c8ce;
-}
-
-.text-grey-959CA5 {
-  color: #959ca5;
-}
-
-.text-grey-646f7c {
-  color: #646f7c;
-}
-
-.text-grey-374553 {
-  color: #374553;
-}
-
-.text-grey-28323C {
-  color: #28323c;
-}
-
-.text-grey-161D24 {
-  color: #161d24;
+  text-decoration: none !important;
 }
 
 .h-ExtraBold-60 {
   font-size: 60px;
   font-weight: 800;
+  line-height: 130%;
+}
+
+.h-ExtraBold-46 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 130%;
 }
 
 .h-bold-46 {
   font-size: 46px;
   font-weight: 700;
+  line-height: 130%;
+}
+
+.h-bold-32 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.h-regular-32 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 130%;
 }
 
 .h-bold-24 {
   font-size: 24px;
   font-weight: 700;
+  line-height: 130%;
 }
 
 .h-regular-20 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 130%;
 }
 
 .h-bold-16 {
   font-size: 16px;
   font-weight: 700;
+  line-height: 130%;
 }
 
 .h-regular-16 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 130%;
 }
 
 .h-regular-14 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.h-regular-12 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 660px) {
+  .h-ExtraBold-60 {
+    font-size: 40px;
+  }
+  .h-ExtraBold-46 {
+    font-size: 30px;
+  }
+  .h-bold-46 {
+    font-size: 30px;
+  }
+  .h-regular-20 {
+    font-size: 13px;
+  }
+}
+
+.text-blue-highlight {
+  color: var(--blue-060);
+}
+
+.text-coral-highlight {
+  color: var(--coral-080);
+}
+
+.view-all {
+  color: var(--grey-045);
+}
+
+.sub-title-color {
+  color: var(--grey-050);
+}
+
+.height-line {
+  border: 0.5px solid var(--grey-080);
+  height: 35px;
+  width: 0;
+  margin: 0px 32px;
+}
+
+.cover-width {
+  width: var(--main-max-width);
 }
 
 .mx-width {
-  max-width: 1200px;
+  max-width: var(--main-max-width);
+}
+
+.test-margin {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comment-delete {
+  color: var(--coral-080);
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }
