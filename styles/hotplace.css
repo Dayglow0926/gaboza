@@ -49,14 +49,14 @@ ul li {
 
 @keyframes cursor {
   to {
-      border-color: transparent;
+    border-color: transparent;
   }
 }
 
 .txt {
   display: table-cell;
   vertical-align: middle;
-  border-right: 0.05em solid #F81857; 
+  border-right: 0.05em solid #f81857;
   animation: cursor 0.5s ease infinite;
 }
 
@@ -158,7 +158,7 @@ h2.hp-tit {
 .blue-border-btn {
   border-radius: 5px;
   padding: 4px 6px;
-  margin:6px;
+  margin: 6px;
   color: var(--grey-050) !important;
   border: 1px solid var(--grey-050);
   background-color: var(--grey-005);
@@ -191,7 +191,6 @@ label {
   color: #fff !important;
   transition: all 0.35s;
 }
-
 
 .blue-border-btn:hover,
 .blue-border-btn.on {
@@ -316,8 +315,9 @@ label {
 .hp-content-list-ul.invisible {
   display: none;
 }
-/* .typing-txt {
+h2.typing-txt {
   display: none;
+  color: inherit;
 }
 
 .typing {
@@ -326,7 +326,8 @@ label {
   animation-name: cursor;
   animation-duration: 0.3s;
   animation-iteration-count: infinite;
-} */
+}
+
 /* 반응형 */
 @media (max-width: 1200px) {
 }
@@ -399,9 +400,9 @@ label {
 
 @media (max-width: 640px) {
   /* 키워드 단어 ul-wrap*/
-.hp-keyword-ul-wrap {
-  justify-content: space-around; 
-}
+  .hp-keyword-ul-wrap {
+    justify-content: space-around;
+  }
 
   .hp-content-list-box .hp-content-list-img img {
     width: 100%;
