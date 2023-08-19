@@ -396,6 +396,10 @@ h2.typing-txt {
   .location-p {
     margin-bottom: 16px;
   }
+
+  .hp-content-list-box .hp-content-list-img img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 640px) {

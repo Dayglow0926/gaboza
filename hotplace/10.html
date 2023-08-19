@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상세페이지</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/layout/header.css" />
+    <link rel="stylesheet" href="../styles/layout/footer.css" />
+    <link rel="stylesheet" href="../styles/detail_hotplace.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/detail_modal_swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header include -->
+    <div data-include-path="../layout/header.html"></div>
+    <main>
+      <!-- 이미지 모달창 -->
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                강아지와 함께 즐기는 푸른 춘천, 춘천 강아지숲
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                style="
+                  --swiper-navigation-color: #fff;
+                  --swiper-pagination-color: #fff;
+                "
+                class="swiper mySwiper2"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f8e57010-d8d4-44e8-b217-f8175caca91e"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f8e57010-d8d4-44e8-b217-f8175caca91e"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../img/detail1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../img/detail1-4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="content">
+        <div class="titleType1">
+          <h2 class="h-bold-46" id="topTitle">춘천 강아지숲</h2>
+          <div class="area_address h-regular-16" id="topAddr">
+            <span>강원도 춘천시 남산면 충효로 437</span>
+          </div>
+          <!-- 캐치플레이스 -->
+          <div id="topCp">
+            <div class="titTypeWrap">
+              <h3>
+                <em class="h-bold-24"
+                  >강아지와 함께 즐기는 푸른 춘천, 춘천 강아지숲</em
+                >
+              </h3>
+            </div>
+          </div>
+          <!-- 버튼 -->
+          <div class="buttonArea">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-share"></i>
+          </div>
+          <!-- 내용 -->
+          <div class="db_cont_detail">
+            <!-- 메뉴 -->
+            <div class="detail_tab">
+              <ul>
+                <li class="selectTab" id="photoTab">
+                  <a href="#사진보기"><span>사진보기</span></a>
+                </li>
+                <li class="selectTab" id="detailTab">
+                  <a href="#상세정보"><span>상세정보</span></a>
+                </li>
+                <li class="selectTab" id="commentTab">
+                  <a href="#댓글보기"><span>댓글보기</span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- 사진 -->
+            <section id="galleryGO">
+              <div class="photoGallery">
+                <div
+                  class="mainList"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <!-- 메인사진 -->
+                  <img
+                    src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f8e57010-d8d4-44e8-b217-f8175caca91e"
+                    alt=""
+                  />
+                </div>
+                <!-- 서브사진 -->
+                <div class="photoGallerySub">
+                  <ul class="subList">
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img
+                        src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f8e57010-d8d4-44e8-b217-f8175caca91e"
+                        alt=""
+                      />
+                    </li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img
+                        src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0359358a-7fa7-4e8e-8885-10b72cd91425"
+                        alt=""
+                      />
+                    </li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <!-- <div class="img-counter h-bold-32">+ 6</div> -->
+                      <img
+                        src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f8e57010-d8d4-44e8-b217-f8175caca91e"
+                        alt=""
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <!-- 상세정보 -->
+              </div>
+            </section>
+            <section id="detailGo">
+              <div class="contView">
+                <h3>상세정보</h3>
+              </div>
+              <div class="inr">
+                <p class="h-regular-14">
+                  사람도 강아지도 마음껏 춘천을 즐길 수 있는, 춘천 강아지숲
+                  테마파크입니다. 넓은 잔디마당과 운동장에서 강아지가 리드줄
+                  없이 맘껏 뛰어놀 수 있어요. 천천히 노즈워크를 하며 숲길을 걸을
+                  수 있는 산책로도 마련되어 있고요. 산책로에서는 노즈워크
+                  구간마다 비치된 인증 스탬프를 모으면, 카페 음료 할인을 해주는
+                  이벤트도 상시 운영 중이니 체크해 보세요. ​한편 강아지숲에는
+                  개와 인간의 아름다운 관계를 테마로 한 다양한 이야기가 있는
+                  박물관도 있습니다. 다양한 전시를 통해 반려견과 인간은 어떻게
+                  공존할 수 있을까, 개와의 행복한 동행은 현실이 될 수 있을까를
+                  풀어냅니다.
+                </p>
+              </div>
+              <!-- 카카오맵 -->
+              <div
+                id="map"
+                style="
+                  width: 1044px;
+                  height: 467px;
+                  margin: 16px;
+                  justify-content: center;
+                "
+              ></div>
+            </section>
+            <div class="txtView">
+              <div class="inr">
+                <ul>
+                  <li>
+                    <strong class="h-bold-16"> 문의 및 안내 </strong>
+                    <span> 012-006-0001 </span>
+                  </li>
+                  <li>
+                    <strong class="h-bold-16"> 주소 </strong>
+                    <span> 강원도 춘천시 남산면 충효로 437 </span>
+                  </li>
+                  <li>
+                    <strong class="h-bold-16"> 영업시간 </strong>
+                    <span>
+                      목요일 오전 9:00~오후 6:00 <br />
+                      금요일 오전 9:00~오후 6:00 <br />
+                      토요일 오전 9:00~오후 6:00 <br />
+                      일요일 오전 9:00~오후 6:00 <br />
+                      월요일 오전 9:00~오후 6:00 <br />
+                      화요일 휴무일 수요일 오전 9:00~오후 6:00
+                    </span>
+                  </li>
+                  <li>
+                    <strong class="h-bold-16"> 휴일 </strong>
+                    <span> 연중무휴 </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 내용 끝 -->
+            <section id="commentGO">
+              <h3 class="">댓글 <span></span></h3>
+              <div class="write">
+                <div class="form">
+                  <!-- <span class="writeForm"> -->
+                  <form id="tform" name="tform">
+                    <textarea
+                      name=""
+                      rows=""
+                      id="comment"
+                      placeholder="소중한 댓글을 남겨주세요."
+                      cols=""
+                      onkeydown="mykeydown()"
+                    ></textarea>
+                    <div class="commentBtn">
+                      <button type="button">등록</button>
+                    </div>
+                  </form>
+                  <!-- </span> -->
+                </div>
+              </div>
+              <!-- 댓글리스트 -->
+              <div class="listReply">
+                <ul>
+                  <li>
+                    <div class="profile">
+                      <img src="../img/profile1.png" alt="프로필 사진" />
+                    </div>
+                    <div class="txtReply">
+                      <p>담에 또갈래요.</p>
+                      <div class="dateReply h-regular-14">
+                        <em class="name">닉네임</em>
+                        <span>2023. 8. 13.</span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="profile">
+                      <img src="../img/profile2.png" alt="프로필 사진" />
+                    </div>
+                    <div class="txtReply">
+                      <p>더워서 힘들었지만 너무 예쁜 곳이에요.</p>
+                      <div class="dateReply h-regular-14">
+                        <em class="name">닉네임</em>
+                        <span>2023. 8. 13.</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="profile">
+                      <img src="../img/profile1.png" alt="프로필 사진" />
+                    </div>
+                    <div class="txtReply">
+                      <p>포토스팟 많아요.</p>
+                      <div class="dateReply h-regular-14">
+                        <em class="name">닉네임</em>
+                        <span>2023. 8. 13.</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="profile">
+                      <img src="../img/profile1.png" alt="프로필 사진" />
+                    </div>
+                    <div class="txtReply">
+                      <p>예쁜 한복입고 사진찍었어요.</p>
+                      <div class="dateReply h-regular-14">
+                        <em class="name">닉네임</em>
+                        <span>2023. 8. 13.</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="scrollUp" onclick="scrollTopFixed()">
+                <i class="bi bi-arrow-up"></i>
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <div data-include-path="../layout/footer.html"></div>
+  <!-- footer include -->
+  <script src="../js/include.js"></script>
+  <script src="../js/favorite-click-event.js"></script>
+  <script src="../js/comment.js"></script>
+  <script src="../js/img-counter.js"></script>
+  <script
+    type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=72f3d9c03606fc3b3d7419af21c7f836&libraries=services"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    let x = 33.450701;
+    let y = 126.570667;
+
+    let container = document.getElementById("map");
+    let options = {
+      center: new kakao.maps.LatLng(x, y),
+      level: 3,
+    };
+
+    /* 버튼 누르면 section 이동 */
+    const sections = document.querySelectorAll("section");
+    const moveBtns = document.querySelectorAll(".selectTab");
+
+    // 지도를 생성합니다
+    var map = new kakao.maps.Map(container, options);
+
+    map.setDraggable(false);
+    map.setZoomable(false);
+
+    // 주소-좌표 변환 객체를 생성합니다
+    var geocoder = new kakao.maps.services.Geocoder();
+
+    // 주소로 좌표를 검색합니다
+    geocoder.addressSearch(
+      "강원도 춘천시 남산면 충효로 437",
+      function (result, status) {
+        // 정상적으로 검색이 완료됐으면
+        if (status === kakao.maps.services.Status.OK) {
+          var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+          // 결과값으로 받은 위치를 마커로 표시합니다
+          var marker = new kakao.maps.Marker({
+            map: map,
+            position: coords,
+          });
+
+          // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+          map.setCenter(coords);
+        }
+      }
+    );
+
+    for (let i = 0; i < sections.length; i++) {
+      moveBtns[i].addEventListener("click", function () {
+        window.scrollBy({
+          top: sections[i].getBoundingClientRect().top - 140,
+          behavior: "smooth",
+        });
+      });
+    }
+
+    /* 최상단 이동 */
+    function scrollTopFixed() {
+      window.scrollTo(0, 0);
+    }
+
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+</html>
