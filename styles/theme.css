@@ -368,6 +368,7 @@ main .detail-banner img {
   .theme-content {
     padding: 0 20px;
   }
+  
   .theme-content .theme-con-img .theme-img-nav .list li{
     margin-left: 1rem;
   }
@@ -389,6 +390,12 @@ main .detail-banner img {
 }
 
 @media screen and (min-width: 1300px) {
+
+  .theme-content {
+    padding: 0 20px;
+  }
+
+
   .banner-slide .theme-title {
     padding-left: 3rem;
     width: 45vw;
