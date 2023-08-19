@@ -347,24 +347,6 @@ header {
   box-sizing: border-box;
 }
 
-.scrollUp {
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
-  background-color: var(--grey-010);
-  border: none;
-  box-shadow: 0 3px 10px #333;
-  position: fixed;
-  bottom: 15px;
-  right: 45px;
-}
-
-.scrollUp i {
-  font-size: 30px;
-  color: var(--grey-050);
-  margin-left: 10px;
-}
-
 .listReply > ul > li > .comment-delete {
   cursor: pointer;
 }
