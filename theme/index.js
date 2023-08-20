@@ -68,8 +68,6 @@ swiper.on("slideChange", function () {
   themeTitdetail.forEach((v, l) => {
     if (l === this.realIndex) {
       themeCon.innerText = v;
-      themeConM.innerText= v ;
-      console.log(v);
     }
   });
 
