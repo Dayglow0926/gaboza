@@ -384,6 +384,7 @@
   ></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="../js/scrollTopFixed.js"></script>
   <script>
     let x = 33.450701;
     let y = 126.570667;
@@ -434,11 +435,6 @@
           behavior: "smooth",
         });
       });
-    }
-
-    /* 최상단 이동 */
-    function scrollTopFixed() {
-      window.scrollTo(0, 0);
     }
 
     var swiper = new Swiper(".mySwiper", {

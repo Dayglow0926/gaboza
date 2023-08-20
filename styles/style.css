@@ -8,7 +8,9 @@
 i {
   -webkit-text-stroke: 1px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "SUIT", sans-serif;
   color: var(--grey-080);
@@ -145,4 +147,30 @@ a {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
+}
+
+.scrollUp {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-color: var(--grey-010);
+  border: none;
+  box-shadow: 0 3px 10px #333;
+  position: fixed;
+  bottom: 15px;
+  right: 45px;
+  z-index: 80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollUp i {
+  margin: 0;
+  font-size: 30px;
+  color: var(--grey-050);
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: var(--blue-060) !important;
 }

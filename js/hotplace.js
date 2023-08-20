@@ -41,7 +41,7 @@ function setVisibility() {
 
 // 공유버튼 이벤트
 function shareBtn() {
-  alert("공유 링크가 복사되었습니다.");
+  //alert("공유 링크가 복사되었습니다.");
 }
 
 // 위치(btnChange1), 컨셉(btnChange2), 지수(btnChange3) 필터링 버튼선택변경
