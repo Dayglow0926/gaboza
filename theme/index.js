@@ -14,7 +14,7 @@ const swiper = new Swiper(".swiper1", {
   autoplay: {
     delay: 1500,
   },
-  speed: 500, //like transition
+  speed: 5000000, //like transition
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -105,10 +105,3 @@ NavImg.forEach((v, i) => {
     ImgArea[i].classList.add("active");
   });
 });
-
-
-// sweet alert
-
-document.querySelector('.detail-banner').addEventListener('click',()=>{
-  swal('', "아직 준비중입니다.", 'warning');
-})
