@@ -71,6 +71,16 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
+          <div class="theme-title mobile">
+            <p class="br-15-30">맑을 때 가면 예쁜 장소</p>
+            <div class="flex-r">
+              <h4 class="ft-bold-700">추천! 웰니스 관광지</h4>
+              <div class="theme-title-icon">☀</div>
+            </div>
+            <a class="h-regular-14 theme-detail" href="./detail.html"
+              >자세히 보기</a
+            >
+          </div>
         </div>
       </section>
       <!-- 스와이퍼 -->
@@ -234,36 +244,6 @@
         <img src="../img/search_banner.svg" alt="" />
       </section>
 
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-      >
-        <div class="modal-dialog alert">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">아직 준비중입니다.</div>
-            <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
 
     <div data-include-path="../layout/footer.html"></div>
@@ -272,5 +252,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script src="./index.js"></script>
+    <!-- sweet alert modal -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
