@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gaboza | Hot Place</title>
+    <link rel="shortcut icon" href="../img/favicon.ico/favicon.ico" />
     <link rel="stylesheet" href="../styles/hotplace.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/layout/header.css" />
@@ -227,7 +228,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -259,7 +260,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -297,7 +298,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -334,7 +335,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -370,7 +371,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -405,7 +406,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -439,7 +440,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -473,7 +474,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -508,7 +509,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share"></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -543,7 +544,7 @@
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
                 <i class="bi bi-heart heart"></i>
-                <i class="bi bi-share" onclick="shareBtn()"></i>
+                <i class="bi bi-share" data-value="공유 링크! "></i>
               </div>
             </div>
             <p class="location-p h-regular-20">
@@ -575,6 +576,9 @@
         <a class="page-btn" href="#">>></a>
       </div>
     </div>
+    <button class="scrollUp" onclick="scrollTopFixed()">
+      <i class="bi bi-arrow-up"></i>
+    </button>
     <!-- #container end -->
     <br />
     <div data-include-path="../layout/footer.html"></div>
@@ -583,9 +587,14 @@
     <script src="../js/include.js"></script>
     <script src="../js/hotplace.js"></script>
 
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
+    <script src="../js/scrollTopFixed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/ready-alert.js"></script>
     </script>
   </body>
 </html>
