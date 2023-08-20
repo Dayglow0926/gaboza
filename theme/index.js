@@ -26,18 +26,18 @@ const swiper = new Swiper(".swiper1", {
   },
 });
 
-
 const test = document.querySelector(".br-15-30");
 
-const testM=document.querySelector('.theme-title.mobile .br-15-30');
+const testM = document.querySelector(".theme-title.mobile .br-15-30");
 
 const themeCon = document.querySelector(".theme-title .flex-r h4");
-
 const themeIc = document.querySelector(".theme-title-icon");
 
 const themeConM = document.querySelector(".theme-title.mobile .flex-r h4");
 
-const themeIcM = document.querySelector(".theme-title.mobile .theme-title-icon");
+const themeIcM = document.querySelector(
+  ".theme-title.mobile .theme-title-icon"
+);
 
 swiper.on("slideChange", function () {
   // 테마 버튼 네브 선언
@@ -82,7 +82,6 @@ swiper.on("slideChange", function () {
   // 테마 모바일 서브 타이틀 분배
 });
 
-
 // 이미지 네브 선언
 const NavImg = document.querySelectorAll(
   ".theme-con-img .theme-img-nav .list li"
@@ -106,9 +105,8 @@ NavImg.forEach((v, i) => {
   });
 });
 
-
 // sweet alert
 
-document.querySelector('.detail-banner').addEventListener('click',()=>{
-  swal('', "아직 준비중입니다.", 'warning');
-})
+document.querySelector(".detail-banner").addEventListener("click", () => {
+  swal("", "아직 준비중입니다.", "warning");
+});

@@ -18,7 +18,7 @@ share.forEach((v) => {
   v.addEventListener("click", () => {
     Swal.fire({
       title: "공유!",
-      text: "링크가 복사되었습니다.!",
+      text: "링크가 복사되었습니다!",
       icon: "success",
       confirmButtonText: "확인",
     });
