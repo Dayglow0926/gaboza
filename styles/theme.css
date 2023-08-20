@@ -368,6 +368,18 @@ main .detail-banner img {
 
 /*  */
 
+@media screen and(max-width:1500px){
+  .banner-slide .theme-title {
+    width: 46vw;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+    padding-left: 3rem;
+}
+}
 
 @media screen and (max-width: 1300px) {
   .banner-nav nav ul li button {
@@ -380,6 +392,30 @@ main .detail-banner img {
   .banner-nav nav ul li:nth-child(4) button {
     width: 8rem;
   }
+
+  .banner-slide .theme-title {
+    width: 46vw;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+    padding-left: 3rem;
+}
+}
+
+@media screen and (max-width:1200px){
+  .banner-slide .theme-title {
+    width: 46vw;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+    padding-left: 3rem;
+}
 }
 
 @media screen and (max-width: 890px) {
