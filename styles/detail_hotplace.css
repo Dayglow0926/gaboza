@@ -421,3 +421,8 @@ i.bi-heart-fill {
     margin-left: 6.5px;
   }
 }
+
+.swiper.mySwiper > .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
