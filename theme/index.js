@@ -39,6 +39,8 @@ const themeIcM = document.querySelector(
   ".theme-title.mobile .theme-title-icon"
 );
 
+const themeLinks = document.querySelectorAll("a.h-regular-14.theme-detail");
+
 swiper.on("slideChange", function () {
   // 테마 버튼 네브 선언
   let themeTit = document.querySelectorAll(".banner-nav nav ul li button");
@@ -54,6 +56,8 @@ swiper.on("slideChange", function () {
 
   // 테마 서브 타이틀과 나오는 아이콘
   let themeTitIcon = ["☀", "🏞️", "🏄", "👩‍🦳👨‍", "🐶"];
+
+  let themeLink = ["./6.html", "./7.html", "./8.html", "./9.html", "./10.html"];
 
   // 테마 버튼 네브 스와이퍼와 연동
   themeTit.forEach((val, i) => {
@@ -76,6 +80,14 @@ swiper.on("slideChange", function () {
     if (i === this.realIndex) {
       themeIc.innerText = v;
       themeIcM.innerText = v;
+    }
+  });
+
+  themeLink.forEach((v, i) => {
+    if (i === this.realIndex) {
+      themeLinks.forEach((a) => {
+        a.href = v;
+      });
     }
   });
 
@@ -103,10 +115,4 @@ NavImg.forEach((v, i) => {
     });
     ImgArea[i].classList.add("active");
   });
-});
-
-// sweet alert
-
-document.querySelector(".detail-banner").addEventListener("click", () => {
-  swal("", "아직 준비중입니다.", "warning");
 });
