@@ -354,7 +354,6 @@ main .detail-banner img {
 }
 
 /*  */
-
 @media screen and(max-width:1500px){
   .banner-slide .theme-title {
     width: 46vw;
@@ -587,3 +586,4 @@ main .detail-banner img {
 .swiper-button-prev::after {
   display: none;
 }
+
