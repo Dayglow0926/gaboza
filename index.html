@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gaboza</title>
+    <link rel="shortcut icon" href="./img/favicon.ico/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
       rel="stylesheet"
@@ -12,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/layout/header.css" />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -53,7 +55,7 @@
             <img src="./img/banner-img3.png" alt="banner-img3" />
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
       <div class="main-travel-info test-margin">
         <div class="main-travel-info__hotplace">
@@ -67,8 +69,7 @@
               전체보기
             </a>
           </div>
-          <div class="main-travel-info__hotplace-list swiper">
-            <div class="swiper-button-prev hoplace-swiper-button-prev"></div>
+          <div class="main-travel-info__hotplace-list hotplace-list swiper">
             <div class="swiper-wrapper">
               <div class="main-travel-info__hotplace-list__item swiper-slide">
                 <div onclick="movePage('./hotplace/detail.html')">
@@ -218,7 +219,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-scrollbar hotplace-swiper-scrollbar"></div>
+            <div class="swiper-button-prev hoplace-swiper-button-prev"></div>
             <div class="swiper-button-next hotplace-swiper-button-next"></div>
           </div>
         </div>
@@ -382,9 +383,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next hotplace-swiper-button-next"></div>
-            <div class="swiper-button-prev hoplace-swiper-button-prev"></div>
-            <div class="swiper-scrollbar hotplace-swiper-scrollbar"></div>
+            <div class="swiper-button-next hotplace-swiper-button-next2"></div>
+            <div class="swiper-button-prev hoplace-swiper-button-prev2"></div>
           </div>
         </div>
         <div class="main-travel-info__gaboza-pick">
@@ -397,7 +397,10 @@
           </div>
           <div class="main-travel-info__gaboza-pick-list">
             <div class="main-travel-info__gaboza-pick-item left">
-              <div class="main-travel-info__gaboza-pick-item-img">
+              <div
+                class="main-travel-info__gaboza-pick-item-img"
+                onclick="movePage('./theme/detail.html')"
+              >
                 <img
                   src="./img/gaboza-pick-img1-1.png"
                   alt="gaboza-pick-img1"
@@ -424,7 +427,10 @@
                   아름다운 바다를 바라보며 휴식할 수 있는 공원
                 </span>
               </div>
-              <div class="main-travel-info__gaboza-pick-item-img">
+              <div
+                class="main-travel-info__gaboza-pick-item-img"
+                onclick="movePage('./theme/detail.html')"
+              >
                 <img src="./img/gaboza-pick-img2.png" alt="gaboza-pick-img2" />
                 <span
                   class="main-travel-info__gaboza-pick-item-img-text h-ExtraBold-60"
@@ -434,7 +440,10 @@
               </div>
             </div>
             <div class="main-travel-info__gaboza-pick-item left">
-              <div class="main-travel-info__gaboza-pick-item-img">
+              <div
+                class="main-travel-info__gaboza-pick-item-img"
+                onclick="movePage('./theme/detail.html')"
+              >
                 <img src="./img/gaboza-pick-img3.png" alt="gaboza-pick-img3" />
                 <span
                   class="main-travel-info__gaboza-pick-item-img-text h-ExtraBold-60"
@@ -450,6 +459,29 @@
                 </span>
               </div>
             </div>
+            <div
+              class="main-travel-info__gaboza-pick-item right"
+              style="display: none"
+            >
+              <div class="main-travel-info__gaboza-pick-item-title">
+                <span class="h-regular-14">경기 시흥시</span>
+                <span class="h-ExtraBold-46">시흥배곧한울공원</span>
+                <span class="h-regular-20">
+                  아름다운 바다를 바라보며 휴식할 수 있는 공원
+                </span>
+              </div>
+              <div
+                class="main-travel-info__gaboza-pick-item-img"
+                onclick="movePage('./theme/detail.html')"
+              >
+                <img src="./img/gaboza-pick-img2.png" alt="gaboza-pick-img2" />
+                <span
+                  class="main-travel-info__gaboza-pick-item-img-text h-ExtraBold-60"
+                >
+                  시흥배곧한울공원
+                </span>
+              </div>
+            </div>
           </div>
           <div class="main-travel-info__gaboza-pick-button">
             <button class="h-bold-16">+ 추천 여행지 더보기</button>
@@ -458,7 +490,7 @@
       </div>
       <div class="main-ad-list swiper">
         <div class="swiper-wrapper">
-          <div class="main-ad-item left swiper-slide">
+          <div class="main-ad-item left swiper-slide ready">
             <div class="main-ad-item__title">
               <span class="h-regular-20">여행 갈때 뭐 입지?</span>
               <span class="h-bold-32">
@@ -468,7 +500,7 @@
             </div>
             <img src="./img/ad-img1.png" alt="ad-img1" />
           </div>
-          <div class="main-ad-item right swiper-slide">
+          <div class="main-ad-item right swiper-slide ready">
             <div class="main-ad-item__title">
               <span class="h-regular-20">감성 챙기기 딱 좋은</span>
               <span class="h-bold-32">
@@ -480,12 +512,20 @@
           </div>
         </div>
       </div>
+      <button class="scrollUp" onclick="scrollTopFixed()">
+        <i class="bi bi-arrow-up"></i>
+      </button>
     </main>
     <div data-include-path="./layout/footer.html"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="./js/include.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/main-swipre-list.js"></script>
     <script src="./js/favorite-click-event.js"></script>
     <script src="./js/main-page.js"></script>
+    <script src="./js/ready-alert.js"></script>
+    <script src="./js/scrollTopFixed.js"></script>
+
   </body>
 </html>

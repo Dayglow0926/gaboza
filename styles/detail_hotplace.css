@@ -358,29 +358,22 @@ i.bi-heart-fill {
   box-sizing: border-box;
 }
 
-.scrollUp {
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
-  background-color: var(--grey-010);
-  border: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  position: fixed;
-  bottom: 30px;
-  right: 45px;
-}
-
-.scrollUp i {
-  font-size: 30px;
-  color: var(--grey-050);
-  margin-left: 10px;
-}
-
 .listReply > ul > li > .comment-delete {
   cursor: pointer;
 }
 
 @media (max-width: 800px) {
+  #content {
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 100px 20px 0px 20px;
+  }
+  .buttonArea {
+    margin-top: 3rem;
+  }
+
   .contView h3 {
     width: 100%;
     padding: 16px;
