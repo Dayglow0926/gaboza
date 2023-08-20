@@ -26,18 +26,20 @@ const swiper = new Swiper(".swiper1", {
   },
 });
 
-
 const test = document.querySelector(".br-15-30");
 
-const testM=document.querySelector('.theme-title.mobile .br-15-30');
+const testM = document.querySelector(".theme-title.mobile .br-15-30");
 
 const themeCon = document.querySelector(".theme-title .flex-r h4");
-
 const themeIc = document.querySelector(".theme-title-icon");
 
 const themeConM = document.querySelector(".theme-title.mobile .flex-r h4");
 
-const themeIcM = document.querySelector(".theme-title.mobile .theme-title-icon");
+const themeIcM = document.querySelector(
+  ".theme-title.mobile .theme-title-icon"
+);
+
+const themeLinks = document.querySelectorAll("a.h-regular-14.theme-detail");
 
 swiper.on("slideChange", function () {
   // 테마 버튼 네브 선언
@@ -54,6 +56,8 @@ swiper.on("slideChange", function () {
 
   // 테마 서브 타이틀과 나오는 아이콘
   let themeTitIcon = ["☀", "🏞️", "🏄", "👩‍🦳👨‍", "🐶"];
+
+  let themeLink = ["./6.html", "./7.html", "./8.html", "./9.html", "./10.html"];
 
   // 테마 버튼 네브 스와이퍼와 연동
   themeTit.forEach((val, i) => {
@@ -79,9 +83,16 @@ swiper.on("slideChange", function () {
     }
   });
 
+  themeLink.forEach((v, i) => {
+    if (i === this.realIndex) {
+      themeLinks.forEach((a) => {
+        a.href = v;
+      });
+    }
+  });
+
   // 테마 모바일 서브 타이틀 분배
 });
-
 
 // 이미지 네브 선언
 const NavImg = document.querySelectorAll(

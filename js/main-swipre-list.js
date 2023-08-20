@@ -77,7 +77,7 @@ const swiper_hotplace2 = new Swiper(".hotplace-list2", {
       slidesPerView: 2,
     },
     1000: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
   },
 });

@@ -118,9 +118,20 @@ main
   .main-travel-info__hotplace
   .main-travel-info__hotplace-list
   .main-travel-info__hotplace-list__item
+  .main-travel-info__hotplace-list__item-img {
+  height: 287px;
+}
+
+main
+  .main-travel-info
+  .main-travel-info__hotplace
+  .main-travel-info__hotplace-list
+  .main-travel-info__hotplace-list__item
   .main-travel-info__hotplace-list__item-img
   img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 main
@@ -284,7 +295,7 @@ main
   .main-travel-info__gaboza-pick-item-img-text {
   position: absolute;
   opacity: 0;
-  color: var(--blue-010);
+  color: var(--blue-005);
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -366,7 +377,7 @@ main
   background-color: var(--grey-005);
   border: 2px solid var(--grey-080);
   border-radius: 30px;
-  padding: 6px 12px;
+  padding: 12px 24px;
   margin-bottom: 32px;
 }
 
