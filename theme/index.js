@@ -14,7 +14,7 @@ const swiper = new Swiper(".swiper1", {
   autoplay: {
     delay: 1500,
   },
-  speed: 500, //like transition
+  speed: 5000000, //like transition
 
   navigation: {
     nextEl: ".swiper-button-next",

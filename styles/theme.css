@@ -17,7 +17,6 @@ main {
   width: 100%;
   display: flex;
   position: relative;
-  margin-bottom: 10.6rem;
 }
 
 .banner-slide .theme-title {
@@ -155,7 +154,6 @@ main {
 /*  */
 .theme-content {
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .theme-content .theme-con-title {
@@ -353,23 +351,96 @@ main .detail-banner img {
   margin-bottom: 1rem;
 }
 
-.swal-button {
-  background-color: var(--blue-060) !important;
-  color: var(--grey-005) !important;
-}
-.swal-button:hover {
-  background-color: var(--blue-070) !important;
-}
-
-.swal-text {
-  color: var(--grey-080) !important ;
-}
-
-
 /*  */
+@media screen and (max-width: 1800px) {
+  .banner-slide-wrap{
+    height: 69vh;
+  }
 
+  .banner-nav{
+    margin: 2rem auto 4rem auto;
+  }
+}
+
+@media screen and (max-width: 1695px) {
+  .banner-slide-wrap{
+    height: 69vh;
+  }
+  .banner-nav{
+    margin: 1rem auto 4rem auto;
+  }
+}
+
+@media screen and (max-width: 1610px) {
+  .banner-slide-wrap{
+    height: 64vh;
+  }
+  .banner-nav{
+    margin: 2rem auto 5rem auto;
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  .banner-slide-wrap{
+    height: 64vh;
+  }
+  .background-slide{
+    height: 54vh;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+
+
+  .banner-slide-wrap{
+    height: 64vh;
+  }
+
+  .banner-slide .theme-title {
+    width: 45vw;
+
+@media screen and(max-width:1500px){
+  .banner-slide .theme-title {
+    width: 46vw;
+
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: 50vh;
+    padding-left: 3rem;
+  }
+
+  .banner-slide .swiper1 {
+    width: 51%;
+    height: 62vh;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .background-slide{
+    height: 51vh;
+  }
+
+  .banner-slide-wrap{
+    height: 63vh;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .banner-slide-wrap{
+    height: 60vh;
+    padding-left: 3rem;
+  }
+}
 
 @media screen and (max-width: 1300px) {
+  .background-slide{
+    height: 50vh;
+  }
+
   .banner-nav nav ul li button {
     width: 10rem;
   }
@@ -380,9 +451,94 @@ main .detail-banner img {
   .banner-nav nav ul li:nth-child(4) button {
     width: 8rem;
   }
+
+  .banner-slide .theme-title {
+
+      width: 46vw;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 59vh;
+    padding-left: 3rem;
+  }
+
+  .banner-slide .swiper1 {
+    width: 52%;
+    height: 60vh;
+  }
+
+  .banner-slide-wrap{
+    height: 58vh;
+  }
+}
+
+@media screen and (max-width: 1255px){
+  .theme-content{
+    padding: 0 20px;
+  }
+  .banner-slide-wrap{height: 58vh;}
+
+  .background-slide{
+    height: 48vh;
+  }
+
+  .background-slide .theme-title{
+    height: 52vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-slide-wrap{
+    height: 60vh;
+    padding-left: 3rem;
+}
+}
+
+@media screen and (max-width:1200px){
+
+  .banner-slide .theme-title {
+    width: 46vw;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-left: 3rem;
+  }
+
+  .theme-content{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .banner-slide-wrap{
+    height: 50vh;
+  }
+
+  .background-slide{
+    height: 60vh;
+    padding-left: 3rem;
+}
 }
 
 @media screen and (max-width: 890px) {
+  .banner-slide .theme-title{
+    height: 50vh;
+  }
+
+  .banner-slide-wrap{
+    height: 50vh;
+  }
+
+  .background-slide{
+    height: 45vh;
+  }
+
+  
   .banner-nav nav ul li button {
     width: 9rem;
   }
@@ -396,6 +552,14 @@ main .detail-banner img {
 }
 
 @media screen and (max-width: 840px) {
+  .banner-slide-wrap{
+    height: 50vh;
+  }
+
+  .background-slide{
+    height: 45vh;
+  }
+
   .banner-nav {
     padding: 0 20px;
   }
@@ -450,7 +614,7 @@ main .detail-banner img {
 
 @media screen and (max-width: 700px) {
   .banner-slide-wrap {
-    height: 100vh;
+    height: 84vh;
   }
 
   .banner-slide {
@@ -487,7 +651,7 @@ main .detail-banner img {
 
   .banner-slide .swiper1 {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     padding-top: 2rem;
   }
 

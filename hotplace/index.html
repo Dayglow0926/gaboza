@@ -13,25 +13,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <div data-include-path="../layout/header.html"></div>
     <!-- header include -->
     <div id="container">
-      <!-- <h2 class="hp-tit h-ExtraBold-60">
-        <p class="typing-txt">우리 어디로 가볼까?</p>
-        <br />
-        <p class="typing-txt">
-          <span class="text-red-E45141">핫플</span> 내 맘대로 골라봐!
-        </p>
-        <p class="typing"></p>
-      </h2> -->
 
-      <h2 class="hp-tit h-ExtraBold-60 typing-demo">
+      <h2 class="hp-tit h-ExtraBold-60"
+      data-aos="fade-left"
+      data-aos-offset="200"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
         우리 어디로 가볼까? <br />
         <span class="text-red-E45141">핫플</span> 내 맘대로 골라봐!
       </h2>
+
+
 
       <div class="hp-search-tit">
         <span>#전체</span>
@@ -353,11 +352,13 @@
       <div class="hp-content-list-box item all busan nature heart-0-15">
         <ul class="hp-content-list-ul">
           <li class="hp-content-list-img">
-            <a href="#"><img src="./img/bs_gamcheon.jpg" alt="" /></a>
+            <a href="../hotplace/5.html"
+              ><img src="./img/bs_gamcheon.jpg" alt=""
+            /></a>
           </li>
           <li class="hp-content-list-text">
             <div class="hp-content-list-h3-div">
-              <a href="#">
+              <a href="../hotplace/5.html">
                 <h3 class="h-bold-32">감천문화마을</h3>
               </a>
               <div class="hp-content-list-icon text-black-5B5B5B">
@@ -577,36 +578,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../js/include.js"></script>
     <script src="../js/hotplace.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="../js/scrollTopFixed.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/ready-alert.js"></script>
-    <script>
-      let typingBool = false;
-      let typingIdx = 0;
-
-      // 타이핑될 텍스트를 가져온다
-      let typingTxt = $(".typing-txt").text();
-      let tyInt;
-
-      typingTxt = typingTxt.split(""); // 한글자씩 자른다.
-
-      if (typingBool == false) {
-        // 타이핑이 진행되지 않았다면
-        typingBool = true;
-        tyInt = setInterval(typing, 100); // 반복동작
-      }
-
-      function typing() {
-        if (typingIdx < typingTxt.length) {
-          // 타이핑될 텍스트 길이만큼 반복
-          $(".typing").append(typingTxt[typingIdx]);
-          // 한글자씩 이어준다.
-          typingIdx++;
-        } else {
-          //끝나면 반복종료
-          clearInterval(tyInt);
-        }
-      }
     </script>
   </body>
 </html>
