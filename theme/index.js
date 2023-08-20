@@ -105,10 +105,3 @@ NavImg.forEach((v, i) => {
     ImgArea[i].classList.add("active");
   });
 });
-
-
-// sweet alert
-
-document.querySelector('.detail-banner').addEventListener('click',()=>{
-  swal('', "아직 준비중입니다.", 'warning');
-})

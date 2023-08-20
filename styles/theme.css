@@ -353,19 +353,6 @@ main .detail-banner img {
   margin-bottom: 1rem;
 }
 
-.swal-button {
-  background-color: var(--blue-060) !important;
-  color: var(--grey-005) !important;
-}
-.swal-button:hover {
-  background-color: var(--blue-070) !important;
-}
-
-.swal-text {
-  color: var(--grey-080) !important ;
-}
-
-
 /*  */
 
 @media screen and(max-width:1500px){
