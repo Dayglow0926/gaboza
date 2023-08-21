@@ -174,3 +174,7 @@ a {
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   background-color: var(--blue-060) !important;
 }
+
+#map {
+  width: auto !important;
+}
