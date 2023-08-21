@@ -513,10 +513,10 @@ main .detail-banner img {
     height: 50vh;
   }
 
-  .background-slide{
-    height: 60vh;
-    padding-left: 3rem;
-}
+    .background-slide{
+      height: 60vh;
+      padding-left: 3rem;
+  }
 }
 
 @media screen and (max-width: 890px) {
