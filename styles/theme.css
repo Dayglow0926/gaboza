@@ -390,14 +390,14 @@ main .detail-banner img {
 }
 
 @media screen and (max-width: 1500px) {
-
-
   .banner-slide-wrap{
     height: 64vh;
   }
 
   .banner-slide .theme-title {
     width: 45vw;
+  }
+}
 
 @media screen and(max-width:1500px){
   .banner-slide .theme-title {
@@ -432,7 +432,7 @@ main .detail-banner img {
 @media screen and (max-width: 1400px) {
   .banner-slide-wrap{
     height: 60vh;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
   }
 }
 
@@ -453,8 +453,7 @@ main .detail-banner img {
   }
 
   .banner-slide .theme-title {
-
-      width: 46vw;
+    width: 46vw;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
@@ -489,14 +488,10 @@ main .detail-banner img {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width:1200px){
   .banner-slide-wrap{
     height: 60vh;
-    padding-left: 3rem;
-}
-}
-
-@media screen and (max-width:1200px){
+  }
 
   .banner-slide .theme-title {
     width: 46vw;
@@ -505,7 +500,6 @@ main .detail-banner img {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
     padding-left: 3rem;
   }
 
