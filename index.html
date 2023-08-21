@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./styles/layout/header.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/layout/footer.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link
       rel="stylesheet"
@@ -28,7 +29,13 @@
     <div data-include-path="./layout/header.html"></div>
     <main>
       <div class="main-slogan h-ExtraBold-60">
-        <div class="main-slogan__text test-margin">
+        <div
+          class="main-slogan__text test-margin"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <span>일상 속 새로움을 찾고 싶을 때</span> <br />
           <span>여기</span>
           <span class="text-blue-highlight"> 가자 보자!</span>
@@ -515,5 +522,9 @@
     <script src="./js/main-page.js"></script>
     <script src="./js/ready-alert.js"></script>
     <script src="./js/scrollTopFixed.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
