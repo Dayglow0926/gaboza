@@ -36,3 +36,8 @@ header .menu {
 header .menu a {
   color: black;
 }
+
+header .menu a:hover {
+  color: var(--blue-060);
+  transition: all 0.2s;
+}
