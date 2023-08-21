@@ -624,7 +624,6 @@ main .detail-banner img {
     width: 100%;
     padding-left: 2rem;
     margin-top: -1rem;
-    z-index: 2;
     position: relative;
     height: 20vh;
   }
