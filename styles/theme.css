@@ -390,14 +390,14 @@ main .detail-banner img {
 }
 
 @media screen and (max-width: 1500px) {
-
-
   .banner-slide-wrap{
     height: 64vh;
   }
 
   .banner-slide .theme-title {
     width: 45vw;
+  }
+}
 
 @media screen and(max-width:1500px){
   .banner-slide .theme-title {
