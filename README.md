@@ -3,6 +3,11 @@
 Figma를 활용하여 디자인 작업부터
 HTML, CSS, Javascript 를 활용한 웹페이지 구현까지 진행하는 여행 정보 사이트
 
+## 🏆 수상 
+
+<img width="300" alt="image" src="https://github.com/Dayglow0926/gaboza/assets/41177346/a428bb3f-6bc7-4ee8-859c-fd09bde863c1">
+
+
 ## 💻 프로젝트 소개
 
 여러 테마와 핫플레이스의 정보를 제공하는 여행 정보 사이트 입니다.
