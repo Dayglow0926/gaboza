@@ -42,4 +42,10 @@ HTML / CSS / JavaScript
 <img src="https://github.com/Dayglow0926/gaboza/assets/41177346/41cc1ba8-b9dc-457a-b094-c98d3e288648" style="width: 600px;" />
 
 
-### 주요 기능
+## 주요 기능
+
+### 🔍 리스트 필터 기능
+
+<img src="https://github.com/Dayglow0926/gaboza/assets/41177346/59463f46-58de-46df-9ba1-eb17148c82c0" style="width: 800px;" />
+
+
