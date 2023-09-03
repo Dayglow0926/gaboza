@@ -72,3 +72,10 @@ HTML / CSS / JavaScript
 
 <img width="800" alt="image" src="https://github.com/Dayglow0926/gaboza/assets/41177346/9c676ce7-ca68-493c-8952-75d5bb9f093f">
 
+
+
+
+## 주요 페이지
+
+### 🧳 메인 페이지
+
