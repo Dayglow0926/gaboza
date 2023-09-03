@@ -18,7 +18,7 @@ HTML, CSS, Javascript 를 활용한 웹페이지 구현까지 진행하는 여�
 
 ## ⚙️ 기술 스택
 
-HTML / CSS / JavaScript
+개발 언어 : HTML, CSS, JavaScript
 
 라이브러리 : swiper, sweet alert, AOS
 
@@ -57,8 +57,6 @@ HTML / CSS / JavaScript
 ### 🔍 리스트 필터 기능
 
 <img src="https://github.com/Dayglow0926/gaboza/assets/41177346/59463f46-58de-46df-9ba1-eb17148c82c0" style="width: 800px;" />
-
-리스트 필터 기능은 페이지에서 태그를 클릭했을 때 태그에 맞는 리스트를 출력하는 기능입니다.
 
 ### 🔍 댓글 입력 삭제 기능
 
